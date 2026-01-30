@@ -88,18 +88,6 @@
             position: relative;
         }
 
-        .code-block::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 32px;
-            background: #111118;
-            border-bottom: 1px solid #1e1e2e;
-            border-radius: 8px 8px 0 0;
-        }
-
         .feature-card {
             transition: all 0.3s ease;
         }
@@ -171,10 +159,12 @@
         /* Terminal styling */
         .terminal-header {
             display: flex;
+            align-items: center;
             gap: 6px;
             padding: 10px 12px;
-            position: relative;
-            z-index: 1;
+            background: #111118;
+            border-bottom: 1px solid #1e1e2e;
+            border-radius: 8px 8px 0 0;
         }
 
         .terminal-dot {
@@ -185,7 +175,6 @@
 
         .terminal-content {
             padding: 16px;
-            padding-top: 8px;
         }
     </style>
 </head>
