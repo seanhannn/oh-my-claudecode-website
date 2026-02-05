@@ -165,6 +165,15 @@
             transform: translateY(0);
         }
 
+        /* Resource card styling */
+        .resource-card {
+            transition: all 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-2px);
+        }
+
         /* Terminal styling */
         .terminal-header {
             display: flex;
@@ -199,6 +208,7 @@
                 <a href="#install" class="hover:text-accent-red transition-colors">Install</a>
                 <a href="#features" class="hover:text-accent-red transition-colors">Features</a>
                 <a href="#agents" class="hover:text-accent-red transition-colors">Agents</a>
+                <a href="#resources" class="hover:text-accent-red transition-colors">Resources</a>
                 <a href="#faq" class="hover:text-accent-red transition-colors">FAQ</a>
                 <a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" class="hover:text-accent-red transition-colors flex items-center gap-1">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -689,6 +699,247 @@
         </div>
     </section>
 
+    <!-- Resources Section -->
+    <section id="resources" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-xs font-medium bg-accent-cyan/10 text-accent-cyan rounded-full border border-accent-cyan/30 mb-4">
+                    📚 Community & Learning
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Resources & Articles</h2>
+                <p class="text-gray-400 text-lg">Tutorials, tips, and community content to master oh-my-claudecode</p>
+            </div>
+
+            <!-- Featured Articles -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="text-accent-orange">🔥</span> Featured Articles
+                </h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Article 1 -->
+                    <a href="https://medium.com/@joe.njenga/i-tested-oh-my-claude-code-the-only-agents-swarm-orchestration-you-need-7338ad92c00f" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="medium_joe_njenga">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">Medium</span>
+                            <span class="text-xs text-gray-500">Jan 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">I Tested Oh My Claude Code - The Only Agents Swarm Orchestration You Need</h4>
+                        <p class="text-gray-400 text-sm mb-4">Hands-on review of multi-agent orchestration capabilities with real-world examples.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Joe Njenga</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 2 -->
+                    <a href="https://roboco.io/posts/oh-my-claudecode-distilled/" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="roboco_korean">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">ROBOCO</span>
+                            <span class="text-xs text-gray-500">🇰🇷 한국어</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Oh My Claude Code - Claude Code를 '팀'으로 쓰는 플러그인</h4>
+                        <p class="text-gray-400 text-sm mb-4">In-depth Korean analysis of the plugin's architecture and team-like agent collaboration.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>Technical Deep Dive</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 3 -->
+                    <a href="https://senrecep.medium.com/ai-coding-tools-the-complete-guide-to-claude-code-opencode-modern-development-eb9da4477dc1" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="medium_recep_sen">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">Medium</span>
+                            <span class="text-xs text-gray-500">Jan 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">AI Coding Tools: The Complete Guide to Claude Code & Modern Development</h4>
+                        <p class="text-gray-400 text-sm mb-4">Comprehensive guide covering Claude Code ecosystem including plugins like OMC.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Recep Şen</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tutorials & Guides -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="text-accent-blue">📖</span> Tutorials & Guides
+                </h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="https://dev.to/ayyazzafar/claude-code-tutorial-for-beginners-2026-from-installation-to-building-your-first-project-1lma" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-blue/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="devto_beginners_tutorial">
+                        <div class="w-12 h-12 bg-accent-blue/10 rounded-lg flex items-center justify-center text-xl shrink-0">📘</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-blue transition-colors truncate">Claude Code Tutorial for Beginners 2026</h4>
+                            <p class="text-sm text-gray-500">DEV Community • From installation to first project</p>
+                        </div>
+                        <span class="text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="https://www.builder.io/blog/claude-code" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-blue/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="builderio_tips">
+                        <div class="w-12 h-12 bg-accent-orange/10 rounded-lg flex items-center justify-center text-xl shrink-0">💡</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-blue transition-colors truncate">How I Use Claude Code (+ My Best Tips)</h4>
+                            <p class="text-sm text-gray-500">Builder.io • Practical workflow tips</p>
+                        </div>
+                        <span class="text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="https://codewithmukesh.com/blog/claude-code-for-beginners/" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-blue/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="codewithmukesh_guide">
+                        <div class="w-12 h-12 bg-accent-green/10 rounded-lg flex items-center justify-center text-xl shrink-0">🎯</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-blue transition-colors truncate">Complete 2026 Guide to AI Coding</h4>
+                            <p class="text-sm text-gray-500">CodeWithMukesh • Comprehensive beginner guide</p>
+                        </div>
+                        <span class="text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-blue/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="bearblog_experience">
+                        <div class="w-12 h-12 bg-accent-purple/10 rounded-lg flex items-center justify-center text-xl shrink-0">🧠</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-blue transition-colors truncate">A Guide to Claude Code 2.0 - Getting Better at Coding Agents</h4>
+                            <p class="text-sm text-gray-500">Sankalp's Blog • Experience & insights</p>
+                        </div>
+                        <span class="text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Community Resources -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="text-accent-pink">🌟</span> Community Resources
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="https://github.com/ykdojo/claude-code-tips" target="_blank"
+                       class="resource-card bg-gradient-to-br from-dark-card to-dark-hover border border-dark-border rounded-xl p-5 hover:border-accent-pink/50 transition-all group"
+                       data-ga-category="resource_click" data-ga-label="github_45_tips">
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span class="font-bold text-white group-hover:text-accent-pink transition-colors">45 Claude Code Tips</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-3">From basics to advanced - custom status line, Gemini CLI integration, and more.</p>
+                        <span class="text-xs text-accent-pink">ykdojo/claude-code-tips</span>
+                    </a>
+
+                    <a href="https://github.com/quemsah/awesome-claude-plugins" target="_blank"
+                       class="resource-card bg-gradient-to-br from-dark-card to-dark-hover border border-dark-border rounded-xl p-5 hover:border-accent-pink/50 transition-all group"
+                       data-ga-category="resource_click" data-ga-label="github_awesome_plugins">
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span class="font-bold text-white group-hover:text-accent-pink transition-colors">Awesome Claude Plugins</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-3">Automated collection of Claude Code plugin adoption metrics across GitHub.</p>
+                        <span class="text-xs text-accent-pink">quemsah/awesome-claude-plugins</span>
+                    </a>
+
+                    <a href="https://www.firecrawl.dev/blog/best-claude-code-plugins" target="_blank"
+                       class="resource-card bg-gradient-to-br from-dark-card to-dark-hover border border-dark-border rounded-xl p-5 hover:border-accent-pink/50 transition-all group"
+                       data-ga-category="resource_click" data-ga-label="firecrawl_top10">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-2xl">🔥</span>
+                            <span class="font-bold text-white group-hover:text-accent-pink transition-colors">Top 10 Claude Code Plugins</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-3">Curated list of the best plugins to try in 2026 from Firecrawl.</p>
+                        <span class="text-xs text-accent-pink">firecrawl.dev</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Related Projects -->
+            <div>
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <span class="text-accent-cyan">🔗</span> Related Projects
+                </h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="https://github.com/ruvnet/claude-flow" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-cyan/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="github_claude_flow">
+                        <div class="w-12 h-12 bg-accent-cyan/10 rounded-lg flex items-center justify-center text-xl shrink-0">🌊</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-cyan transition-colors">claude-flow</h4>
+                            <p class="text-sm text-gray-500 truncate">Agent orchestration platform with distributed swarm intelligence</p>
+                        </div>
+                        <span class="text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="https://gist.github.com/kieranklaassen/4f2aba89594a4aea4ad64d753984b2ea" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-cyan/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="gist_swarm_guide">
+                        <div class="w-12 h-12 bg-accent-orange/10 rounded-lg flex items-center justify-center text-xl shrink-0">📋</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-cyan transition-colors">Swarm Orchestration Skill Guide</h4>
+                            <p class="text-sm text-gray-500 truncate">Complete guide to multi-agent coordination patterns</p>
+                        </div>
+                        <span class="text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="https://paddo.dev/blog/claude-code-hidden-swarm/" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-cyan/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="paddo_hidden_swarm">
+                        <div class="w-12 h-12 bg-accent-purple/10 rounded-lg flex items-center justify-center text-xl shrink-0">🕵️</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-cyan transition-colors">Claude Code's Hidden Multi-Agent System</h4>
+                            <p class="text-sm text-gray-500 truncate">Exploring the native TeammateTool capabilities</p>
+                        </div>
+                        <span class="text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="https://news.ycombinator.com/item?id=46743908" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-cyan/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="hackernews_swarm">
+                        <div class="w-12 h-12 bg-accent-orange/10 rounded-lg flex items-center justify-center text-xl shrink-0">🔶</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-cyan transition-colors">Hacker News Discussion</h4>
+                            <p class="text-sm text-gray-500 truncate">Claude Code's Swarm feature discussion thread</p>
+                        </div>
+                        <span class="text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Official Links -->
+            <div class="mt-12 p-6 bg-gradient-to-r from-accent-red/10 via-accent-purple/10 to-accent-pink/10 border border-accent-red/20 rounded-xl">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Official Documentation</h3>
+                        <p class="text-gray-400">Dive deep into the complete reference and changelog</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/docs/REFERENCE.md" target="_blank"
+                           class="resource-card px-5 py-2.5 bg-dark-card border border-dark-border rounded-lg font-semibold hover:border-accent-red transition-colors flex items-center gap-2"
+                           data-ga-category="resource_click" data-ga-label="official_reference_docs">
+                            <span>📚</span> Reference Docs
+                        </a>
+                        <a href="https://github.com/Yeachan-Heo/oh-my-claudecode/blob/main/CHANGELOG.md" target="_blank"
+                           class="resource-card px-5 py-2.5 bg-dark-card border border-dark-border rounded-lg font-semibold hover:border-accent-red transition-colors flex items-center gap-2"
+                           data-ga-category="resource_click" data-ga-label="official_changelog">
+                            <span>📝</span> Changelog
+                        </a>
+                        <a href="https://github.com/Yeachan-Heo/oh-my-claudecode/releases" target="_blank"
+                           class="resource-card px-5 py-2.5 bg-dark-card border border-dark-border rounded-lg font-semibold hover:border-accent-red transition-colors flex items-center gap-2"
+                           data-ga-category="resource_click" data-ga-label="official_releases">
+                            <span>🚀</span> Releases
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section id="faq" class="py-20 px-4 bg-dark-card/50">
         <div class="max-w-3xl mx-auto">
@@ -821,13 +1072,155 @@
     </footer>
 
     <script>
-        // Copy to clipboard function
+        // ============================================
+        // GOOGLE ANALYTICS EVENT TRACKING
+        // ============================================
+        //
+        // GA4 Event Tracking Guidelines:
+        //
+        // 1. RESOURCE CLICKS (Outbound Links):
+        //    - Event: 'resource_click'
+        //    - Parameters: category, label, url
+        //    - Add data-ga-category and data-ga-label to clickable elements
+        //    - Example: <a href="..." data-ga-category="resource_click" data-ga-label="medium_article">
+        //
+        // 2. SECTION IMPRESSIONS (Visibility Tracking):
+        //    - Event: 'section_view'
+        //    - Parameters: section_id, section_name
+        //    - Automatically tracked for all sections with id attribute
+        //
+        // 3. CTA BUTTON CLICKS:
+        //    - Event: 'cta_click'
+        //    - Parameters: button_text, destination
+        //    - Tracked on primary action buttons
+        //
+        // 4. COPY ACTIONS:
+        //    - Event: 'copy_code'
+        //    - Parameters: code_type
+        //    - Tracked when users copy installation commands
+        //
+        // To add tracking to new elements:
+        // - For clicks: Add data-ga-category="category_name" data-ga-label="unique_label"
+        // - For sections: Ensure section has an id attribute
+        // ============================================
+
+        // Helper function to safely send GA4 events
+        function trackEvent(eventName, params = {}) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, params);
+            }
+        }
+
+        // Track resource card clicks (outbound links)
+        document.querySelectorAll('.resource-card, [data-ga-category]').forEach(card => {
+            card.addEventListener('click', function(e) {
+                const category = this.dataset.gaCategory || 'link_click';
+                const label = this.dataset.gaLabel || this.textContent.trim().substring(0, 50);
+                const url = this.href || '';
+
+                trackEvent(category, {
+                    event_category: category,
+                    event_label: label,
+                    link_url: url,
+                    link_text: this.textContent.trim().substring(0, 100)
+                });
+            });
+        });
+
+        // Track CTA button clicks
+        document.querySelectorAll('a[href="#install"], a[href*="github.com"]').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const isGitHub = this.href.includes('github.com');
+                trackEvent('cta_click', {
+                    event_category: 'cta',
+                    event_label: isGitHub ? 'github_link' : 'get_started',
+                    button_text: this.textContent.trim(),
+                    destination: this.href
+                });
+            });
+        });
+
+        // Track section impressions (visibility)
+        const sectionNames = {
+            'install': 'Quick Start',
+            'features': 'Execution Modes',
+            'agents': 'Specialized Agents',
+            'resources': 'Resources & Articles',
+            'faq': 'FAQ'
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.dataset.gaViewed) {
+                    const sectionId = entry.target.id;
+                    const sectionName = sectionNames[sectionId] || sectionId;
+
+                    trackEvent('section_view', {
+                        event_category: 'engagement',
+                        event_label: sectionId,
+                        section_id: sectionId,
+                        section_name: sectionName
+                    });
+
+                    // Mark as viewed to prevent duplicate events
+                    entry.target.dataset.gaViewed = 'true';
+                }
+            });
+        }, { threshold: 0.3 });
+
+        // Observe all sections with IDs
+        document.querySelectorAll('section[id]').forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // Track navigation clicks
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const linkText = this.textContent.trim();
+                const isExternal = this.hostname !== window.location.hostname;
+
+                trackEvent('navigation_click', {
+                    event_category: 'navigation',
+                    event_label: linkText,
+                    link_type: isExternal ? 'external' : 'internal',
+                    destination: this.href
+                });
+            });
+        });
+
+        // Track FAQ interactions
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            faq.addEventListener('toggle', function(e) {
+                if (this.open) {
+                    const question = this.querySelector('summary span')?.textContent || '';
+                    trackEvent('faq_expand', {
+                        event_category: 'engagement',
+                        event_label: question.substring(0, 50),
+                        faq_question: question
+                    });
+                }
+            });
+        });
+
+        // ============================================
+        // CORE FUNCTIONALITY
+        // ============================================
+
+        // Copy to clipboard function with GA tracking
         function copyToClipboard(button, text) {
             navigator.clipboard.writeText(text).then(() => {
                 const span = button.querySelector('span');
                 const originalText = span.textContent;
                 span.textContent = 'Copied!';
                 button.classList.add('copied');
+
+                // Track copy event
+                trackEvent('copy_code', {
+                    event_category: 'engagement',
+                    event_label: text.includes('plugin') ? 'install_command' :
+                                 text.includes('omc-setup') ? 'setup_command' : 'example_code',
+                    code_snippet: text.substring(0, 100)
+                });
 
                 setTimeout(() => {
                     span.textContent = originalText;
@@ -865,6 +1258,36 @@
 
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
+        });
+
+        // Track scroll depth (25%, 50%, 75%, 100%)
+        let scrollDepthTracked = {};
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+            const milestones = [25, 50, 75, 100];
+
+            milestones.forEach(milestone => {
+                if (scrollPercent >= milestone && !scrollDepthTracked[milestone]) {
+                    scrollDepthTracked[milestone] = true;
+                    trackEvent('scroll_depth', {
+                        event_category: 'engagement',
+                        event_label: `${milestone}%`,
+                        percent_scrolled: milestone
+                    });
+                }
+            });
+        });
+
+        // Track time on page (30s, 60s, 120s, 300s)
+        const timeIntervals = [30, 60, 120, 300];
+        timeIntervals.forEach(seconds => {
+            setTimeout(() => {
+                trackEvent('time_on_page', {
+                    event_category: 'engagement',
+                    event_label: `${seconds}s`,
+                    seconds_on_page: seconds
+                });
+            }, seconds * 1000);
         });
     </script>
 </body>
