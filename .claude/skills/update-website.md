@@ -1,10 +1,10 @@
-# update-omc-website
+# update-website
 
 Update oh-my-claudecode website with latest changes and resources.
 
 ## Metadata
 
-- **name**: update-omc-website
+- **name**: update-website
 - **description**: Sync oh-my-claudecode repo changes and curate latest resources for the website
 - **keywords**: website, update, sync, resources, omc, oh-my-claudecode
 - **author**: seanhan

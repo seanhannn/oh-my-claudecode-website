@@ -23,7 +23,7 @@ Updates the website with latest oh-my-claudecode changes and curated resources.
 4. Applies Google Analytics tracking to all new elements
 5. Commits and deploys automatically
 
-**Skill file:** `.claude/skills/update-omc-website.md`
+**Skill file:** `.claude/skills/update-website.md`
 
 ## Development Guidelines
 
