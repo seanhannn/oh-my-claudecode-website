@@ -61,6 +61,19 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `gist_swarm_guide` - Swarm orchestration gist
 - `paddo_hidden_swarm` - Hidden multi-agent system article
 - `hackernews_swarm` - Hacker News discussion
+- `theunwindai_multiagent` - The Unwind AI multi-agent article
+- `medium_piercelamb` - Pierce Lamb's plugin development article
+- `aibit_multiagent` - AIBit multi-agent automation article
+- `roboco_comparison` - ROBOCO enterprise comparison (Korean)
+- `shipyard_multiagent` - Shipyard multi-agent orchestration guide
+- `skywork_largecodebase` - Skywork AI large codebase best practices
+- `medium_clairebluepark_migration` - OpenCode to OMC migration (Korean)
+- `vibesparking_steroids` - Vibe Sparking AI review
+- `eeselai_multiagent_guide` - eesel.ai complete multi-agent guide
+- `github_awesomeccplugins` - ccplugins/awesome-claude-code-plugins
+- `github_awesomeclaudecode` - hesreallyhim/awesome-claude-code
+- `github_wshobson_agents` - wshobson/agents framework
+- `github_claudeorchestration` - mbruhler/claude-orchestration
 - `official_reference_docs` - Official reference documentation
 - `official_changelog` - Official changelog
 - `official_releases` - Official releases page
