@@ -77,6 +77,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `official_reference_docs` - Official reference documentation
 - `official_changelog` - Official changelog
 - `official_releases` - Official releases page
+- `addyosmani_swarms` - Addy Osmani's Claude Code Swarms article
+- `zenvanriel_swarms` - Zen van Riel's multi-agent AI coding article
+- `datanorth_guide` - DataNorth complete Claude Code guide
 
 ---
 
