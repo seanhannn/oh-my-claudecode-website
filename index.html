@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oh-my-claudecode - Multi-Agent Orchestration for Claude Code</title>
-    <meta name="description" content="Zero learning curve multi-agent orchestration for Claude Code. 32 specialized agents, 40+ skills, automatic parallelization. Now with Opus 4.6 support.">
+    <meta name="description" content="Zero learning curve multi-agent orchestration for Claude Code. 28 unified agents, 34+ skills, automatic parallelization. Teams-first orchestration with Opus 4.6.">
     <meta name="keywords" content="claude code, ai coding, multi-agent, orchestration, autopilot, claude">
     <link rel="canonical" href="https://ohmyclaudecode.com">
 
     <!-- Open Graph -->
     <meta property="og:title" content="oh-my-claudecode - Multi-Agent Orchestration">
-    <meta property="og:description" content="Zero learning curve. 32 specialized agents. 40+ skills. Don't learn Claude Code. Just use OMC.">
+    <meta property="og:description" content="Zero learning curve. 28 unified agents. 34+ skills. Teams-first orchestration. Just use OMC.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ohmyclaudecode.com">
 
@@ -228,7 +228,7 @@
             <div class="mb-6 animate-fade-in">
                 <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent-red/10 text-accent-red rounded-full border border-accent-red/30">
                     <span class="w-2 h-2 bg-accent-green rounded-full animate-pulse"></span>
-                    v4.1.12 - CLI Setup, HUD Themes & Model Display
+                    v4.2.5 - Teams-first Orchestration & Notifications
                 </span>
             </div>
 
@@ -260,11 +260,11 @@
             <!-- Stats -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                 <div class="stat-card rounded-xl p-6">
-                    <div class="text-4xl font-bold text-accent-red mb-1">32</div>
+                    <div class="text-4xl font-bold text-accent-red mb-1">28</div>
                     <div class="text-sm text-gray-400">Unified Agents</div>
                 </div>
                 <div class="stat-card rounded-xl p-6">
-                    <div class="text-4xl font-bold text-accent-green mb-1">40+</div>
+                    <div class="text-4xl font-bold text-accent-green mb-1">34+</div>
                     <div class="text-sm text-gray-400">Built-in Skills</div>
                 </div>
                 <div class="stat-card rounded-xl p-6">
@@ -299,7 +299,7 @@
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="text-3xl mb-4">🤖</div>
                     <h3 class="text-xl font-bold mb-2">Multi-Agent Orchestration</h3>
-                    <p class="text-gray-400">32 specialized agents for architecture, research, design, testing, and data science - automatically delegated.</p>
+                    <p class="text-gray-400">28 unified agents for architecture, research, design, testing, and data science - automatically delegated.</p>
                 </div>
 
                 <!-- Card 3 -->
@@ -545,87 +545,107 @@
     <section id="agents" class="py-20 px-4 bg-dark-card/50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">32 Specialized Agents</h2>
-                <p class="text-gray-400 text-lg">Smart model routing - Right agent for the job, every time</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">28 Unified Agents</h2>
+                <p class="text-gray-400 text-lg">Teams-first architecture - specify model capability via parameters, not tiers</p>
             </div>
 
-            <div class="overflow-x-auto rounded-xl border border-dark-border">
-                <table class="w-full text-sm">
-                    <thead class="bg-dark-card">
-                        <tr class="border-b border-dark-border">
-                            <th class="text-left py-4 px-6 font-semibold">Domain</th>
-                            <th class="text-left py-4 px-6 font-semibold">
-                                <span class="flex items-center gap-2">
-                                    <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
-                                    LOW (Haiku)
-                                </span>
-                            </th>
-                            <th class="text-left py-4 px-6 font-semibold">
-                                <span class="flex items-center gap-2">
-                                    <span class="w-2 h-2 bg-yellow-400 rounded-full"></span>
-                                    MEDIUM (Sonnet)
-                                </span>
-                            </th>
-                            <th class="text-left py-4 px-6 font-semibold">
-                                <span class="flex items-center gap-2">
-                                    <span class="w-2 h-2 bg-accent-red rounded-full"></span>
-                                    HIGH (Opus)
-                                </span>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-gray-300">
-                        <tr class="border-b border-dark-border/50 hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">🧠 Analysis</td>
-                            <td class="py-4 px-6 code text-xs text-blue-400">architect-low</td>
-                            <td class="py-4 px-6 code text-xs text-yellow-400">architect-medium</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">architect</td>
-                        </tr>
-                        <tr class="border-b border-dark-border/50 hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">⚙️ Execution</td>
-                            <td class="py-4 px-6 code text-xs text-blue-400">executor-low</td>
-                            <td class="py-4 px-6 code text-xs text-yellow-400">executor</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">executor-high</td>
-                        </tr>
-                        <tr class="border-b border-dark-border/50 hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">🔍 Search</td>
-                            <td class="py-4 px-6 code text-xs text-blue-400">explore</td>
-                            <td class="py-4 px-6 code text-xs text-yellow-400">explore-medium</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">explore-high</td>
-                        </tr>
-                        <tr class="border-b border-dark-border/50 hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">🎨 Frontend</td>
-                            <td class="py-4 px-6 code text-xs text-blue-400">designer-low</td>
-                            <td class="py-4 px-6 code text-xs text-yellow-400">designer</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">designer-high</td>
-                        </tr>
-                        <tr class="border-b border-dark-border/50 hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">🧪 Testing</td>
-                            <td class="py-4 px-6 code text-xs text-gray-500">-</td>
-                            <td class="py-4 px-6 code text-xs text-yellow-400">qa-tester</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">qa-tester-high</td>
-                        </tr>
-                        <tr class="border-b border-dark-border/50 hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">🔒 Security</td>
-                            <td class="py-4 px-6 code text-xs text-blue-400">security-reviewer-low</td>
-                            <td class="py-4 px-6 code text-xs text-gray-500">-</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">security-reviewer</td>
-                        </tr>
-                        <tr class="border-b border-dark-border/50 hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">📊 Data Science</td>
-                            <td class="py-4 px-6 code text-xs text-blue-400">scientist-low</td>
-                            <td class="py-4 px-6 code text-xs text-yellow-400">scientist</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">scientist-high</td>
-                        </tr>
-                        <tr class="hover:bg-dark-hover/50 transition-colors">
-                            <td class="py-4 px-6 font-medium">📋 Planning</td>
-                            <td class="py-4 px-6 code text-xs text-gray-500">-</td>
-                            <td class="py-4 px-6 code text-xs text-gray-500">-</td>
-                            <td class="py-4 px-6 code text-xs text-accent-red">planner, critic, analyst</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">🧠</span>
+                        <h4 class="font-semibold text-sm">Analysis</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-accent-red/10 text-accent-red rounded">architect</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-red/10 text-accent-red rounded">debugger</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-red/10 text-accent-red rounded">verifier</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">⚙️</span>
+                        <h4 class="font-semibold text-sm">Execution</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-accent-orange/10 text-accent-orange rounded">executor</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-orange/10 text-accent-orange rounded">build-fixer</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">🔍</span>
+                        <h4 class="font-semibold text-sm">Search & Research</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-accent-blue/10 text-accent-blue rounded">explore</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-blue/10 text-accent-blue rounded">researcher</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">🎨</span>
+                        <h4 class="font-semibold text-sm">Frontend & UX</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-accent-pink/10 text-accent-pink rounded">designer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-pink/10 text-accent-pink rounded">ux-researcher</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-pink/10 text-accent-pink rounded">info-architect</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">🧪</span>
+                        <h4 class="font-semibold text-sm">Testing & QA</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-accent-green/10 text-accent-green rounded">qa-tester</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-green/10 text-accent-green rounded">test-engineer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-green/10 text-accent-green rounded">tdd-guide</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">🔒</span>
+                        <h4 class="font-semibold text-sm">Code Review</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-accent-purple/10 text-accent-purple rounded">code-reviewer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-purple/10 text-accent-purple rounded">style-reviewer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-purple/10 text-accent-purple rounded">quality-reviewer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-purple/10 text-accent-purple rounded">api-reviewer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-purple/10 text-accent-purple rounded">perf-reviewer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-purple/10 text-accent-purple rounded">security-reviewer</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">📋</span>
+                        <h4 class="font-semibold text-sm">Planning & Product</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-yellow-500/10 text-yellow-500 rounded">planner</span>
+                        <span class="code text-xs px-2 py-1 bg-yellow-500/10 text-yellow-500 rounded">critic</span>
+                        <span class="code text-xs px-2 py-1 bg-yellow-500/10 text-yellow-500 rounded">analyst</span>
+                        <span class="code text-xs px-2 py-1 bg-yellow-500/10 text-yellow-500 rounded">product-manager</span>
+                        <span class="code text-xs px-2 py-1 bg-yellow-500/10 text-yellow-500 rounded">product-analyst</span>
+                        <span class="code text-xs px-2 py-1 bg-yellow-500/10 text-yellow-500 rounded">quality-strategist</span>
+                    </div>
+                </div>
+                <div class="bg-dark-card border border-dark-border rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-lg">📊</span>
+                        <h4 class="font-semibold text-sm">Specialists</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="code text-xs px-2 py-1 bg-accent-cyan/10 text-accent-cyan rounded">scientist</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-cyan/10 text-accent-cyan rounded">writer</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-cyan/10 text-accent-cyan rounded">vision</span>
+                        <span class="code text-xs px-2 py-1 bg-accent-cyan/10 text-accent-cyan rounded">dependency-expert</span>
+                    </div>
+                </div>
             </div>
+
+            <p class="text-center text-sm text-gray-500 mt-6">All agents accept a <code class="code text-accent-red">model</code> parameter - no more tier suffixes. Specify <code class="code text-accent-red">haiku</code>, <code class="code text-accent-red">sonnet</code>, or <code class="code text-accent-red">opus</code> as needed.</p>
         </div>
     </section>
 
@@ -665,6 +685,10 @@
                 <div class="keyword-badge bg-dark-card border border-accent-pink/30 rounded-xl p-5 text-center cursor-pointer hover:border-accent-pink hover:bg-accent-pink/5">
                     <div class="code text-xl font-bold text-accent-pink mb-2">swarm</div>
                     <div class="text-sm text-gray-500">Coordinated agents</div>
+                </div>
+                <div class="keyword-badge bg-dark-card border border-accent-cyan/30 rounded-xl p-5 text-center cursor-pointer hover:border-accent-cyan hover:bg-accent-cyan/5">
+                    <div class="code text-xl font-bold text-accent-cyan mb-2">team</div>
+                    <div class="text-sm text-gray-500">Agent teams</div>
                 </div>
                 <div class="keyword-badge bg-dark-card border border-gray-500/30 rounded-xl p-5 text-center cursor-pointer hover:border-gray-400 hover:bg-gray-500/5">
                     <div class="code text-xl font-bold text-gray-400 mb-2">cancel</div>
@@ -861,6 +885,22 @@
                     </a>
 
                     <!-- Article 10 - NEW -->
+                    <a href="https://sonim1.com/en/blog/oh-my-claudecode" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="sonim1_legal_doping">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-pink/10 text-accent-pink rounded">Sonim1</span>
+                            <span class="text-xs text-gray-500">Feb 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Oh My ClaudeCode: Legal Doping for Claude Code</h4>
+                        <p class="text-gray-400 text-sm mb-4">Practical guide focusing on the features that actually get used daily - ralplan, autopilot, ultraqa, and honest cost analysis.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Kendrick B. Jung</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 11 - NEW -->
                     <a href="https://datanorth.ai/blog/claude-code-ai-coding-assistant-guide-2025" target="_blank"
                        class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
                        data-ga-category="resource_click" data-ga-label="datanorth_guide">
@@ -1056,6 +1096,17 @@
                         <p class="text-sm text-gray-400 mb-3">Intelligent automation and multi-agent orchestration for Claude Code.</p>
                         <span class="text-xs text-accent-pink">wshobson/agents</span>
                     </a>
+
+                    <a href="https://rosmur.github.io/claudecode-best-practices/" target="_blank"
+                       class="resource-card bg-gradient-to-br from-dark-card to-dark-hover border border-dark-border rounded-xl p-5 hover:border-accent-pink/50 transition-all group"
+                       data-ga-category="resource_click" data-ga-label="rosmur_best_practices">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-2xl">📖</span>
+                            <span class="font-bold text-white group-hover:text-accent-pink transition-colors">Claude Code Best Practices</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-3">Community-maintained guide covering workflows, patterns, and tips for effective Claude Code usage.</p>
+                        <span class="text-xs text-accent-pink">rosmur/claudecode-best-practices</span>
+                    </a>
                 </div>
             </div>
 
@@ -1166,7 +1217,7 @@
                         <svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div class="px-6 pb-6 text-gray-400">
-                        oh-my-claudecode (OMC) is a multi-agent orchestration layer for Claude Code. It provides 32 specialized agents, 40+ skills, and intelligent workflows that automatically parallelize tasks, optimize token usage, and persist until completion.
+                        oh-my-claudecode (OMC) is a teams-first multi-agent orchestration layer for Claude Code. It provides 28 unified agents, 34+ skills, and intelligent workflows that automatically parallelize tasks, optimize token usage, and persist until completion.
                     </div>
                 </details>
 

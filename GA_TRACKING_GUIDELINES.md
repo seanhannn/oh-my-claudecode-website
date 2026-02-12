@@ -80,6 +80,8 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `addyosmani_swarms` - Addy Osmani's Claude Code Swarms article
 - `zenvanriel_swarms` - Zen van Riel's multi-agent AI coding article
 - `datanorth_guide` - DataNorth complete Claude Code guide
+- `sonim1_legal_doping` - Sonim1 "Legal Doping for Claude Code" practical guide
+- `rosmur_best_practices` - Claude Code Best Practices community guide
 
 ---
 
