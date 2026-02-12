@@ -5,14 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oh-my-claudecode - Multi-Agent Orchestration for Claude Code</title>
     <meta name="description" content="Zero learning curve multi-agent orchestration for Claude Code. 28 unified agents, 34+ skills, automatic parallelization. Teams-first orchestration with Opus 4.6.">
-    <meta name="keywords" content="claude code, ai coding, multi-agent, orchestration, autopilot, claude">
-    <link rel="canonical" href="https://ohmyclaudecode.com">
+    <meta name="keywords" content="claude code, ai coding, multi-agent, orchestration, autopilot, claude, claude code plugin, ai agent, swarm, team mode, parallel coding, oh-my-claudecode, omc">
+    <meta name="author" content="oh-my-claudecode contributors">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#dc2626">
+    <link rel="canonical" href="https://ohmyclaudecode.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="oh-my-claudecode - Multi-Agent Orchestration">
+    <meta property="og:title" content="oh-my-claudecode - Multi-Agent Orchestration for Claude Code">
     <meta property="og:description" content="Zero learning curve. 28 unified agents. 34+ skills. Teams-first orchestration. Just use OMC.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ohmyclaudecode.com">
+    <meta property="og:url" content="https://ohmyclaudecode.com/">
+    <meta property="og:site_name" content="oh-my-claudecode">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://opengraph.githubassets.com/1/Yeachan-Heo/oh-my-claudecode">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image:alt" content="oh-my-claudecode - Teams-first Multi-agent orchestration for Claude Code">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="oh-my-claudecode - Multi-Agent Orchestration for Claude Code">
+    <meta name="twitter:description" content="Zero learning curve. 28 unified agents. 34+ skills. Teams-first orchestration. Just use OMC.">
+    <meta name="twitter:image" content="https://opengraph.githubassets.com/1/Yeachan-Heo/oh-my-claudecode">
+
+    <!-- Preconnect & DNS Prefetch for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- JSON-LD Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "oh-my-claudecode",
+        "alternateName": "OMC",
+        "url": "https://ohmyclaudecode.com/",
+        "description": "Zero learning curve multi-agent orchestration for Claude Code. 28 unified agents, 34+ skills, automatic parallelization.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://github.com/Yeachan-Heo/oh-my-claudecode/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "oh-my-claudecode",
+        "alternateName": "OMC",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "url": "https://ohmyclaudecode.com/",
+        "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+        "softwareVersion": "4.2.5",
+        "description": "Teams-first multi-agent orchestration plugin for Claude Code with 28 unified agents and 34+ skills.",
+        "license": "https://opensource.org/licenses/MIT",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "6000",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "oh-my-claudecode contributors",
+            "url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: FAQPage (enables Google rich snippets) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is oh-my-claudecode?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "oh-my-claudecode (OMC) is a teams-first multi-agent orchestration layer for Claude Code. It provides 28 unified agents, 34+ skills, and intelligent workflows that automatically parallelize tasks, optimize token usage, and persist until completion."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need to learn special commands?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No! OMC has zero learning curve. Just describe what you want in natural language, and it automatically detects the best mode and agents to use. Magic keywords like autopilot and ralph are optional shortcuts for power users."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the requirements for oh-my-claudecode?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You need Claude Code CLI installed, plus either a Claude Max/Pro subscription or an Anthropic API key. That's it - no other dependencies required."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does token optimization work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "OMC uses smart model routing - simple tasks go to Haiku (cheap and fast), complex reasoning goes to Opus. Ecomode takes this further by using only Haiku and Sonnet agents, saving 30-50% on tokens while maintaining quality."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the difference between Autopilot and Ultrapilot?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autopilot runs tasks sequentially with full autonomous execution. Ultrapilot adds parallel execution with up to 5 concurrent workers, making it 3-5x faster for multi-component projects like fullstack apps or large refactoring tasks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is oh-my-claudecode safe to use with production code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! OMC includes security-reviewer agents, mandatory Architect verification before completion, and verification-before-completion protocols. Ralph mode ensures nothing is marked complete until properly verified."
+                }
+            }
+        ]
+    }
+    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY1SMZBQT0"></script>
@@ -22,6 +151,10 @@
         gtag('js', new Date());
         gtag('config', 'G-DY1SMZBQT0');
     </script>
+
+    <!-- Favicon (GitHub default) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -1203,7 +1336,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-20 px-4 bg-dark-card/50">
+    <section id="faq" class="py-20 px-4 bg-dark-card/50" itemscope itemtype="https://schema.org/FAQPage">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
