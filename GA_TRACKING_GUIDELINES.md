@@ -82,6 +82,17 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `datanorth_guide` - DataNorth complete Claude Code guide
 - `sonim1_legal_doping` - Sonim1 "Legal Doping for Claude Code" practical guide
 - `rosmur_best_practices` - Claude Code Best Practices community guide
+- `medium_piercelamb_trilogy` - Pierce Lamb's Deep Trilogy plugins article
+- `medium_vinay_chatbox` - Vinay Bhaskarla's non-technical Claude Code guide
+- `hackceleration_review` - Hackceleration Claude Code 2026 review
+- `devgenius_plugin_stack` - JP Caparas plugin starter stack for web devs
+- `datacamp_build_plugins` - DataCamp step-by-step plugin building guide
+- `wasp_fullstack_essentials` - Wasp fullstack development essentials
+- `medium_benyamin_codereview` - Benyamin Salimi's interactive code review
+- `claudepluginsdev_registry` - Claude Plugins community registry
+- `github_shanraisshan_bestpractice` - shanraisshan/claude-code-best-practice
+- `claudecoderun_agentrooms` - Claude Code Agentrooms workspace
+- `github_claudecodebyagents` - baryhuang/claude-code-by-agents
 
 ---
 
