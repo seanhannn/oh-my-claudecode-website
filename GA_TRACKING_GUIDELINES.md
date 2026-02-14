@@ -93,6 +93,13 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `github_shanraisshan_bestpractice` - shanraisshan/claude-code-best-practice
 - `claudecoderun_agentrooms` - Claude Code Agentrooms workspace
 - `github_claudecodebyagents` - baryhuang/claude-code-by-agents
+- `lenny_claude_code` - Lenny Rachitsky's "Everyone should be using Claude Code more"
+- `oreilly_auto_review` - O'Reilly Radar auto-reviewing Claude's code
+- `creatorsai_practical_tips` - The Creator's AI practical plugin & swarm tips
+- `alexop_tasks_to_swarms` - alexop.dev agent teams coordination patterns
+- `perrotta_swarm_mode` - perrotta.dev swarm mode deep dive
+- `official_agent_teams_docs` - Official Anthropic agent teams documentation
+- `github_ohmyclaude_dotnet` - stefandevo/oh-my-claude .NET port
 
 ---
 
