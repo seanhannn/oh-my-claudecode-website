@@ -100,6 +100,11 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `perrotta_swarm_mode` - perrotta.dev swarm mode deep dive
 - `official_agent_teams_docs` - Official Anthropic agent teams documentation
 - `github_ohmyclaude_dotnet` - stefandevo/oh-my-claude .NET port
+- `composio_top_plugins` - Composio top 10 Claude Code plugins ranking
+- `prismic_claude_code` - Prismic "Why Claude Code Changed My Mind"
+- `apiyi_swarm_guide` - Apiyi.com Claude Swarm Mode complete guide
+- `atcyrus_swarm_explained` - Cyrus Claude Code swarm feature explainer
+- `github_wesammustafa_guide` - wesammustafa/Claude-Code-Everything-You-Need-to-Know
 
 ---
 
