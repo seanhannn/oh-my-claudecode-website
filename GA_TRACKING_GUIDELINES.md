@@ -105,6 +105,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `apiyi_swarm_guide` - Apiyi.com Claude Swarm Mode complete guide
 - `atcyrus_swarm_explained` - Cyrus Claude Code swarm feature explainer
 - `github_wesammustafa_guide` - wesammustafa/Claude-Code-Everything-You-Need-to-Know
+- `jeongil_agent_ecosystem` - Jeongil Jeong's AI coding agent ecosystem article
+- `brightcoding_plugins_plus` - BrightCoding 270+ Claude Code plugins directory
+- `boristane_howto` - Boris Tane's "How I Use Claude Code" guide
 
 ---
 

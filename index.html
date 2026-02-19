@@ -63,7 +63,7 @@
         "operatingSystem": "macOS, Linux, Windows",
         "url": "https://ohmyclaudecode.com/",
         "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-        "softwareVersion": "4.2.11",
+        "softwareVersion": "4.2.13",
         "description": "Teams-first multi-agent orchestration plugin for Claude Code with 32 specialized agents and 40+ skills.",
         "license": "https://opensource.org/licenses/MIT",
         "offers": {
@@ -74,7 +74,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "6500",
+            "ratingCount": "6600",
             "bestRating": "5"
         },
         "author": {
@@ -120,7 +120,7 @@
                 "name": "How does token optimization work?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "OMC uses smart model routing - simple tasks go to Haiku (cheap and fast), complex reasoning goes to Opus. Ecomode takes this further by using only Haiku and Sonnet agents, saving 30-50% on tokens while maintaining quality."
+                    "text": "OMC uses smart model routing - simple tasks go to Haiku (cheap and fast), complex reasoning goes to Opus. This automatic routing saves 30-50% on tokens while maintaining quality, with no manual configuration needed."
                 }
             },
             {
@@ -361,7 +361,7 @@
             <div class="mb-6 animate-fade-in">
                 <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent-red/10 text-accent-red rounded-full border border-accent-red/30">
                     <span class="w-2 h-2 bg-accent-green rounded-full animate-pulse"></span>
-                    v4.2.11 - Teams-first Orchestration & Notifications
+                    v4.2.13 - HUD Call Indicators & Context Warnings
                 </span>
             </div>
 
@@ -620,20 +620,20 @@
                     </div>
                 </div>
 
-                <!-- Ecomode -->
+                <!-- Notifications -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-12 h-12 bg-accent-green/10 rounded-xl flex items-center justify-center text-2xl">
-                            💚
+                            🔔
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold">Ecomode</h3>
-                            <span class="px-2 py-0.5 text-xs bg-accent-green/20 text-accent-green rounded">30-50% savings</span>
+                            <h3 class="text-xl font-bold">Notifications</h3>
+                            <span class="px-2 py-0.5 text-xs bg-accent-green/20 text-accent-green rounded">Discord & Telegram</span>
                         </div>
                     </div>
-                    <p class="text-gray-400 mb-4">Token-efficient parallel execution using Haiku and Sonnet agents.</p>
+                    <p class="text-gray-400 mb-4">Get notified on Discord/Telegram when tasks finish. Named profiles & reply injection.</p>
                     <div class="code-block p-3">
-                        <code class="code text-sm text-accent-green">eco: migrate database schema</code>
+                        <code class="code text-sm text-accent-green">omc config-stop-callback discord</code>
                     </div>
                 </div>
 
@@ -1081,7 +1081,7 @@
                         </div>
                     </a>
 
-                    <!-- Article 14 - NEW -->
+                    <!-- Article 14 -->
                     <a href="https://hackceleration.com/claude-code-review/" target="_blank"
                        class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
                        data-ga-category="resource_click" data-ga-label="hackceleration_review">
@@ -1097,7 +1097,7 @@
                         </div>
                     </a>
 
-                    <!-- Article 15 - NEW -->
+                    <!-- Article 15 -->
                     <a href="https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code" target="_blank"
                        class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
                        data-ga-category="resource_click" data-ga-label="lenny_claude_code">
@@ -1113,7 +1113,7 @@
                         </div>
                     </a>
 
-                    <!-- Article 16 - NEW -->
+                    <!-- Article 16 -->
                     <a href="https://www.oreilly.com/radar/auto-reviewing-claudes-code/" target="_blank"
                        class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
                        data-ga-category="resource_click" data-ga-label="oreilly_auto_review">
@@ -1129,7 +1129,7 @@
                         </div>
                     </a>
 
-                    <!-- Article 17 - NEW -->
+                    <!-- Article 17 -->
                     <a href="https://composio.dev/blog/top-claude-code-plugins" target="_blank"
                        class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
                        data-ga-category="resource_click" data-ga-label="composio_top_plugins">
@@ -1145,7 +1145,7 @@
                         </div>
                     </a>
 
-                    <!-- Article 18 - NEW -->
+                    <!-- Article 18 -->
                     <a href="https://prismic.io/blog/claude-code" target="_blank"
                        class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
                        data-ga-category="resource_click" data-ga-label="prismic_claude_code">
@@ -1157,6 +1157,22 @@
                         <p class="text-gray-400 text-sm mb-4">First-hand account of how Claude Code and its plugin ecosystem transformed a developer's approach to AI-assisted coding.</p>
                         <div class="flex items-center gap-2 text-sm text-gray-500">
                             <span>Prismic Blog</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 19 -->
+                    <a href="https://jeongil.dev/en/blog/trends/claude-code-agent-teams/" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="jeongil_agent_ecosystem">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-blue/10 text-accent-blue rounded">Tech Blog</span>
+                            <span class="text-xs text-gray-500">Feb 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">The Ever-Changing AI Coding Agent Ecosystem</h4>
+                        <p class="text-gray-400 text-sm mb-4">How community tools like OMC drove platform evolution, from multi-agent orchestration to official Agent Teams.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Jeongil Jeong</span>
                             <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </div>
                     </a>
@@ -1363,6 +1379,28 @@
                         <div class="flex-grow min-w-0">
                             <h4 class="font-semibold group-hover:text-accent-blue transition-colors truncate">What Is the Claude Code Swarm Feature? Agent Teams, Explained</h4>
                             <p class="text-sm text-gray-500">Cyrus • Clear explainer on swarm architecture & use cases</p>
+                        </div>
+                        <span class="text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="http://www.blog.brightcoding.dev/2026/02/07/claude-code-plugins-plus-270-ai-agent-tools-that-transform-development" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-blue/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="brightcoding_plugins_plus">
+                        <div class="w-12 h-12 bg-accent-green/10 rounded-lg flex items-center justify-center text-xl shrink-0">🔌</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-blue transition-colors truncate">Claude Code Plugins Plus: 270+ AI Agent Tools</h4>
+                            <p class="text-sm text-gray-500">BrightCoding • Comprehensive plugin directory & agent tools</p>
+                        </div>
+                        <span class="text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                    </a>
+
+                    <a href="https://boristane.com/blog/how-i-use-claude-code/" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-blue/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="boristane_howto">
+                        <div class="w-12 h-12 bg-accent-orange/10 rounded-lg flex items-center justify-center text-xl shrink-0">💡</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-blue transition-colors truncate">How I Use Claude Code</h4>
+                            <p class="text-sm text-gray-500">Boris Tane • Real-world workflows, tips & best practices</p>
                         </div>
                         <span class="text-accent-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                     </a>
@@ -1668,7 +1706,7 @@
                         <svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div class="px-6 pb-6 text-gray-400">
-                        OMC uses smart model routing - simple tasks go to Haiku (cheap & fast), complex reasoning goes to Opus. Ecomode takes this further by using only Haiku and Sonnet agents, saving 30-50% on tokens while maintaining quality.
+                        OMC uses smart model routing - simple tasks go to Haiku (cheap & fast), complex reasoning goes to Opus. This automatic routing saves 30-50% on tokens while maintaining quality, with no manual configuration needed.
                     </div>
                 </details>
 
