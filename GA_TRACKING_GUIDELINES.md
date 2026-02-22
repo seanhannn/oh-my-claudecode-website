@@ -108,6 +108,10 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `jeongil_agent_ecosystem` - Jeongil Jeong's AI coding agent ecosystem article
 - `brightcoding_plugins_plus` - BrightCoding 270+ Claude Code plugins directory
 - `boristane_howto` - Boris Tane's "How I Use Claude Code" guide
+- `codingnexus_swarms` - Coding Nexus multi-agent teams article
+- `claudefast_agent_teams` - ClaudeFast agent teams complete guide
+- `medium_darasoba_teams` - Dára Sobaloju agent teams setup guide
+- `producttalk_features` - Product Talk Claude Code features guide
 
 ---
 
