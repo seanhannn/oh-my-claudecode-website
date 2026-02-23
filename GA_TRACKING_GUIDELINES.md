@@ -112,6 +112,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `claudefast_agent_teams` - ClaudeFast agent teams complete guide
 - `medium_darasoba_teams` - Dára Sobaloju agent teams setup guide
 - `producttalk_features` - Product Talk Claude Code features guide
+- `theneuron_guide` - The Neuron's complete Claude Code beginner-to-power-user guide
+- `official_subagents_docs` - Official Claude Code custom subagents documentation
+- `vscode_multiagent` - VS Code multi-agent development blog post
 
 ---
 
