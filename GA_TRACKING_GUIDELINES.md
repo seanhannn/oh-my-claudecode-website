@@ -115,6 +115,8 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `theneuron_guide` - The Neuron's complete Claude Code beginner-to-power-user guide
 - `official_subagents_docs` - Official Claude Code custom subagents documentation
 - `vscode_multiagent` - VS Code multi-agent development blog post
+- `anthropic_c_compiler` - Anthropic engineering building a C compiler with Claude Code
+- `medium_kargar_agent_sdk` - Isaac Kargar agent teams with Claude Agent SDK
 
 ---
 
