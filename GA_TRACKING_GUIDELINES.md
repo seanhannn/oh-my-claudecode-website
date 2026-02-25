@@ -117,6 +117,8 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `vscode_multiagent` - VS Code multi-agent development blog post
 - `anthropic_c_compiler` - Anthropic engineering building a C compiler with Claude Code
 - `medium_kargar_agent_sdk` - Isaac Kargar agent teams with Claude Agent SDK
+- `marc0_agent_teams` - marc0.dev practical agent teams setup guide
+- `anthropic_security` - Anthropic official security best practices documentation
 
 ---
 
