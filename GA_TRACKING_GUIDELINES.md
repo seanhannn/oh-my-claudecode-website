@@ -119,6 +119,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `medium_kargar_agent_sdk` - Isaac Kargar agent teams with Claude Agent SDK
 - `marc0_agent_teams` - marc0.dev practical agent teams setup guide
 - `anthropic_security` - Anthropic official security best practices documentation
+- `aitoolanalysis_plugins_review` - AI Tool Analysis 9,000+ plugins comprehensive review
+- `cuttlesoft_macos_teams` - Cuttlesoft macOS agent teams setup guide
+- `devto_opencode_teams` - Ugo Enyioha porting agent teams to OpenCode
 
 ---
 
