@@ -122,6 +122,8 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `aitoolanalysis_plugins_review` - AI Tool Analysis 9,000+ plugins comprehensive review
 - `cuttlesoft_macos_teams` - Cuttlesoft macOS agent teams setup guide
 - `devto_opencode_teams` - Ugo Enyioha porting agent teams to OpenCode
+- `devto_oikon_changelog` - oikon's Claude Code CHANGELOG reflections
+- `github_quemsah_metrics` - quemsah/awesome-claude-plugins adoption metrics
 
 ---
 
