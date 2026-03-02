@@ -124,6 +124,12 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `devto_opencode_teams` - Ugo Enyioha porting agent teams to OpenCode
 - `devto_oikon_changelog` - oikon's Claude Code CHANGELOG reflections
 - `github_quemsah_metrics` - quemsah/awesome-claude-plugins adoption metrics
+- `devto_felixchan_plugin_teams` - FelixChan building plugins for agent teams
+- `geekygadgets_50tips` - Geeky Gadgets 50 Claude Code tips and tricks
+- `sshh_every_feature` - Shrivu Shankar using every Claude Code feature
+- `jangwook_openclaw_teams` - Jangwook Lee agent teams with OpenClaw guide
+- `byteiota_swarms_discovered` - ByteIota hidden multi-agent swarms feature
+- `github_ruflo_orchestration` - ruflo enterprise agent orchestration platform
 
 ---
 
