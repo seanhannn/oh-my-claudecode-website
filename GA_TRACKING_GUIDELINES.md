@@ -130,6 +130,7 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `jangwook_openclaw_teams` - Jangwook Lee agent teams with OpenClaw guide
 - `byteiota_swarms_discovered` - ByteIota hidden multi-agent swarms feature
 - `github_ruflo_orchestration` - ruflo enterprise agent orchestration platform
+- `adambernard_swarm_orchestration` - Adam Bernard's OMC agent swarm orchestration guide
 
 ---
 
