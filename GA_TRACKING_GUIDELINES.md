@@ -131,6 +131,12 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `byteiota_swarms_discovered` - ByteIota hidden multi-agent swarms feature
 - `github_ruflo_orchestration` - ruflo enterprise agent orchestration platform
 - `adambernard_swarm_orchestration` - Adam Bernard's OMC agent swarm orchestration guide
+- `sitepoint_agent_teams` - SitePoint agent teams setup guide
+- `medium_cobusgreyling_teams` - Cobus Greyling's agent teams article
+- `turingcollege_agent_teams` - Turing College agent teams guide
+- `anthropic_plugins_blog` - Official Anthropic plugins blog post
+- `freekdev_claude_setup` - Freek Van der Herten's Claude Code setup
+- `github_claudeswarm_hackathon` - affaan-m/claude-swarm hackathon project
 
 ---
 
