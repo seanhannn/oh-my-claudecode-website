@@ -137,6 +137,11 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `anthropic_plugins_blog` - Official Anthropic plugins blog post
 - `freekdev_claude_setup` - Freek Van der Herten's Claude Code setup
 - `github_claudeswarm_hackathon` - affaan-m/claude-swarm hackathon project
+- `deepakkarkala_omc_guide` - Deepak Karkala's comprehensive oh-my-claudecode framework guide
+- `medium_danavila_teams` - Daniel Avila's agent teams in Claude Code article
+- `medium_habib_teams` - Michael Habib's experience trying Claude Code Teams
+- `github_bruniaux_ultimate_guide` - FlorianBruniaux/claude-code-ultimate-guide
+- `lobehub_omc_setup` - OMC omc-setup skill on LobeHub Skills Marketplace
 
 ---
 
