@@ -142,6 +142,10 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `medium_habib_teams` - Michael Habib's experience trying Claude Code Teams
 - `github_bruniaux_ultimate_guide` - FlorianBruniaux/claude-code-ultimate-guide
 - `lobehub_omc_setup` - OMC omc-setup skill on LobeHub Skills Marketplace
+- `medium_leogodin_great` - Leo Godin's "Claude Code is Great" practical guide
+- `rockcyber_zerg_orchestration` - Rock Cyber Musings parallel orchestration deep dive
+- `scottspence_swarm_unlock` - Scott Spence's swarm mode unlock guide
+- `similarlabs_tutorial_guide` - SimilarLabs ultimate Claude Code tutorial 2026
 
 ---
 
