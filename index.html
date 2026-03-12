@@ -8,7 +8,7 @@
     <meta name="keywords" content="claude code, ai coding, multi-agent, orchestration, autopilot, claude, claude code plugin, ai agent, swarm, team mode, parallel coding, oh-my-claudecode, omc">
     <meta name="author" content="oh-my-claudecode contributors">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="theme-color" content="#dc2626">
+    <meta name="theme-color" content="#28D7FF">
     <link rel="canonical" href="https://ohmyclaudecode.com/">
 
     <!-- Open Graph -->
@@ -163,19 +163,19 @@
                 extend: {
                     colors: {
                         dark: {
-                            bg: '#0a0a0f',
-                            card: '#111118',
-                            border: '#1e1e2e',
-                            hover: '#252535'
+                            bg: '#070B14',
+                            card: '#0E1525',
+                            border: '#25324A',
+                            hover: '#1A2540'
                         },
                         accent: {
-                            red: '#dc2626',
-                            green: '#22c55e',
+                            red: '#28D7FF',
+                            green: '#A3FF66',
                             orange: '#f97316',
                             pink: '#ec4899',
-                            purple: '#a855f7',
+                            purple: '#6E7CFF',
                             blue: '#3b82f6',
-                            cyan: '#06b6d4'
+                            cyan: '#28D7FF'
                         }
                     },
                     animation: {
@@ -188,11 +188,11 @@
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0a0a0f;
+            font-family: 'Manrope', sans-serif;
+            background-color: #070B14;
         }
 
         code, .code {
@@ -200,31 +200,31 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #dc2626, #ec4899);
+            background: linear-gradient(110deg, #28D7FF, #6E7CFF 55%, #A3FF66);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .gradient-border {
-            background: linear-gradient(135deg, #dc2626, #ec4899);
+            background: linear-gradient(110deg, #28D7FF, #6E7CFF 55%, #A3FF66);
             padding: 1px;
             border-radius: 12px;
         }
 
         .gradient-border-inner {
-            background: #111118;
+            background: #0E1525;
             border-radius: 11px;
             height: 100%;
         }
 
         .glow-red {
-            box-shadow: 0 0 30px rgba(220, 38, 38, 0.4);
+            box-shadow: 0 0 30px rgba(40, 215, 255, 0.3);
         }
 
         .code-block {
-            background: #0d0d12;
-            border: 1px solid #1e1e2e;
+            background: #0A1020;
+            border: 1px solid #25324A;
             border-radius: 8px;
             overflow-x: auto;
             position: relative;
@@ -235,9 +235,9 @@
         }
 
         .feature-card:hover {
-            border-color: #dc2626;
+            border-color: rgba(40, 215, 255, 0.55);
             transform: translateY(-4px);
-            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.1);
+            box-shadow: 0 14px 40px rgba(7, 11, 20, 0.45);
         }
 
         .keyword-badge {
@@ -253,11 +253,13 @@
         }
 
         .copy-btn:hover {
-            background: #dc2626;
+            background: #28D7FF;
+            color: #070B14;
         }
 
         .copy-btn.copied {
-            background: #22c55e;
+            background: #A3FF66;
+            color: #070B14;
         }
 
         .faq-item {
@@ -265,7 +267,7 @@
         }
 
         .faq-item[open] summary {
-            color: #dc2626;
+            color: #28D7FF;
         }
 
         .faq-item[open] .faq-icon {
@@ -273,8 +275,8 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(236, 72, 153, 0.05));
-            border: 1px solid rgba(220, 38, 38, 0.2);
+            background: linear-gradient(135deg, rgba(40, 215, 255, 0.08), rgba(110, 124, 255, 0.04));
+            border: 1px solid rgba(40, 215, 255, 0.15);
         }
 
         @keyframes fadeIn {
@@ -313,8 +315,8 @@
             align-items: center;
             gap: 6px;
             padding: 10px 12px;
-            background: #111118;
-            border-bottom: 1px solid #1e1e2e;
+            background: #0E1525;
+            border-bottom: 1px solid #25324A;
             border-radius: 8px 8px 0 0;
         }
 
@@ -365,7 +367,7 @@
                 </span>
             </div>
 
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight" style="font-family: 'Sora', sans-serif; letter-spacing: -0.03em; line-height: 0.95;">
                 <span class="gradient-text">Multi-Agent Orchestration</span>
                 <br>
                 <span class="text-white">for Claude Code</span>
@@ -381,8 +383,8 @@
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                <a href="#install" class="px-8 py-4 bg-accent-red hover:bg-red-700 text-white font-bold rounded-xl transition-all glow-red text-lg">
-                    🚀 Get Started
+                <a href="#install" class="px-8 py-4 bg-accent-red hover:brightness-110 text-dark-bg font-bold rounded-xl transition-all glow-red text-lg">
+                    Get Started
                 </a>
                 <a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" class="px-8 py-4 bg-dark-card hover:bg-dark-hover border border-dark-border text-white font-semibold rounded-xl transition-colors text-lg flex items-center justify-center gap-2">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -415,51 +417,63 @@
     <!-- Why OMC Section -->
     <section class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why oh-my-claudecode?</h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Everything you need to supercharge your Claude Code experience</p>
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">Why oh-my-claudecode?</h2>
+                <p class="text-gray-400 text-lg max-w-2xl">Everything you need to supercharge your Claude Code experience</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
-                    <div class="text-3xl mb-4">🎯</div>
-                    <h3 class="text-xl font-bold mb-2">Zero Learning Curve</h3>
+                    <div class="w-8 h-8 rounded-lg bg-accent-red/10 mb-4 flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-accent-red"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Sora', sans-serif;">Zero Learning Curve</h3>
                     <p class="text-gray-400">Just describe what you want in natural language. No commands to memorize, no configuration needed.</p>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
-                    <div class="text-3xl mb-4">🤖</div>
-                    <h3 class="text-xl font-bold mb-2">Multi-Agent Orchestration</h3>
+                    <div class="w-8 h-8 rounded-lg bg-accent-purple/10 mb-4 flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-accent-purple"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Sora', sans-serif;">Multi-Agent Orchestration</h3>
                     <p class="text-gray-400">32 specialized agents for architecture, research, design, testing, and data science - automatically delegated.</p>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
-                    <div class="text-3xl mb-4">⚡</div>
-                    <h3 class="text-xl font-bold mb-2">Parallel Execution</h3>
+                    <div class="w-8 h-8 rounded-lg bg-accent-green/10 mb-4 flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-accent-green"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Sora', sans-serif;">Parallel Execution</h3>
                     <p class="text-gray-400">Up to 5 concurrent workers with Ultrapilot mode. 3-5x faster than sequential execution.</p>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
-                    <div class="text-3xl mb-4">💰</div>
-                    <h3 class="text-xl font-bold mb-2">Smart Cost Optimization</h3>
+                    <div class="w-8 h-8 rounded-lg bg-accent-orange/10 mb-4 flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-accent-orange"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Sora', sans-serif;">Smart Cost Optimization</h3>
                     <p class="text-gray-400">Automatic model routing - Haiku for simple tasks, Opus for complex reasoning. Save 30-50% on tokens.</p>
                 </div>
 
                 <!-- Card 5 -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
-                    <div class="text-3xl mb-4">🔄</div>
-                    <h3 class="text-xl font-bold mb-2">Persistent Execution</h3>
+                    <div class="w-8 h-8 rounded-lg bg-accent-blue/10 mb-4 flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-accent-blue"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Sora', sans-serif;">Persistent Execution</h3>
                     <p class="text-gray-400">Won't give up until verified complete. Ralph mode ensures tasks are done right, with Architect verification.</p>
                 </div>
 
                 <!-- Card 6 -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
-                    <div class="text-3xl mb-4">📚</div>
-                    <h3 class="text-xl font-bold mb-2">Rich Documentation</h3>
+                    <div class="w-8 h-8 rounded-lg bg-accent-pink/10 mb-4 flex items-center justify-center">
+                        <div class="w-3 h-3 rounded-full bg-accent-pink"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Sora', sans-serif;">Rich Documentation</h3>
                     <p class="text-gray-400">Comprehensive docs, examples, and community support. Get help when you need it.</p>
                 </div>
             </div>
@@ -471,9 +485,9 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <span class="inline-block px-3 py-1 text-xs font-medium bg-accent-green/10 text-accent-green rounded-full border border-accent-green/30 mb-4">
-                    ✓ 30 seconds setup
+                    30 seconds setup
                 </span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Quick Start</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">Quick Start</h2>
                 <p class="text-gray-400 text-lg">Three steps to supercharge your Claude Code</p>
             </div>
 
@@ -487,9 +501,7 @@
                         <h3 class="text-xl font-bold mb-3">Install the plugin</h3>
                         <div class="code-block">
                             <div class="terminal-header">
-                                <div class="terminal-dot bg-red-500"></div>
-                                <div class="terminal-dot bg-yellow-500"></div>
-                                <div class="terminal-dot bg-green-500"></div>
+                                <span class="text-xs text-gray-500 font-mono select-none">terminal</span>
                                 <button onclick="copyToClipboard(this, '/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode\n/plugin install oh-my-claudecode')" class="copy-btn ml-auto flex items-center gap-1 px-3 py-1 text-xs bg-dark-hover rounded-md hover:bg-accent-red transition-colors">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                                     <span>Copy</span>
@@ -512,9 +524,7 @@
                         <h3 class="text-xl font-bold mb-3">Run setup wizard</h3>
                         <div class="code-block">
                             <div class="terminal-header">
-                                <div class="terminal-dot bg-red-500"></div>
-                                <div class="terminal-dot bg-yellow-500"></div>
-                                <div class="terminal-dot bg-green-500"></div>
+                                <span class="text-xs text-gray-500 font-mono select-none">terminal</span>
                                 <button onclick="copyToClipboard(this, '/oh-my-claudecode:omc-setup')" class="copy-btn ml-auto flex items-center gap-1 px-3 py-1 text-xs bg-dark-hover rounded-md hover:bg-accent-red transition-colors">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                                     <span>Copy</span>
@@ -537,9 +547,7 @@
                         <h3 class="text-xl font-bold mb-3">Start building</h3>
                         <div class="code-block">
                             <div class="terminal-header">
-                                <div class="terminal-dot bg-red-500"></div>
-                                <div class="terminal-dot bg-yellow-500"></div>
-                                <div class="terminal-dot bg-green-500"></div>
+                                <span class="text-xs text-gray-500 font-mono select-none">terminal</span>
                                 <button onclick="copyToClipboard(this, 'autopilot: build a REST API for managing tasks')" class="copy-btn ml-auto flex items-center gap-1 px-3 py-1 text-xs bg-dark-hover rounded-md hover:bg-accent-red transition-colors">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                                     <span>Copy</span>
@@ -547,7 +555,7 @@
                             </div>
                             <div class="terminal-content">
                                 <pre class="code text-sm"><code><span class="text-gray-500">$</span> <span class="text-accent-orange">autopilot:</span> <span class="text-white">build a REST API for managing tasks</span>
-<span class="text-accent-purple">🚀 Activating autopilot for full autonomous execution...</span></code></pre>
+<span class="text-accent-purple">Activating autopilot for full autonomous execution...</span></code></pre>
                             </div>
                         </div>
                     </div>
@@ -564,7 +572,8 @@
     <section id="features" class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Execution Modes</h2>
+                <span class="text-xs uppercase tracking-widest text-accent-red/60 font-semibold mb-3 inline-block">Workflows</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">Execution Modes</h2>
                 <p class="text-gray-400 text-lg">Multiple strategies for different use cases</p>
             </div>
 
@@ -572,8 +581,8 @@
                 <!-- Autopilot -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-accent-red/10 rounded-xl flex items-center justify-center text-2xl">
-                            🚀
+                        <div class="w-12 h-12 bg-accent-red/10 rounded-xl flex items-center justify-center">
+                            <div class="w-5 h-5 rounded-md bg-accent-red/80"></div>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Autopilot</h3>
@@ -589,8 +598,8 @@
                 <!-- Ultrapilot -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-accent-purple/10 rounded-xl flex items-center justify-center text-2xl">
-                            ⚡
+                        <div class="w-12 h-12 bg-accent-purple/10 rounded-xl flex items-center justify-center">
+                            <div class="w-5 h-5 rounded-md bg-accent-purple/80"></div>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Ultrapilot</h3>
@@ -606,8 +615,8 @@
                 <!-- Swarm -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-accent-orange/10 rounded-xl flex items-center justify-center text-2xl">
-                            🐝
+                        <div class="w-12 h-12 bg-accent-orange/10 rounded-xl flex items-center justify-center">
+                            <div class="w-5 h-5 rounded-md bg-accent-orange/80"></div>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Swarm</h3>
@@ -623,8 +632,8 @@
                 <!-- Notifications -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-accent-green/10 rounded-xl flex items-center justify-center text-2xl">
-                            🔔
+                        <div class="w-12 h-12 bg-accent-green/10 rounded-xl flex items-center justify-center">
+                            <div class="w-5 h-5 rounded-md bg-accent-green/80"></div>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Notifications</h3>
@@ -640,8 +649,8 @@
                 <!-- Pipeline -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-accent-pink/10 rounded-xl flex items-center justify-center text-2xl">
-                            🔗
+                        <div class="w-12 h-12 bg-accent-pink/10 rounded-xl flex items-center justify-center">
+                            <div class="w-5 h-5 rounded-md bg-accent-pink/80"></div>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Pipeline</h3>
@@ -657,8 +666,8 @@
                 <!-- Ralph -->
                 <div class="feature-card bg-dark-card border border-dark-border rounded-xl p-6">
                     <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center text-2xl">
-                            🦾
+                        <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center">
+                            <div class="w-5 h-5 rounded-md bg-yellow-500/80"></div>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold">Ralph</h3>
@@ -678,14 +687,14 @@
     <section id="agents" class="py-20 px-4 bg-dark-card/50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">32 Specialized Agents</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">32 Specialized Agents</h2>
                 <p class="text-gray-400 text-lg">Teams-first architecture - specify model capability via parameters, not tiers</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">🧠</span>
+                        <div class="w-5 h-5 rounded bg-accent-red/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-accent-red"></div></div>
                         <h4 class="font-semibold text-sm">Analysis</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -696,7 +705,7 @@
                 </div>
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">⚙️</span>
+                        <div class="w-5 h-5 rounded bg-accent-orange/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-accent-orange"></div></div>
                         <h4 class="font-semibold text-sm">Execution</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -706,7 +715,7 @@
                 </div>
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">🔍</span>
+                        <div class="w-5 h-5 rounded bg-accent-blue/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-accent-blue"></div></div>
                         <h4 class="font-semibold text-sm">Search & Research</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -716,7 +725,7 @@
                 </div>
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">🎨</span>
+                        <div class="w-5 h-5 rounded bg-accent-pink/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-accent-pink"></div></div>
                         <h4 class="font-semibold text-sm">Frontend & UX</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -727,7 +736,7 @@
                 </div>
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">🧪</span>
+                        <div class="w-5 h-5 rounded bg-accent-green/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-accent-green"></div></div>
                         <h4 class="font-semibold text-sm">Testing & QA</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -738,7 +747,7 @@
                 </div>
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">🔒</span>
+                        <div class="w-5 h-5 rounded bg-accent-purple/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-accent-purple"></div></div>
                         <h4 class="font-semibold text-sm">Code Review</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -752,7 +761,7 @@
                 </div>
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">📋</span>
+                        <div class="w-5 h-5 rounded bg-yellow-500/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-yellow-500"></div></div>
                         <h4 class="font-semibold text-sm">Planning & Product</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -766,7 +775,7 @@
                 </div>
                 <div class="bg-dark-card border border-dark-border rounded-xl p-5">
                     <div class="flex items-center gap-2 mb-3">
-                        <span class="text-lg">📊</span>
+                        <div class="w-5 h-5 rounded bg-accent-cyan/20 flex items-center justify-center"><div class="w-2 h-2 rounded-sm bg-accent-cyan"></div></div>
                         <h4 class="font-semibold text-sm">Specialists</h4>
                     </div>
                     <div class="flex flex-wrap gap-1.5">
@@ -786,7 +795,7 @@
     <section class="py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Magic Keywords</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">Magic Keywords</h2>
                 <p class="text-gray-400 text-lg">Optional shortcuts for power users. Natural language works fine without them.</p>
             </div>
 
@@ -833,9 +842,7 @@
                 <h3 class="text-xl font-bold mb-4 text-center">Combine Keywords</h3>
                 <div class="code-block">
                     <div class="terminal-header">
-                        <div class="terminal-dot bg-red-500"></div>
-                        <div class="terminal-dot bg-yellow-500"></div>
-                        <div class="terminal-dot bg-green-500"></div>
+                        <span class="text-xs text-gray-500 font-mono select-none">terminal</span>
                         <button onclick="copyToClipboard(this, 'ralph ulw: migrate database\neco autopilot: build a blog\n/swarm 3:executor \"fix TypeScript errors\"')" class="copy-btn ml-auto flex items-center gap-1 px-3 py-1 text-xs bg-dark-hover rounded-md hover:bg-accent-red transition-colors">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                             <span>Copy</span>
@@ -861,16 +868,16 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <span class="inline-block px-3 py-1 text-xs font-medium bg-accent-cyan/10 text-accent-cyan rounded-full border border-accent-cyan/30 mb-4">
-                    📚 Community & Learning
+                    Community & Learning
                 </span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Resources & Articles</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">Resources & Articles</h2>
                 <p class="text-gray-400 text-lg">Tutorials, tips, and community content to master oh-my-claudecode</p>
             </div>
 
             <!-- Featured Articles -->
             <div class="mb-12">
-                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
-                    <span class="text-accent-orange">🔥</span> Featured Articles
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2" style="font-family: 'Sora', sans-serif;">
+                    <span class="w-1.5 h-5 bg-accent-orange rounded-full inline-block"></span> Featured Articles
                 </h3>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Article 1 -->
@@ -1017,6 +1024,10 @@
                         </div>
                     </a>
 
+                </div>
+                <!-- Hidden articles container -->
+                <div id="more-articles" class="hidden mt-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Article 10 - NEW -->
                     <a href="https://sonim1.com/en/blog/oh-my-claudecode" target="_blank"
                        class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
@@ -1497,12 +1508,18 @@
                         </div>
                     </a>
                 </div>
+                </div>
+                <div class="text-center mt-8">
+                    <button id="show-more-articles" onclick="toggleArticles()" class="px-6 py-3 bg-dark-card border border-dark-border rounded-xl font-semibold hover:border-accent-red/50 transition-all text-sm text-gray-300 hover:text-white">
+                        Show more articles <span id="more-articles-count" class="text-accent-red">(30)</span>
+                    </button>
+                </div>
             </div>
 
             <!-- Tutorials & Guides -->
             <div class="mb-12">
-                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
-                    <span class="text-accent-blue">📖</span> Tutorials & Guides
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2" style="font-family: 'Sora', sans-serif;">
+                    <span class="w-1.5 h-5 bg-accent-blue rounded-full inline-block"></span> Tutorials & Guides
                 </h3>
                 <div class="grid md:grid-cols-2 gap-4">
                     <a href="https://dev.to/ayyazzafar/claude-code-tutorial-for-beginners-2026-from-installation-to-building-your-first-project-1lma" target="_blank"
@@ -1938,8 +1955,8 @@
 
             <!-- Community Resources -->
             <div class="mb-12">
-                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
-                    <span class="text-accent-pink">🌟</span> Community Resources
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2" style="font-family: 'Sora', sans-serif;">
+                    <span class="w-1.5 h-5 bg-accent-pink rounded-full inline-block"></span> Community Resources
                 </h3>
                 <div class="grid md:grid-cols-3 gap-4">
                     <a href="https://github.com/ykdojo/claude-code-tips" target="_blank"
@@ -2078,8 +2095,8 @@
 
             <!-- Related Projects -->
             <div>
-                <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
-                    <span class="text-accent-cyan">🔗</span> Related Projects
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2" style="font-family: 'Sora', sans-serif;">
+                    <span class="w-1.5 h-5 bg-accent-cyan rounded-full inline-block"></span> Related Projects
                 </h3>
                 <div class="grid md:grid-cols-2 gap-4">
                     <a href="https://github.com/ruvnet/claude-flow" target="_blank"
@@ -2217,7 +2234,7 @@
             </div>
 
             <!-- Official Links -->
-            <div class="mt-12 p-6 bg-gradient-to-r from-accent-red/10 via-accent-purple/10 to-accent-pink/10 border border-accent-red/20 rounded-xl">
+            <div class="mt-12 p-6 bg-gradient-to-r from-accent-red/10 via-accent-purple/10 to-accent-green/10 border border-accent-red/20 rounded-xl">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                     <div>
                         <h3 class="text-xl font-bold mb-2">Official Documentation</h3>
@@ -2249,7 +2266,7 @@
     <section id="faq" class="py-20 px-4 bg-dark-card/50" itemscope itemtype="https://schema.org/FAQPage">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">Frequently Asked Questions</h2>
                 <p class="text-gray-400 text-lg">Got questions? We've got answers.</p>
             </div>
 
@@ -2326,7 +2343,7 @@
                 </div>
             </div>
 
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Get Involved</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" style="font-family: 'Sora', sans-serif; letter-spacing: -0.02em;">Get Involved</h2>
             <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
                 oh-my-claudecode is open source and community-driven. Contribute, report issues, or just star the repo!
             </p>
@@ -2510,6 +2527,22 @@
         // ============================================
         // CORE FUNCTIONALITY
         // ============================================
+
+        // Toggle more articles
+        function toggleArticles() {
+            const container = document.getElementById('more-articles');
+            const btn = document.getElementById('show-more-articles');
+            if (container.classList.contains('hidden')) {
+                container.classList.remove('hidden');
+                btn.innerHTML = 'Show fewer articles';
+                trackEvent('show_more_articles', { event_category: 'engagement', event_label: 'expand' });
+            } else {
+                container.classList.add('hidden');
+                btn.innerHTML = 'Show more articles <span class="text-accent-red">(30)</span>';
+                // Scroll back to resources section
+                document.getElementById('resources').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
 
         // Copy to clipboard function with GA tracking
         function copyToClipboard(button, text) {
