@@ -146,6 +146,12 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `rockcyber_zerg_orchestration` - Rock Cyber Musings parallel orchestration deep dive
 - `scottspence_swarm_unlock` - Scott Spence's swarm mode unlock guide
 - `similarlabs_tutorial_guide` - SimilarLabs ultimate Claude Code tutorial 2026
+- `anthropic_code_review_blog` - Anthropic official Code Review launch blog post
+- `techcrunch_code_review` - TechCrunch coverage of Claude Code Review launch
+- `thenewstack_code_review` - The New Stack multi-agent code review deep-dive
+- `aicorner_code_review` - The AI Corner analysis of Code Review capabilities
+- `claudeworld_complete_guide` - ClaudeWorld "From Zero to Hero" complete guide 2026
+- `devto_umesh_code_review` - Umesh Malik's Code Review setup & pricing guide
 
 ---
 
