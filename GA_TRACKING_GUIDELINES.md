@@ -152,6 +152,15 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `aicorner_code_review` - The AI Corner analysis of Code Review capabilities
 - `claudeworld_complete_guide` - ClaudeWorld "From Zero to Hero" complete guide 2026
 - `devto_umesh_code_review` - Umesh Malik's Code Review setup & pricing guide
+- `thesys_code_review` - Thesys Code Review features, pricing & setup guide
+- `uxplanet_top7_plugins` - UX Planet top 7 Claude Code plugins (Nick Babich)
+- `analyticsvidhya_claude_flow` - Analytics Vidhya Claude Flow orchestration framework
+- `turbodocx_best_plugins` - TurboDocx best plugins, skills & MCP servers directory
+- `dataconomy_code_review` - Dataconomy AI-powered Code Review launch coverage
+- `nxcode_beginners_guide` - NxCode Claude Code beginner tutorial 2026
+- `nxcode_agent_teams` - NxCode Opus 4.6 agent teams parallel setup guide
+- `serenitiesai_agent_teams` - Serenities AI agent teams documentation
+- `github_workflow_orchestration` - barkain/claude-code-workflow-orchestration plugin
 
 ---
 
