@@ -161,6 +161,14 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `nxcode_agent_teams` - NxCode Opus 4.6 agent teams parallel setup guide
 - `serenitiesai_agent_teams` - Serenities AI agent teams documentation
 - `github_workflow_orchestration` - barkain/claude-code-workflow-orchestration plugin
+- `substack_karozieminski_cowork` - Karo Zieminski's 50+ tested tips on plugins, skills & memory
+- `medium_unicodeveloper_skills` - unicodeveloper's 10 must-have skills for Claude
+- `sabrinadev_concepts_explained` - sabrina.dev's Claude Code concepts for beginners
+- `geekygadgets_cli_plugins` - Geeky Gadgets 10 CLI plugins for workflows
+- `atalupadhyay_ultimate_guide` - Atal Upadhyay's ultimate Claude Code 2.0 guide
+- `mindwiredai_essential_skills` - MindWired AI 5 must-know Claude Code skills
+- `github_plugins_plus_skills` - jeremylongshore/claude-code-plugins-plus-skills marketplace
+- `github_shinpr_workflows` - shinpr/claude-code-workflows production workflows
 
 ---
 
