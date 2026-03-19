@@ -63,7 +63,7 @@
         "operatingSystem": "macOS, Linux, Windows",
         "url": "https://ohmyclaudecode.com/",
         "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-        "softwareVersion": "4.8.2",
+        "softwareVersion": "4.9.0",
         "description": "Teams-first multi-agent orchestration plugin for Claude Code with 32 specialized agents and 40+ skills.",
         "license": "https://opensource.org/licenses/MIT",
         "offers": {
@@ -74,7 +74,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "10400",
+            "ratingCount": "10500",
             "bestRating": "5"
         },
         "author": {
@@ -363,7 +363,7 @@
             <div class="mb-6 animate-fade-in">
                 <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent-red/10 text-accent-red rounded-full border border-accent-red/30">
                     <span class="w-2 h-2 bg-accent-green rounded-full animate-pulse"></span>
-                    v4.8.2 - Tracer Agent, Security Hardening & Team Runtime
+                    v4.9.0 - Team Reliability, Autoresearch Setup & Safety Hardening
                 </span>
             </div>
 
@@ -1667,11 +1667,59 @@
                             <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </div>
                     </a>
+
+                    <!-- Article 50 - NEW -->
+                    <a href="https://heeki.medium.com/collaborating-with-agents-teams-in-claude-code-f64a465f3c11" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="medium_heeki_teams">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">Medium</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Collaborating with Agents Teams in Claude Code</h4>
+                        <p class="text-gray-400 text-sm mb-4">Practical guide to coordinating multiple Claude Code agent teams for parallel development workflows.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Heeki Park</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 51 - NEW -->
+                    <a href="https://www.claudio-novaglio.com/en/papers/agent-teams-claude-code-multi-agent-orchestration" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="novaglio_agent_teams">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">Technical Paper</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Agent Teams in Claude Code: Complete Guide to Multi-Agent Orchestration</h4>
+                        <p class="text-gray-400 text-sm mb-4">Deep technical paper on team setup, task coordination, git worktree isolation, and prompt engineering strategies.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Claudio Novaglio</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 52 - NEW -->
+                    <a href="https://maecapozzi.com/blog/building-a-multi-agent-orchestrator" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="maecapozzi_orchestrator">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-orange/10 text-accent-orange rounded">Blog</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Building a Multi-Agent AI System with Claude Code</h4>
+                        <p class="text-gray-400 text-sm mb-4">Hands-on walkthrough of building a Claude Orchestrator multi-agent system for complex development tasks.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Mae Capozzi</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
                 </div>
                 </div>
                 <div class="text-center mt-8">
                     <button id="show-more-articles" onclick="toggleArticles()" class="px-6 py-3 bg-dark-card border border-dark-border rounded-xl font-semibold hover:border-accent-red/50 transition-all text-sm text-gray-300 hover:text-white">
-                        Show more articles <span id="more-articles-count" class="text-accent-red">(40)</span>
+                        Show more articles <span id="more-articles-count" class="text-accent-red">(43)</span>
                     </button>
                 </div>
             </div>
@@ -2841,7 +2889,7 @@
                 trackEvent('show_more_articles', { event_category: 'engagement', event_label: 'expand' });
             } else {
                 container.classList.add('hidden');
-                btn.innerHTML = 'Show more articles <span class="text-accent-red">(30)</span>';
+                btn.innerHTML = 'Show more articles <span class="text-accent-red">(43)</span>';
                 // Scroll back to resources section
                 document.getElementById('resources').scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
