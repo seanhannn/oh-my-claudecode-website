@@ -169,6 +169,12 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `mindwiredai_essential_skills` - MindWired AI 5 must-know Claude Code skills
 - `github_plugins_plus_skills` - jeremylongshore/claude-code-plugins-plus-skills marketplace
 - `github_shinpr_workflows` - shinpr/claude-code-workflows production workflows
+- `hackernews_sisyphus` - HN discussion "Sisyphus Now Lives in Oh My Claude"
+- `claudedirectory_best_plugins` - Claude Directory best plugins for every stack ranking
+- `github_cmux` - craigsc/cmux tmux-based worktree manager for Claude Code
+- `github_ohmyopenagent` - code-yeongyu/oh-my-openagent universal agent harness
+- `github_manaflow_cmux` - manaflow-ai/cmux native macOS terminal for AI agents
+- `github_matrixy_swarm` - MaTriXy/claude-swarm-orchestration TeammateTool patterns
 
 ---
 

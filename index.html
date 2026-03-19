@@ -74,7 +74,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "9900",
+            "ratingCount": "10400",
             "bestRating": "5"
         },
         "author": {
@@ -1635,11 +1635,43 @@
                             <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </div>
                     </a>
+
+                    <!-- Article 48 - NEW -->
+                    <a href="https://news.ycombinator.com/item?id=46572032" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="hackernews_sisyphus">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-orange/10 text-accent-orange rounded">Hacker News</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Sisyphus Now Lives in Oh My Claude</h4>
+                        <p class="text-gray-400 text-sm mb-4">HN discussion on the oh-my-claude-sisyphus npm package and the story behind the naming - community reactions and technical deep-dive.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>Hacker News Thread</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 49 - NEW -->
+                    <a href="https://www.claudedirectory.org/blog/best-claude-code-plugins" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="claudedirectory_best_plugins">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">Claude Directory</span>
+                            <span class="text-xs text-gray-500">2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">The Best Claude Code Plugins for Every Stack (2026)</h4>
+                        <p class="text-gray-400 text-sm mb-4">Stack-specific plugin recommendations with OMC featured as the top orchestration layer for multi-agent workflows.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>Claude Directory Blog</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
                 </div>
                 </div>
                 <div class="text-center mt-8">
                     <button id="show-more-articles" onclick="toggleArticles()" class="px-6 py-3 bg-dark-card border border-dark-border rounded-xl font-semibold hover:border-accent-red/50 transition-all text-sm text-gray-300 hover:text-white">
-                        Show more articles <span id="more-articles-count" class="text-accent-red">(38)</span>
+                        Show more articles <span id="more-articles-count" class="text-accent-red">(40)</span>
                     </button>
                 </div>
             </div>
@@ -2317,6 +2349,28 @@
                         <p class="text-sm text-gray-400 mb-3">Production-ready development workflows with specialized agents for requirements, design, implementation, and quality checks.</p>
                         <span class="text-xs text-accent-pink">shinpr/claude-code-workflows</span>
                     </a>
+
+                    <a href="https://github.com/craigsc/cmux" target="_blank"
+                       class="resource-card bg-gradient-to-br from-dark-card to-dark-hover border border-dark-border rounded-xl p-5 hover:border-accent-pink/50 transition-all group"
+                       data-ga-category="resource_click" data-ga-label="github_cmux">
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span class="font-bold text-white group-hover:text-accent-pink transition-colors">cmux - tmux for Claude Code</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-3">Manages git worktree lifecycles for parallel Claude Code sessions - each agent gets an isolated working directory.</p>
+                        <span class="text-xs text-accent-pink">craigsc/cmux</span>
+                    </a>
+
+                    <a href="https://github.com/code-yeongyu/oh-my-openagent" target="_blank"
+                       class="resource-card bg-gradient-to-br from-dark-card to-dark-hover border border-dark-border rounded-xl p-5 hover:border-accent-pink/50 transition-all group"
+                       data-ga-category="resource_click" data-ga-label="github_ohmyopenagent">
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span class="font-bold text-white group-hover:text-accent-pink transition-colors">oh-my-openagent (omo)</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-3">Universal agent harness inspired by OMC - supports Claude Code, Codex, Gemini CLI, and other AI coding agents.</p>
+                        <span class="text-xs text-accent-pink">code-yeongyu/oh-my-openagent</span>
+                    </a>
                 </div>
             </div>
 
@@ -2454,6 +2508,28 @@
                         <div class="flex-grow min-w-0">
                             <h4 class="font-semibold group-hover:text-accent-cyan transition-colors">claude-swarm</h4>
                             <p class="text-sm text-gray-500 truncate">Multi-agent orchestration with task decomposition and rich terminal UI</p>
+                        </div>
+                        <span class="text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                    </a>
+
+                    <a href="https://github.com/manaflow-ai/cmux" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-cyan/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="github_manaflow_cmux">
+                        <div class="w-12 h-12 bg-accent-cyan/10 rounded-lg flex items-center justify-center text-xl shrink-0">🖥️</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-cyan transition-colors">cmux - Native macOS Terminal for AI Agents</h4>
+                            <p class="text-sm text-gray-500 truncate">Ghostty-based terminal with vertical tabs, split panes & notifications for Claude Code</p>
+                        </div>
+                        <span class="text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
+                    </a>
+
+                    <a href="https://github.com/MaTriXy/claude-swarm-orchestration" target="_blank"
+                       class="resource-card flex items-center gap-4 bg-dark-card border border-dark-border rounded-xl p-4 hover:border-accent-cyan/50 transition-colors group"
+                       data-ga-category="resource_click" data-ga-label="github_matrixy_swarm">
+                        <div class="w-12 h-12 bg-accent-purple/10 rounded-lg flex items-center justify-center text-xl shrink-0">🔄</div>
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-semibold group-hover:text-accent-cyan transition-colors">claude-swarm-orchestration</h4>
+                            <p class="text-sm text-gray-500 truncate">Master multi-agent coordination using TeammateTool and Task system patterns</p>
                         </div>
                         <span class="text-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
                     </a>
