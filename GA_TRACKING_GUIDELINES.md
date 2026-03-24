@@ -167,6 +167,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `geekygadgets_cli_plugins` - Geeky Gadgets 10 CLI plugins for workflows
 - `atalupadhyay_ultimate_guide` - Atal Upadhyay's ultimate Claude Code 2.0 guide
 - `mindwiredai_essential_skills` - MindWired AI 5 must-know Claude Code skills
+- `paddo_one_year` - paddo.dev one year of Claude Code retrospective
+- `devto_chand1012_agentic` - DEV Community best way to do agentic development in 2026
+- `devto_claude_vs_codex` - DEV Community Claude Code vs Codex 2026 Reddit survey
 - `github_plugins_plus_skills` - jeremylongshore/claude-code-plugins-plus-skills marketplace
 - `github_shinpr_workflows` - shinpr/claude-code-workflows production workflows
 - `hackernews_sisyphus` - HN discussion "Sisyphus Now Lives in Oh My Claude"
