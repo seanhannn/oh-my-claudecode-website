@@ -178,6 +178,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `github_ohmyopenagent` - code-yeongyu/oh-my-openagent universal agent harness
 - `github_manaflow_cmux` - manaflow-ai/cmux native macOS terminal for AI agents
 - `github_matrixy_swarm` - MaTriXy/claude-swarm-orchestration TeammateTool patterns
+- `medium_heeki_teams` - Heeki Park's collaborating with agent teams in Claude Code
+- `novaglio_agent_teams` - Claudio Novaglio's agent teams multi-agent orchestration paper
+- `maecapozzi_orchestrator` - Mae Capozzi's building a multi-agent AI system with Claude Code
 
 ---
 
