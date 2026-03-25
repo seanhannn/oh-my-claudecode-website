@@ -181,6 +181,13 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `medium_heeki_teams` - Heeki Park's collaborating with agent teams in Claude Code
 - `novaglio_agent_teams` - Claudio Novaglio's agent teams multi-agent orchestration paper
 - `maecapozzi_orchestrator` - Mae Capozzi's building a multi-agent AI system with Claude Code
+- `medium_kapil_workspace` - CodeToDeploy "Claude Code Stopped Being a Tool and Became the Workspace"
+- `medium_joe_code_review` - Joe Njenga's Claude Code Review workflow article
+- `medium_mohit_opencode_block` - Mohit Aggarwal's Claude Code vs OpenCode January 2026 block analysis
+- `devto_jandedobbeleer_posh` - Oh My Posh ❤️ Claude Code integration guide
+- `medium_tihomir_simplify` - Tihomir Manushev's /simplify skill replaces self-review article
+- `github_composio_awesome_skills` - ComposioHQ/awesome-claude-skills curated skills list
+- `github_alirezarezvani_skills` - alirezarezvani/claude-skills personal skills collection
 
 ---
 
