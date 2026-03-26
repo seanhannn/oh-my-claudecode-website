@@ -188,6 +188,11 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `medium_tihomir_simplify` - Tihomir Manushev's /simplify skill replaces self-review article
 - `github_composio_awesome_skills` - ComposioHQ/awesome-claude-skills curated skills list
 - `github_alirezarezvani_skills` - alirezarezvani/claude-skills personal skills collection
+- `devto_tessak_laravel_overnight` - Laravel backend rebuild overnight with 18 parallel multi-agents
+- `devto_matkarimov_12_subagents` - How to split Claude Code into 12 specialized sub-agents for React
+- `devto_tsekatm_agent_memory` - Layered markdown memory architecture for multi-agent systems
+- `medium_alirezarezvani_teams_leap` - From subagents to agent teams: Claude Code's multi-agent leap
+- `devto_plugin_agent_teams_service` - Building a plugin and service for Claude Code agent teams
 
 ---
 
