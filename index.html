@@ -74,7 +74,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "11700",
+            "ratingCount": "12600",
             "bestRating": "5"
         },
         "author": {
@@ -1843,11 +1843,59 @@
                             <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </div>
                     </a>
+
+                    <!-- Article 61 - NEW -->
+                    <a href="https://getpushtoprod.substack.com/p/30-tips-for-claude-code-agent-teams" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="substack_johnkim_30tips">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-orange/10 text-accent-orange rounded">Substack</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">30 Tips for Claude Code Agent Teams</h4>
+                        <p class="text-gray-400 text-sm mb-4">Practical strategies for agent teams: domain separation, teammate sizing, parallel exploration patterns, and token waste prevention.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By John Kim</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 62 - NEW -->
+                    <a href="https://blog.imseankim.com/claude-code-team-mode-multi-agent-orchestration-march-2026/" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="seankim_teammode_march2026">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">Blog</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Agent Teams: How TeammateTool and Swarm Mode Are Redefining AI Coding</h4>
+                        <p class="text-gray-400 text-sm mb-4">Deep dive into TeammateTool's 13 operations and swarm mode capabilities with Opus 4.6 integration and March 2026 stability improvements.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Sean Kim</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 63 - NEW -->
+                    <a href="https://pasqualepillitteri.it/en/news/381/claude-code-march-2026-updates" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="pillitteri_march2026_updates">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">Blog</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code March 2026: All Updates from /loop to Voice Mode</h4>
+                        <p class="text-gray-400 text-sm mb-4">Comprehensive roundup of March 2026 features: voice mode, /loop command, 1M token context, /effort, MCP Elicitation, and more.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Pasquale Pillitteri</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
                 </div>
                 </div>
                 <div class="text-center mt-8">
                     <button id="show-more-articles" onclick="toggleArticles()" class="px-6 py-3 bg-dark-card border border-dark-border rounded-xl font-semibold hover:border-accent-red/50 transition-all text-sm text-gray-300 hover:text-white">
-                        Show more articles <span id="more-articles-count" class="text-accent-red">(51)</span>
+                        Show more articles <span id="more-articles-count" class="text-accent-red">(54)</span>
                     </button>
                 </div>
             </div>
@@ -3094,7 +3142,7 @@
                 trackEvent('show_more_articles', { event_category: 'engagement', event_label: 'expand' });
             } else {
                 container.classList.add('hidden');
-                btn.innerHTML = 'Show more articles <span class="text-accent-red">(43)</span>';
+                btn.innerHTML = 'Show more articles <span class="text-accent-red">(54)</span>';
                 // Scroll back to resources section
                 document.getElementById('resources').scrollIntoView({ behavior: 'smooth', block: 'start' });
             }

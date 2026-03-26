@@ -193,6 +193,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `devto_tsekatm_agent_memory` - Layered markdown memory architecture for multi-agent systems
 - `medium_alirezarezvani_teams_leap` - From subagents to agent teams: Claude Code's multi-agent leap
 - `devto_plugin_agent_teams_service` - Building a plugin and service for Claude Code agent teams
+- `substack_johnkim_30tips` - John Kim's 30 tips for Claude Code agent teams
+- `seankim_teammode_march2026` - Sean Kim's TeammateTool and swarm mode March 2026 update
+- `pillitteri_march2026_updates` - Pasquale Pillitteri's Claude Code March 2026 all updates roundup
 
 ---
 
