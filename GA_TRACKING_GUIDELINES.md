@@ -196,6 +196,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `substack_johnkim_30tips` - John Kim's 30 tips for Claude Code agent teams
 - `seankim_teammode_march2026` - Sean Kim's TeammateTool and swarm mode March 2026 update
 - `pillitteri_march2026_updates` - Pasquale Pillitteri's Claude Code March 2026 all updates roundup
+- `byteiota_omc_review` - ByteIota review: oh-my-claudecode trending #1 on GitHub, 3-5x speedup
+- `aitoolly_omc_teams` - AIToolly: oh-my-claudecode multi-agent orchestration for teams (Mar 29, 2026)
+- `shipyard_multiagent_2026` - Shipyard: multi-agent orchestration for Claude Code in 2026 (Mar 18, 2026)
 
 ---
 
