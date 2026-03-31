@@ -199,6 +199,8 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `byteiota_omc_review` - ByteIota review: oh-my-claudecode trending #1 on GitHub, 3-5x speedup
 - `aitoolly_omc_teams` - AIToolly: oh-my-claudecode multi-agent orchestration for teams (Mar 29, 2026)
 - `shipyard_multiagent_2026` - Shipyard: multi-agent orchestration for Claude Code in 2026 (Mar 18, 2026)
+- `aitoolly_multiagent_teams` - AIToolly: oh-my-claudecode new multi-agent orchestration tool for team collaboration (Mar 29, 2026)
+- `devto_raxxo_best_plugins` - DEV Community (Raxxo Studios): Best Claude Code Skills & Plugins 2026 Guide
 
 ---
 
