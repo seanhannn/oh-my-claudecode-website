@@ -204,6 +204,10 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `medium_guljabeen_top10` - Medium (Gul Jabeen): Top 10 Claude Code Plugins That Actually Changed How I Build Software in 2026 (Feb 2026)
 - `buildtolaunch_plugins_review` - Substack (Jenny Ouyang): Best Claude Code Plugins 2026 - 10 Tested 4 Worth Keeping (Mar 2026)
 - `corpwaters_skills_guide` - Substack (Mikhail Shcheglov): The Ultimate Guide to Claude Code Skills (Mar 2026)
+- `medium_joe_swarm_discovery` - Medium (Joe Njenga): I Discovered This Claude Code Agent Swarm Mode You Don't Know Exists (Jan 2026)
+- `medium_joe_agent_teams` - Medium (Joe Njenga): I Tried New Claude Code Agent Teams And Discovered New Way to Swarm (Feb 2026)
+- `medium_buzzgrewal_swarm` - Medium (Abdullah Grewal): I Gave My Code to a Swarm of AI Agents and Here's What Happened (Feb 2026)
+- `aitoolly_team_solution` - AIToolly: Oh-My-ClaudeCode New Multi-Agent Orchestration Solution for Team-Based Workflows (Mar 31, 2026)
 
 ---
 
