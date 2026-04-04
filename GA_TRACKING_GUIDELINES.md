@@ -208,6 +208,11 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `medium_joe_agent_teams` - Medium (Joe Njenga): I Tried New Claude Code Agent Teams And Discovered New Way to Swarm (Feb 2026)
 - `medium_buzzgrewal_swarm` - Medium (Abdullah Grewal): I Gave My Code to a Swarm of AI Agents and Here's What Happened (Feb 2026)
 - `aitoolly_team_solution` - AIToolly: Oh-My-ClaudeCode New Multi-Agent Orchestration Solution for Team-Based Workflows (Mar 31, 2026)
+- `aitoolly_team_framework` - AIToolly: oh-my-claudecode Multi-Agent Orchestration Framework for Team-Based Claude Code (Apr 2, 2026)
+- `medevel_omc_review` - MEDevel: oh-my-claudecode Review - Turn Claude Code Into a Coordinated Agent System
+- `mindstudio_q1_roundup` - MindStudio: Claude Code Q1 2026 Update Roundup - Every Feature That Actually Matters
+- `medevel_master_guide` - MEDevel (Hazem Abbas): Master Claude Code in 2026 Ultimate Guide featuring OMC
+- `builderio_50tips` - Builder.io (Vishwas Gopinath): 50 Claude Code Tips and Best Practices For Daily Use
 
 ---
 

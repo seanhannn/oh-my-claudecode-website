@@ -63,7 +63,7 @@
         "operatingSystem": "macOS, Linux, Windows",
         "url": "https://ohmyclaudecode.com/",
         "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-        "softwareVersion": "4.9.3",
+        "softwareVersion": "4.10.2",
         "description": "Teams-first multi-agent orchestration plugin for Claude Code with 32 specialized agents and 40+ skills.",
         "license": "https://opensource.org/licenses/MIT",
         "offers": {
@@ -74,7 +74,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "21000",
+            "ratingCount": "23600",
             "bestRating": "5"
         },
         "author": {
@@ -363,7 +363,7 @@
             <div class="mb-6 animate-fade-in">
                 <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent-red/10 text-accent-red rounded-full border border-accent-red/30">
                     <span class="w-2 h-2 bg-accent-green rounded-full animate-pulse"></span>
-                    v4.9.3 - MCP Bridge Fix, 30+ Bug Fixes & Hardening
+                    v4.10.2 - HUD Upgrades, LSP Diagnostics & Security Hardening
                 </span>
             </div>
 
@@ -2163,11 +2163,59 @@
                             <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </div>
                     </a>
+
+                    <!-- Article 81 - NEW -->
+                    <a href="https://www.mindstudio.ai/blog/claude-code-q1-2026-update-roundup" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="mindstudio_q1_roundup">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">MindStudio</span>
+                            <span class="text-xs text-gray-500">Apr 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Q1 2026 Update Roundup: Every Feature That Actually Matters</h4>
+                        <p class="text-gray-400 text-sm mb-4">Comprehensive Q1 2026 breakdown covering Remote Control, Dispatch, Channels, Computer Use, Auto Mode, and AutoDream features.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>MindStudio Team</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 82 - NEW -->
+                    <a href="https://medevel.com/master-claude-code-in-2026/" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="medevel_master_guide">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">MEDevel</span>
+                            <span class="text-xs text-gray-500">Apr 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Master Claude Code in 2026: The Ultimate Guide to 10x Your Development Workflow</h4>
+                        <p class="text-gray-400 text-sm mb-4">Five-step workflow guide featuring OMC as "an incredible leap" — covering IDE integration, memory management, plugins, and slash commands.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Hazem Abbas</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 83 - NEW -->
+                    <a href="https://www.builder.io/blog/claude-code-tips-best-practices" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="builderio_50tips">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">Builder.io</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">50 Claude Code Tips and Best Practices For Daily Use</h4>
+                        <p class="text-gray-400 text-sm mb-4">Comprehensive 50-tip guide covering Plan Mode, CLAUDE.md, hooks, subagents, worktrees, keyboard shortcuts, and daily workflow optimization.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Vishwas Gopinath</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
                 </div>
                 </div>
                 <div class="text-center mt-8">
                     <button id="show-more-articles" onclick="toggleArticles()" class="px-6 py-3 bg-dark-card border border-dark-border rounded-xl font-semibold hover:border-accent-red/50 transition-all text-sm text-gray-300 hover:text-white">
-                        Show more articles <span id="more-articles-count" class="text-accent-red">(71)</span>
+                        Show more articles <span id="more-articles-count" class="text-accent-red">(74)</span>
                     </button>
                 </div>
             </div>
@@ -3414,7 +3462,7 @@
                 trackEvent('show_more_articles', { event_category: 'engagement', event_label: 'expand' });
             } else {
                 container.classList.add('hidden');
-                btn.innerHTML = 'Show more articles <span class="text-accent-red">(54)</span>';
+                btn.innerHTML = 'Show more articles <span class="text-accent-red">(74)</span>';
                 // Scroll back to resources section
                 document.getElementById('resources').scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
