@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Dark background with subtle gradient feel -->
+  <rect width="32" height="32" rx="7" fill="#111111"/>
+  <!-- Terminal window top bar -->
+  <rect x="3" y="3" width="26" height="5" rx="2" fill="#1a1a1a"/>
+  <!-- Traffic light dots -->
+  <circle cx="7" cy="5.5" r="1.2" fill="#ef4444"/>
+  <circle cx="11" cy="5.5" r="1.2" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="15" cy="5.5" r="1.2" fill="#22c55e" opacity="0.7"/>
+  <!-- Terminal body -->
+  <rect x="3" y="8" width="26" height="21" rx="2" fill="#0a0a0a"/>
+  <!-- Prompt ">" -->
+  <text x="6" y="19" font-family="'SF Mono', 'Fira Code', monospace" font-weight="700" font-size="9" fill="#ef4444">&#62;</text>
+  <!-- Cursor block -->
+  <rect x="14" y="12" width="5" height="8" rx="1" fill="#ef4444" opacity="0.9"/>
+  <!-- Scanline effect -->
+  <rect x="3" y="8" width="26" height="21" rx="2" fill="url(#scanlines)" opacity="0.05"/>
+</svg>
