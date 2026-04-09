@@ -213,6 +213,11 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `mindstudio_q1_roundup` - MindStudio: Claude Code Q1 2026 Update Roundup - Every Feature That Actually Matters
 - `medevel_master_guide` - MEDevel (Hazem Abbas): Master Claude Code in 2026 Ultimate Guide featuring OMC
 - `builderio_50tips` - Builder.io (Vishwas Gopinath): 50 Claude Code Tips and Best Practices For Daily Use
+- `vibetip_omc_hub` - VibeTip: Oh My ClaudeCode community hub for multi-agent orchestration tips
+- `emelia_omc_32agents` - Emelia.io: oh-my-claudecode turn Claude Code into a full 32-agent development team
+- `freecodecamp_handbook` - freeCodeCamp: The Claude Code Handbook - Professional introduction to AI-assisted dev
+- `sanity_staff_engineer_journey` - Sanity.io: First Attempt Will Be 95% Garbage - Staff engineer's 6-week Claude Code journey
+- `aihero_real_engineers` - AI Hero (Apr 2026): Claude Code for Real Engineers cohort course featuring OMC workflows
 
 ---
 
