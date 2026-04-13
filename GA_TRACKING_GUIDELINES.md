@@ -218,6 +218,11 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `freecodecamp_handbook` - freeCodeCamp: The Claude Code Handbook - Professional introduction to AI-assisted dev
 - `sanity_staff_engineer_journey` - Sanity.io: First Attempt Will Be 95% Garbage - Staff engineer's 6-week Claude Code journey
 - `aihero_real_engineers` - AI Hero (Apr 2026): Claude Code for Real Engineers cohort course featuring OMC workflows
+- `devto_yukifuruta_gamechanger` - DEV Community (Yuki Furuta): oh-my-claudecode is a Game Changer — local AI swarm orchestration experience (Apr 2026)
+- `medium_rickhightower_daily_os` - Medium (Rick Hightower): Claude Code 2026 as the daily operating system top developers use (Apr 2026)
+- `selfmd_best_plugins` - self.md: Best Claude Code Plugins 2026 ranking featuring OMC as top orchestration pick
+- `mcpmarket_omc_help_skill` - MCP Market: oh-my-claudecode interactive help skill and guide listing
+- `scriptbyai_resource_list` - ScriptByAI: The Ultimate Claude Code Resource List 2026 Edition featuring OMC
 
 ---
 
