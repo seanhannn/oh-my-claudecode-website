@@ -223,6 +223,11 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `selfmd_best_plugins` - self.md: Best Claude Code Plugins 2026 ranking featuring OMC as top orchestration pick
 - `mcpmarket_omc_help_skill` - MCP Market: oh-my-claudecode interactive help skill and guide listing
 - `scriptbyai_resource_list` - ScriptByAI: The Ultimate Claude Code Resource List 2026 Edition featuring OMC
+- `htdocs_conductor_orchestrator` - htdocs.dev: From Conductor to Orchestrator practical multi-agent coding guide (Apr 2026)
+- `claudefast_agent_teams_guide` - ClaudeFast: Claude Code Agent Teams setup & usage guide 2026
+- `botmonster_agent_teams` - Botmonster Tech: orchestrating multiple AI sessions as agent teams
+- `lushbinary_agent_teams` - Lushbinary: Claude Code Agent Teams multi-agent development guide
+- `releasebot_april2026` - Releasebot: Claude Code April 2026 release notes auto-tracked changelog
 
 ---
 
