@@ -228,6 +228,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `botmonster_agent_teams` - Botmonster Tech: orchestrating multiple AI sessions as agent teams
 - `lushbinary_agent_teams` - Lushbinary: Claude Code Agent Teams multi-agent development guide
 - `releasebot_april2026` - Releasebot: Claude Code April 2026 release notes auto-tracked changelog
+- `gist_multiagent_system` - Kieran Klaassen gist: Claude Code Multi-Agent Orchestration System reference
+- `devopsdaily_plugins_2026` - DevOps Daily: Best Claude Code plugins for DevOps engineers in 2026
+- `agensi_marketplace_guide` - Agensi: Claude Code Plugin Marketplace complete guide 2026
 
 ---
 
