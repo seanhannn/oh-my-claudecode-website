@@ -231,6 +231,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `gist_multiagent_system` - Kieran Klaassen gist: Claude Code Multi-Agent Orchestration System reference
 - `devopsdaily_plugins_2026` - DevOps Daily: Best Claude Code plugins for DevOps engineers in 2026
 - `agensi_marketplace_guide` - Agensi: Claude Code Plugin Marketplace complete guide 2026
+- `openclawapi_32_agents` - OpenClaw API: oh-my-claudecode deployment & tips with 32 specialized agents (Mar 2026)
+- `paulgp_researcher_setup` - Paul Goldsmith-Pinkham Substack: Getting Started with Claude Code researcher setup
+- `specterops_secure_reviews` - SpecterOps: Leveling Up Secure Code Reviews with Claude Code (Mar 2026)
 
 ---
 

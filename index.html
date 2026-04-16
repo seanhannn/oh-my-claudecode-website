@@ -65,7 +65,7 @@
         "operatingSystem": "macOS, Linux, Windows",
         "url": "https://ohmyclaudecode.com/",
         "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-        "softwareVersion": "4.11.6",
+        "softwareVersion": "4.12.0",
         "description": "Teams-first multi-agent orchestration plugin for Claude Code with 32 specialized agents and 40+ skills.",
         "license": "https://opensource.org/licenses/MIT",
         "offers": {
@@ -76,7 +76,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "28600",
+            "ratingCount": "29200",
             "bestRating": "5"
         },
         "author": {
@@ -365,7 +365,7 @@
             <div class="mb-6 animate-fade-in">
                 <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent-red/10 text-accent-red rounded-full border border-accent-red/30">
                     <span class="w-2 h-2 bg-accent-green rounded-full animate-pulse"></span>
-                    v4.11.6 - MiniMax Provider & 50 PRs Merged
+                    v4.12.0 - Team Routing & Usage Analytics
                 </span>
             </div>
 
@@ -2517,11 +2517,59 @@
                             <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </div>
                     </a>
+
+                    <!-- Article 102 - NEW -->
+                    <a href="https://openclawapi.org/en/blog/2026-03-31-oh-my-claudecode-32-agents" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="openclawapi_32_agents">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">OpenClaw API</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">oh-my-claudecode Deployment & Tips: Double Your Efficiency with 32 Specialized Agents</h4>
+                        <p class="text-gray-400 text-sm mb-4">Hands-on deployment guide for OMC — zero-config setup, using 32 specialized agents in parallel, and intermediate tips for doubling development efficiency.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>OpenClaw API Docs</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 103 - NEW -->
+                    <a href="https://paulgp.substack.com/p/getting-started-with-claude-code" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="paulgp_researcher_setup">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-blue/10 text-accent-blue rounded">Substack</span>
+                            <span class="text-xs text-gray-500">2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Getting Started with Claude Code: A Researcher's Setup Guide</h4>
+                        <p class="text-gray-400 text-sm mb-4">Economist Paul Goldsmith-Pinkham shares his research-oriented Claude Code setup — CLAUDE.md conventions, MCP servers, and plugins like OMC for reproducible workflows.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Paul Goldsmith-Pinkham</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 104 - NEW -->
+                    <a href="https://specterops.io/blog/2026/03/26/leveling-up-secure-code-reviews-with-claude-code/" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="specterops_secure_reviews">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-pink/10 text-accent-pink rounded">SpecterOps</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Leveling Up Secure Code Reviews with Claude Code</h4>
+                        <p class="text-gray-400 text-sm mb-4">Security research team breaks down how /security-review, subagents, and orchestration frameworks like OMC catch vulnerabilities before PRs ship.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>SpecterOps Research</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
                 </div>
                 </div>
                 <div class="text-center mt-8">
                     <button id="show-more-articles" onclick="toggleArticles()" class="px-6 py-3 bg-dark-card border border-dark-border rounded-xl font-semibold hover:border-accent-red/50 transition-all text-sm text-gray-300 hover:text-white">
-                        Show more articles <span id="more-articles-count" class="text-accent-red">(93)</span>
+                        Show more articles <span id="more-articles-count" class="text-accent-red">(96)</span>
                     </button>
                 </div>
             </div>
@@ -3768,7 +3816,7 @@
                 trackEvent('show_more_articles', { event_category: 'engagement', event_label: 'expand' });
             } else {
                 container.classList.add('hidden');
-                btn.innerHTML = 'Show more articles <span class="text-accent-red">(74)</span>';
+                btn.innerHTML = 'Show more articles <span class="text-accent-red">(96)</span>';
                 // Scroll back to resources section
                 document.getElementById('resources').scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
