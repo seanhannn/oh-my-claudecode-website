@@ -65,7 +65,7 @@
         "operatingSystem": "macOS, Linux, Windows",
         "url": "https://ohmyclaudecode.com/",
         "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-        "softwareVersion": "4.12.0",
+        "softwareVersion": "4.13.0",
         "description": "Teams-first multi-agent orchestration plugin for Claude Code with 32 specialized agents and 40+ skills.",
         "license": "https://opensource.org/licenses/MIT",
         "offers": {
@@ -76,7 +76,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "29200",
+            "ratingCount": "30100",
             "bestRating": "5"
         },
         "author": {
@@ -365,7 +365,7 @@
             <div class="mb-6 animate-fade-in">
                 <span class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-accent-red/10 text-accent-red rounded-full border border-accent-red/30">
                     <span class="w-2 h-2 bg-accent-green rounded-full animate-pulse"></span>
-                    v4.12.0 - Team Routing & Usage Analytics
+                    v4.13.0 - Stability & Autoresearch Migration
                 </span>
             </div>
 
@@ -2565,11 +2565,59 @@
                             <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
                         </div>
                     </a>
+
+                    <!-- Article 105 - NEW -->
+                    <a href="https://addyosmani.com/blog/code-agent-orchestra/" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="addyosmani_code_orchestra">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-orange/10 text-accent-orange rounded">AddyOsmani.com</span>
+                            <span class="text-xs text-gray-500">Mar 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">The Code Agent Orchestra: What Makes Multi-Agent Coding Work</h4>
+                        <p class="text-gray-400 text-sm mb-4">Addy Osmani explores three multi-agent patterns — subagents, Agent Teams, and cloud orchestration — plus quality gates and compound learning for trustworthy agent-assisted development.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Addy Osmani</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 106 - NEW -->
+                    <a href="https://www.anthropic.com/engineering/managed-agents" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="anthropic_managed_agents">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-red/10 text-accent-red rounded">Anthropic</span>
+                            <span class="text-xs text-gray-500">2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Scaling Managed Agents: Decoupling the Brain from the Hands</h4>
+                        <p class="text-gray-400 text-sm mb-4">Official Anthropic engineering deep-dive on Managed Agents architecture — separating the brain (Claude + harness) from the hands (sandboxes + tools) for scalable multi-agent systems.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>Anthropic Engineering</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
+
+                    <!-- Article 107 - NEW -->
+                    <a href="https://alexkerber.com/blog/elite-ai-coding-korea-claw-code" target="_blank"
+                       class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group"
+                       data-ga-category="resource_click" data-ga-label="alexkerber_korea_stars">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">Alex Kerber</span>
+                            <span class="text-xs text-gray-500">Apr 2026</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">What +100K Stars in 24 Hours Actually Tells Us About AI Coding</h4>
+                        <p class="text-gray-400 text-sm mb-4">Deep analysis of the Claude Code source leak phenomenon — verification loops, composable skills, and context discipline — with extensive coverage of OMC's 19-agent pipeline.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <span>By Alex Kerber</span>
+                            <span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
+                    </a>
                 </div>
                 </div>
                 <div class="text-center mt-8">
                     <button id="show-more-articles" onclick="toggleArticles()" class="px-6 py-3 bg-dark-card border border-dark-border rounded-xl font-semibold hover:border-accent-red/50 transition-all text-sm text-gray-300 hover:text-white">
-                        Show more articles <span id="more-articles-count" class="text-accent-red">(96)</span>
+                        Show more articles <span id="more-articles-count" class="text-accent-red">(99)</span>
                     </button>
                 </div>
             </div>
@@ -3816,7 +3864,7 @@
                 trackEvent('show_more_articles', { event_category: 'engagement', event_label: 'expand' });
             } else {
                 container.classList.add('hidden');
-                btn.innerHTML = 'Show more articles <span class="text-accent-red">(96)</span>';
+                btn.innerHTML = 'Show more articles <span class="text-accent-red">(99)</span>';
                 // Scroll back to resources section
                 document.getElementById('resources').scrollIntoView({ behavior: 'smooth', block: 'start' });
             }

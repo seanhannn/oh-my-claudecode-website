@@ -234,6 +234,9 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `openclawapi_32_agents` - OpenClaw API: oh-my-claudecode deployment & tips with 32 specialized agents (Mar 2026)
 - `paulgp_researcher_setup` - Paul Goldsmith-Pinkham Substack: Getting Started with Claude Code researcher setup
 - `specterops_secure_reviews` - SpecterOps: Leveling Up Secure Code Reviews with Claude Code (Mar 2026)
+- `addyosmani_code_orchestra` - Addy Osmani: The Code Agent Orchestra multi-agent coding patterns (Mar 2026)
+- `anthropic_managed_agents` - Anthropic Engineering: Scaling Managed Agents architecture deep-dive (2026)
+- `alexkerber_korea_stars` - Alex Kerber: What +100K Stars in 24 Hours tells about AI Coding and OMC (Apr 2026)
 
 ---
 
