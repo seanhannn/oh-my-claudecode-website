@@ -2,6 +2,47 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-04-20 Redesign: New Event Taxonomy
+
+The v2 site introduces rich engagement tracking across all sections. **143 GA data points** (up from 108).
+
+### New Event Categories
+| Category | Fires On | Use For |
+|----------|----------|---------|
+| `cta_click` | Hero/Final/Nav CTAs | Conversion funnel |
+| `testimonial_click` | Community quote cards | Social proof impact |
+| `mode_tab_click` | Autopilot/Ultrapilot/Team/Ralph tabs | Feature interest |
+| `copy_code` | Install step copy buttons | Install intent |
+| `section_view` | Section visibility (once/session) | Content engagement |
+| `scroll_depth` | 25/50/75/100% milestones | Page depth |
+| `time_on_page` | 30/60/120/300s milestones | Dwell time |
+| `faq_expand` | FAQ item opens | Question interest |
+| `terminal_demo_complete` | Hero terminal cycle completes | Hero engagement |
+| `show_more_articles` | Expand 99 hidden resources | Deep interest |
+| `engagement` | Miscellaneous interactions | Granular tracking |
+
+### Key Conversion Labels (Watch These!)
+- `hero_cta_install` — Primary hero CTA (top of funnel)
+- `hero_cta_github` — Secondary hero CTA (star the repo)
+- `nav_install` — Sticky nav install button
+- `nav_github_stars` — Nav star counter click
+- `final_cta_install` — Bottom of page install CTA
+- `final_cta_github` — Bottom of page GitHub CTA
+- `install_step_1` / `install_step_2` / `install_step_3` — Copy buttons per step
+- `mode_tab_autopilot` / `mode_tab_ultrapilot` / `mode_tab_team` / `mode_tab_ralph` — Which mode users explore
+- `testimonial_joe_njenga` / `testimonial_addy_osmani` / `testimonial_alex_kerber` — Testimonial drives
+- `show_more_articles_button` — Resources deep dive
+
+### Funnel to watch in GA4 Reports
+1. `section_view:install` impressions
+2. `copy_code:install_step_1` (intent signal)
+3. `cta_click:final_cta_install` (final push)
+4. Outbound to GitHub (star conversion)
+
+---
+
+
+
 ## Setup
 
 **Measurement ID:** `G-DY1SMZBQT0`
