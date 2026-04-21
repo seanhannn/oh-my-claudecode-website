@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oh-my-claudecode - Ship 3× Faster with a Team of AI Agents</title>
-    <meta name="description" content="Zero-config multi-agent orchestration for Claude Code. 32 specialists. 40+ skills. 30-50% token savings. Used by 30,100+ developers. Install in 30 seconds.">
-    <meta name="keywords" content="claude code, ai coding, multi-agent, orchestration, autopilot, claude, claude code plugin, ai agent, swarm, team mode, parallel coding, oh-my-claudecode, omc">
+    <meta name="description" content="Zero-config multi-agent orchestration for Claude Code. 19 specialized agents. Team/Autopilot/Ultrawork/Ralph modes. Save 30-50% on tokens. 30,300+ stars. Install in 30 seconds.">
+    <meta name="keywords" content="claude code, ai coding, multi-agent, orchestration, autopilot, ultrawork, ralph, team, claude code plugin, ai agent, parallel coding, oh-my-claudecode, omc, cursor">
     <meta name="author" content="oh-my-claudecode contributors">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="theme-color" content="#00E5FF">
@@ -65,7 +65,7 @@
         "operatingSystem": "macOS, Linux, Windows",
         "url": "https://ohmyclaudecode.com/",
         "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-        "softwareVersion": "4.13.0",
+        "softwareVersion": "4.13.1",
         "description": "Teams-first multi-agent orchestration plugin for Claude Code with 32 specialized agents and 40+ skills.",
         "license": "https://opensource.org/licenses/MIT",
         "offers": {
@@ -76,7 +76,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "30100",
+            "ratingCount": "30300",
             "bestRating": "5"
         },
         "author": {
@@ -97,7 +97,7 @@
             {"@type":"Question","name":"Do I need to learn special commands?","acceptedAnswer":{"@type":"Answer","text":"No. OMC has zero learning curve. Just describe what you want in natural language. Magic keywords like autopilot and ralph are optional shortcuts for power users."}},
             {"@type":"Question","name":"What are the requirements?","acceptedAnswer":{"@type":"Answer","text":"You need Claude Code CLI installed, plus either a Claude Max/Pro subscription or an Anthropic API key. That's it."}},
             {"@type":"Question","name":"How does token optimization work?","acceptedAnswer":{"@type":"Answer","text":"OMC uses smart model routing - simple tasks go to Haiku, complex reasoning goes to Opus. This automatic routing saves 30-50% on tokens while maintaining quality."}},
-            {"@type":"Question","name":"What's the difference between Autopilot and Ultrapilot?","acceptedAnswer":{"@type":"Answer","text":"Autopilot runs tasks sequentially with full autonomous execution. Ultrapilot adds parallel execution with up to 5 concurrent workers, making it 3-5x faster."}},
+            {"@type":"Question","name":"What's the difference between Autopilot and Ultrawork?","acceptedAnswer":{"@type":"Answer","text":"Autopilot runs tasks sequentially with full autonomous execution. Ultrawork adds maximum parallel execution — prepend ulw to any prompt, or use /ultrawork directly. 3-5x faster for fullstack features and large refactors."}},
             {"@type":"Question","name":"Is it safe to use with production code?","acceptedAnswer":{"@type":"Answer","text":"Yes. OMC includes security-reviewer agents, mandatory Architect verification, and verification-before-completion protocols."}}
         ]
     }
@@ -580,7 +580,7 @@
                class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-lg bg-ink-700/60 border border-ink-500/60 hover:border-glow-cyan/40 transition-all text-sm font-medium"
                data-ga-category="cta_click" data-ga-label="nav_github_stars">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.849L19.335 24 12 20.017 4.665 24 6 15.599 0 9.75l8.332-1.595z"/></svg>
-                <span class="text-glow-amber">30.1k</span>
+                <span class="text-glow-amber">30.3k</span>
             </a>
             <a href="#install" class="btn-primary px-5 py-2 rounded-lg text-sm font-bold" data-ga-category="cta_click" data-ga-label="nav_install">Install</a>
         </div>
@@ -601,9 +601,9 @@
                class="pill hover:border-glow-cyan/40 transition-all"
                data-ga-category="resource_click" data-ga-label="hero_version_badge">
                 <span class="pill-dot live"></span>
-                <span class="text-gray-300">v4.13.0</span>
+                <span class="text-gray-300">v4.13.1</span>
                 <span class="text-gray-500">·</span>
-                <span class="text-white">Stability & Autoresearch Migration</span>
+                <span class="text-white">Cursor IDE Support & Bug Fixes</span>
                 <span class="text-glow-cyan">→</span>
             </a>
         </div>
@@ -638,7 +638,7 @@
                data-ga-category="cta_click" data-ga-label="hero_cta_github">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                 Star on GitHub
-                <span class="px-2 py-0.5 rounded-md bg-glow-amber/15 text-glow-amber text-xs font-bold">30.1k ★</span>
+                <span class="px-2 py-0.5 rounded-md bg-glow-amber/15 text-glow-amber text-xs font-bold">30.3k ★</span>
             </a>
         </div>
 
@@ -683,10 +683,10 @@
 <!-- =============================================================== -->
 <section class="py-16 px-4 border-y border-ink-500/40 bg-ink-800/40 backdrop-blur-sm">
     <div class="max-w-6xl mx-auto">
-        <p class="text-center text-xs uppercase tracking-[0.2em] text-gray-500 mb-10 font-semibold">Trusted by 30,100+ developers worldwide</p>
+        <p class="text-center text-xs uppercase tracking-[0.2em] text-gray-500 mb-10 font-semibold">Trusted by 30,300+ developers worldwide</p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="text-center">
-                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="30100">30.1k</div>
+                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="30300">30.3k</div>
                 <div class="text-sm text-gray-500 uppercase tracking-wider">GitHub Stars</div>
             </div>
             <div class="text-center">
@@ -927,14 +927,14 @@
                         </div>
                     </div>
                 </button>
-                <button class="mode-tab flex-shrink-0 md:w-full" data-mode="ultrapilot" data-ga-category="mode_tab_click" data-ga-label="mode_tab_ultrapilot">
+                <button class="mode-tab flex-shrink-0 md:w-full" data-mode="ultrawork" data-ga-category="mode_tab_click" data-ga-label="mode_tab_ultrawork">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-lg bg-glow-purple/15 flex items-center justify-center">
                             <div class="w-3 h-3 rounded-sm bg-glow-purple"></div>
                         </div>
                         <div>
-                            <div class="font-bold text-sm flex items-center gap-2">Ultrapilot <span class="px-1.5 py-0.5 rounded text-[10px] bg-glow-purple/20 text-glow-purple">3-5×</span></div>
-                            <div class="text-xs text-gray-500">Parallel · 5 workers</div>
+                            <div class="font-bold text-sm flex items-center gap-2">Ultrawork <span class="px-1.5 py-0.5 rounded text-[10px] bg-glow-purple/20 text-glow-purple">3-5×</span></div>
+                            <div class="text-xs text-gray-500">Max parallelism · <code class="mono">ulw</code></div>
                         </div>
                     </div>
                 </button>
@@ -973,7 +973,7 @@
                     <h3 class="h-display text-3xl mb-3">Full autonomy, end to end.</h3>
                     <p class="text-gray-400 mb-6 leading-relaxed">Describe the feature. Autopilot plans with architect, builds with executor, tests with qa-tester, and reviews with code-reviewer — all automatically. The flagship experience.</p>
                     <div class="code-block p-4 mb-4">
-                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span class="text-glow-amber">autopilot:</span> <span class="text-white">build a todo app with auth</span></code>
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span class="text-glow-amber">/autopilot</span> <span class="text-[#B4FF4C]">"build a todo app with auth"</span></code>
                     </div>
                     <div class="grid grid-cols-3 gap-3 text-center">
                         <div class="p-3 rounded-lg bg-ink-700/50 border border-ink-500/40">
@@ -990,20 +990,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- Ultrapilot -->
-                <div class="mode-panel" data-panel="ultrapilot">
+                <!-- Ultrawork -->
+                <div class="mode-panel" data-panel="ultrawork">
                     <div class="flex items-center gap-2 mb-4">
-                        <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-glow-purple/15 text-glow-purple">ULTRAPILOT</span>
-                        <span class="text-xs text-gray-500">3-5× faster via parallelism</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-bold bg-glow-purple/15 text-glow-purple">ULTRAWORK</span>
+                        <span class="text-xs text-gray-500">Maximum parallel processing · shorthand <code class="mono text-glow-purple">ulw</code></span>
                     </div>
-                    <h3 class="h-display text-3xl mb-3">Five workers, one mission.</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Frontend, backend, database, tests, infra — OMC partitions file ownership and runs 5 workers concurrently. Best for fullstack features or large refactors.</p>
+                    <h3 class="h-display text-3xl mb-3">Throw max parallelism at it.</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Frontend, backend, database, tests, infra — OMC partitions file ownership and runs workers in parallel. Prepend <code class="mono text-glow-purple">ulw</code> to any prompt, or use <code class="mono text-glow-purple">/ultrawork</code> directly. Best for fullstack features or large refactors.</p>
                     <div class="code-block p-4 mb-4">
-                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span class="text-glow-purple">ultrapilot:</span> <span class="text-white">build a fullstack SaaS with Stripe + Postgres</span></code>
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span class="text-glow-purple">/ultrawork</span> <span class="text-white">"build a fullstack SaaS with Stripe + Postgres"</span></code>
                     </div>
                     <div class="grid grid-cols-3 gap-3 text-center">
                         <div class="p-3 rounded-lg bg-ink-700/50 border border-ink-500/40">
-                            <div class="font-bold text-lg text-glow-purple">5 parallel</div>
+                            <div class="font-bold text-lg text-glow-purple">Max parallel</div>
                             <div class="text-xs text-gray-500">Workers</div>
                         </div>
                         <div class="p-3 rounded-lg bg-ink-700/50 border border-ink-500/40">
@@ -1025,7 +1025,7 @@
                     <h3 class="h-display text-3xl mb-3">N coordinated agents. Shared task list.</h3>
                     <p class="text-gray-400 mb-6 leading-relaxed">Spawn a team with a shared pool of tasks. Agents claim atomically, hand off via messages, and synthesize results. The canonical multi-agent surface.</p>
                     <div class="code-block p-4 mb-4">
-                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span class="text-glow-amber">/team 3</span> <span class="text-[#B4FF4C]">"fix all TypeScript errors in /src"</span></code>
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span class="text-glow-amber">/team 3:executor</span> <span class="text-[#B4FF4C]">"fix all TypeScript errors in /src"</span></code>
                     </div>
                     <div class="grid grid-cols-3 gap-3 text-center">
                         <div class="p-3 rounded-lg bg-ink-700/50 border border-ink-500/40">
@@ -1051,7 +1051,7 @@
                     <h3 class="h-display text-3xl mb-3">Won't stop until architect-verified.</h3>
                     <p class="text-gray-400 mb-6 leading-relaxed">For hairy bugs and high-stakes refactors. Ralph keeps iterating — plan, fix, verify, repeat — until the Architect agent signs off. Maximum persistence.</p>
                     <div class="code-block p-4 mb-4">
-                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span style="color: #B4FF4C">ralph:</span> <span class="text-white">refactor auth to JWT with zero downtime</span></code>
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span style="color: #B4FF4C">/ralph</span> <span class="text-white">"refactor auth to JWT with zero downtime"</span></code>
                     </div>
                     <div class="grid grid-cols-3 gap-3 text-center">
                         <div class="p-3 rounded-lg bg-ink-700/50 border border-ink-500/40">
@@ -1332,7 +1332,7 @@
                     <div class="code-block">
                         <div class="flex items-center justify-between px-4 py-2.5 border-b border-ink-500/40 bg-ink-700/50">
                             <span class="mono text-xs text-gray-500">terminal</span>
-                            <button onclick="copyToClipboard(this, '/oh-my-claudecode:omc-setup')"
+                            <button onclick="copyToClipboard(this, '/omc-setup')"
                                     class="copy-btn flex items-center gap-1.5 px-3 py-1 text-xs rounded-md text-gray-400"
                                     data-ga-category="copy_code" data-ga-label="install_step_2">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
@@ -1340,7 +1340,7 @@
                             </button>
                         </div>
                         <div class="p-4">
-                            <pre class="mono text-sm"><code><span class="text-gray-500">$</span> <span class="text-glow-cyan">/oh-my-claudecode:omc-setup</span>
+                            <pre class="mono text-sm"><code><span class="text-gray-500">$</span> <span class="text-glow-cyan">/omc-setup</span>
 <span class="text-[#B4FF4C]">✓</span> <span class="text-gray-400">32 agents registered</span>
 <span class="text-[#B4FF4C]">✓</span> <span class="text-gray-400">40+ skills loaded</span>
 <span class="text-[#B4FF4C]">✓</span> <span class="text-gray-400">Configuration complete.</span></code></pre>
@@ -1358,7 +1358,7 @@
                     <div class="code-block">
                         <div class="flex items-center justify-between px-4 py-2.5 border-b border-ink-500/40 bg-ink-700/50">
                             <span class="mono text-xs text-gray-500">terminal</span>
-                            <button onclick="copyToClipboard(this, 'autopilot: build a REST API for managing tasks')"
+                            <button onclick="copyToClipboard(this, 'autopilot build a REST API for managing tasks')"
                                     class="copy-btn flex items-center gap-1.5 px-3 py-1 text-xs rounded-md text-gray-400"
                                     data-ga-category="copy_code" data-ga-label="install_step_3">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
@@ -1366,7 +1366,7 @@
                             </button>
                         </div>
                         <div class="p-4">
-                            <pre class="mono text-sm"><code><span class="text-gray-500">$</span> <span class="text-glow-amber">autopilot:</span> <span class="text-white">build a REST API for managing tasks</span>
+                            <pre class="mono text-sm"><code><span class="text-gray-500">$</span> <span class="text-glow-amber">autopilot</span> <span class="text-white">build a REST API for managing tasks</span>
 <span class="text-glow-purple">↳ Activating autopilot…</span>
 <span class="text-gray-500">  architect · executor · qa-tester · security-reviewer</span></code></pre>
                         </div>
@@ -1647,6 +1647,10 @@
                     <a href="https://addyosmani.com/blog/code-agent-orchestra/" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="addyosmani_code_orchestra"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-orange/10 text-accent-orange rounded">AddyOsmani.com</span><span class="text-xs text-gray-500">Mar 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">The Code Agent Orchestra: What Makes Multi-Agent Coding Work</h4><p class="text-gray-400 text-sm mb-4">Addy Osmani explores three multi-agent patterns.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Addy Osmani</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                     <a href="https://www.anthropic.com/engineering/managed-agents" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="anthropic_managed_agents"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-red/10 text-accent-red rounded">Anthropic</span><span class="text-xs text-gray-500">2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Scaling Managed Agents: Decoupling the Brain from the Hands</h4><p class="text-gray-400 text-sm mb-4">Official Anthropic engineering deep-dive on Managed Agents architecture.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>Anthropic Engineering</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                     <a href="https://alexkerber.com/blog/elite-ai-coding-korea-claw-code" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="alexkerber_korea_stars"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">Alex Kerber</span><span class="text-xs text-gray-500">Apr 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">What +100K Stars in 24 Hours Actually Tells Us About AI Coding</h4><p class="text-gray-400 text-sm mb-4">Deep analysis of the Claude Code source leak phenomenon with extensive OMC coverage.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Alex Kerber</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <a href="https://www.youtube.com/watch?v=gCwsX8UwiwI" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="youtube_joe_njenga_howto"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-red/10 text-accent-red rounded">YouTube</span><span class="text-xs text-gray-500">2026 · Video</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">How to Use "Oh My Claude Code" Properly: The Ultimate Guide</h4><p class="text-gray-400 text-sm mb-4">Video walkthrough showing install-through-autopilot workflow and real project demo.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Joe Njenga</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <a href="https://github.com/TechDufus/oh-my-claude" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="github_techdufus_ultrawork"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">GitHub</span><span class="text-xs text-gray-500">Ultrawork prompts</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">TechDufus/oh-my-claude — Ultrawork Prompt Pack</h4><p class="text-gray-400 text-sm mb-4">Drop-in ultrawork prompts that optimize Claude Code performance with maximum parallel execution.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>TechDufus</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <a href="https://github.com/frankbria/ralph-claude-code" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="github_frankbria_ralph"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">GitHub</span><span class="text-xs text-gray-500">Ralph loop</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">frankbria/ralph-claude-code — Autonomous Dev Loop</h4><p class="text-gray-400 text-sm mb-4">Ralph-style autonomous AI development loop for Claude Code with intelligent exit detection.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>Frank Bria</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <a href="https://github.com/zephyrpersonal/oh-my-claude-code" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="github_zephyrpersonal_ultrawork"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">GitHub</span><span class="text-xs text-gray-500">Ultrawork mode</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">zephyrpersonal/oh-my-claude-code — Ultrawork Fork</h4><p class="text-gray-400 text-sm mb-4">Multi-agent orchestration with Ultrawork mode for Claude Code, inspired by oh-my-opencode.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>Zephyr Personal</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                 </div>
                 </div>
 
@@ -1656,7 +1660,7 @@
                     class="inline-flex items-center gap-2 px-6 py-3 bg-ink-700/60 border border-ink-500/60 rounded-xl font-semibold hover:border-glow-cyan/40 hover:bg-ink-600/60 transition-all text-sm text-gray-300 hover:text-white"
                     data-ga-category="engagement" data-ga-label="show_more_articles_button">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                Show more articles <span id="more-articles-count" class="text-glow-cyan">(99)</span>
+                Show more articles <span id="more-articles-count" class="text-glow-cyan">(103)</span>
             </button>
         </div>
 
@@ -1757,11 +1761,11 @@
 
             <details class="faq-item group">
                 <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold transition-colors">
-                    <span>Autopilot vs Ultrapilot vs Team vs Ralph — how do I choose?</span>
+                    <span>Autopilot vs Ultrawork vs Team vs Ralph — how do I choose?</span>
                     <svg class="faq-icon w-5 h-5 transition-transform text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </summary>
                 <div class="px-6 pb-6 text-gray-400 leading-relaxed">
-                    <strong class="text-white">Autopilot</strong> — default, sequential, hands-off. <strong class="text-white">Ultrapilot</strong> — parallel (up to 5 workers), 3-5× faster on fullstack features. <strong class="text-white">Team</strong> — N coordinated agents on a shared task list. <strong class="text-white">Ralph</strong> — relentless, won't quit until architect-verified. Or just describe the work — OMC picks the right mode.
+                    <strong class="text-white">Autopilot</strong> — default, sequential, hands-off (<code class="mono text-glow-cyan">/autopilot "..."</code>). <strong class="text-white">Ultrawork</strong> — maximum parallelism, 3-5× faster on fullstack features (<code class="mono text-glow-purple">ulw</code> prefix or <code class="mono text-glow-purple">/ultrawork</code>). <strong class="text-white">Team</strong> — N coordinated agents on a shared task list (<code class="mono text-glow-amber">/team 3:executor "..."</code>). <strong class="text-white">Ralph</strong> — relentless, won't quit until architect-verified. Or just describe the work — OMC picks the right mode.
                 </div>
             </details>
 
@@ -1801,7 +1805,7 @@
             <span class="block h-cyan">3× faster?</span>
         </h2>
         <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Join 30,100+ developers who turned Claude Code into a coordinated team of specialists.
+            Join 30,300+ developers who turned Claude Code into a coordinated team of specialists.
             Install in 30 seconds. Free forever.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 justify-center mb-8">
@@ -1846,7 +1850,7 @@
                     <span class="text-xl font-bold"><span class="text-glow-cyan">oh-my-</span>claudecode</span>
                 </div>
                 <p class="text-gray-400 text-sm max-w-md leading-relaxed mb-5">
-                    Zero-config multi-agent orchestration for Claude Code. 32 specialists. Used by 30,100+ developers. MIT licensed.
+                    Zero-config multi-agent orchestration for Claude Code. 32 specialists. Used by 30,300+ developers. MIT licensed.
                 </p>
                 <div class="flex gap-3">
                     <a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank"
@@ -1902,7 +1906,7 @@
     // - cta_click: hero/final/nav CTAs (with label: hero_cta_install, final_cta_github, nav_install, etc.)
     // - navigation_click: in-page nav + footer links
     // - testimonial_click: testimonial quote card clicks
-    // - mode_tab_click: execution mode tab interactions (autopilot/ultrapilot/team/ralph)
+    // - mode_tab_click: execution mode tab interactions (autopilot/ultrawork/team/ralph)
     // - copy_code: install step copy buttons
     // - faq_expand: FAQ question opens
     // - show_more_articles: expanding the 99 hidden articles
@@ -2083,7 +2087,7 @@
             trackEvent('show_more_articles', { event_category: 'engagement', event_label: 'expand' });
         } else {
             container.classList.add('hidden');
-            btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg> Show more articles <span class="text-glow-cyan">(99)</span>';
+            btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg> Show more articles <span class="text-glow-cyan">(103)</span>';
             document.getElementById('resources').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
@@ -2097,10 +2101,10 @@
         const t1 = document.getElementById('heroType1');
         const cursor1 = document.getElementById('heroCursor1');
         const phrases = [
-            'autopilot: build a payment checkout flow',
-            'ultrapilot: refactor auth to OAuth',
-            'ralph: fix the flaky CI pipeline',
-            'team 5: migrate from REST to GraphQL'
+            'autopilot build a payment checkout flow',
+            'ulw refactor auth to OAuth',
+            'ralph fix the flaky CI pipeline',
+            '/team 5:executor "migrate from REST to GraphQL"'
         ];
         let phraseIdx = 0;
         const lines = [2, 3, 4, 5, 6, 7].map(i => document.getElementById(`heroLine${i}`));

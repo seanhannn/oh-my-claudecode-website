@@ -2,6 +2,28 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-04-21 README Alignment Update
+
+**Version bump**: v4.13.0 → **v4.13.1** (Cursor IDE Support & Bug Fixes)
+**Star count**: 30,100 → **30,300**
+
+### Mode Tab Label Change (⚠️ breaks historical data)
+- `mode_tab_ultrapilot` → **`mode_tab_ultrawork`**
+  - Reason: Ultrapilot is deprecated per README. Ultrawork is the correct parallel mode.
+  - GA4 reports for Ultrapilot will stop; new `mode_tab_ultrawork` event replaces it.
+
+### New Resource Labels (4 added, 103 total hidden articles)
+- `youtube_joe_njenga_howto` — How to Use OMC Properly (YouTube video)
+- `github_techdufus_ultrawork` — TechDufus/oh-my-claude ultrawork prompts
+- `github_frankbria_ralph` — frankbria/ralph-claude-code Ralph loop
+- `github_zephyrpersonal_ultrawork` — zephyrpersonal Ultrawork fork
+
+### Syntax corrections (not GA, but noted for copy_code tracking)
+- `/team 3 "..."` → `/team 3:executor "..."` (role suffix required)
+- `/oh-my-claudecode:omc-setup` → `/omc-setup` (shorter form per README)
+
+---
+
 ## 🆕 2026-04-20 Redesign: New Event Taxonomy
 
 The v2 site introduces rich engagement tracking across all sections. **143 GA data points** (up from 108).
