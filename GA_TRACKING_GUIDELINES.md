@@ -2,6 +2,20 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-04 v4.13.5 + Resource Refresh
+
+**Version bump**: v4.13.1 → **v4.13.5** (HUD Stability & Ralph PRD Fixes)
+**Star count**: 30,300 → **32,400**
+
+### New Resource Labels (5 added, 108 total hidden articles)
+- `andrewooo_omc_review` — andrew.ooo OMC multi-agent review (Apr 2026)
+- `codex_danielvaughan_ecosystem` — Daniel Vaughan multi-agent ecosystem (Apr 2026)
+- `mejba_top10_skills_plugins` — Engr Mejba Ahmed top 10 plugins/skills/CLIs (2026)
+- `redwerk_best_plugins` — Redwerk 7 best Claude Code plugins (2026)
+- `firecrawl_top10_plugins` — Firecrawl top 10 Claude Code plugins (2026)
+
+---
+
 ## 🆕 2026-04-21 README Alignment Update
 
 **Version bump**: v4.13.0 → **v4.13.1** (Cursor IDE Support & Bug Fixes)
