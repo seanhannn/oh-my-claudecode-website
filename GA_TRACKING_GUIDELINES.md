@@ -2,6 +2,18 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-06 v4.13.6 + Opus 4.7 Resources
+
+**Version bump**: v4.13.5 → **v4.13.6** (Reliability & Opus 4.7 Agent Upgrades)
+**Star count**: 32,400 → **32,600**
+
+### New Resource Labels (3 added, 112 total hidden articles)
+- `anthropic_opus47_best_practices` — Anthropic official Opus 4.7 best practices for Claude Code
+- `substack_karozieminski_opus47_review` — Karo Zieminski Opus 4.7 review for builders
+- `claudefast_opus47_best_practices` — ClaudeFast Opus 4.7 best practices guide
+
+---
+
 ## 🆕 2026-05-04 v4.13.5 + Resource Refresh
 
 **Version bump**: v4.13.1 → **v4.13.5** (HUD Stability & Ralph PRD Fixes)
