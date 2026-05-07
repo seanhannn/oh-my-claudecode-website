@@ -2,6 +2,18 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-07 Star Bump + May 2026 Resources
+
+**Version**: v4.13.6 (unchanged)
+**Star count**: 32,600 → **32,800**
+
+### New Resource Labels (3 added, 115 total hidden articles)
+- `simonwillison_code_w_claude_2026` — Simon Willison live blog of Code w/ Claude 2026 conference
+- `meanceo_claude_code_news_may2026` — Mean.ceo May 2026 startup edition news roundup
+- `devto_muhammadmoeed_skills_guide` — Muhammad Moeed practical Claude Code skills guide
+
+---
+
 ## 🆕 2026-05-06 v4.13.6 + Opus 4.7 Resources
 
 **Version bump**: v4.13.5 → **v4.13.6** (Reliability & Opus 4.7 Agent Upgrades)
