@@ -2,6 +2,17 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-11 Late: 2 More Community Resources
+
+**Version**: v4.13.7 (unchanged)
+**Star count**: 33,300 (unchanged)
+
+### New Resource Labels (2 added, 119 total hidden articles)
+- `iceicebear_omc_deepdive_korean` — Korean OMC deep-dive on ice-ice-bear.github.io
+- `github_mazenyasser_fork` — Mazen Yasser community fork on GitHub
+
+---
+
 ## 🆕 2026-05-11 v4.13.7 + Visual Guide Resources
 
 **Version bump**: v4.13.6 → **v4.13.7** (Pre-flight Workflow Setup & Ownership Scope)
