@@ -2,6 +2,17 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-11 v4.13.7 + Visual Guide Resources
+
+**Version bump**: v4.13.6 → **v4.13.7** (Pre-flight Workflow Setup & Ownership Scope)
+**Star count**: 32,800 → **33,300**
+
+### New Resource Labels (2 added, 117 total hidden articles)
+- `github_luongnv89_claude_howto` — luongnv89 visual Claude Code guide on GitHub
+- `vibetip_omc_docs` — OMC community docs hub at omc.vibetip.help/docs
+
+---
+
 ## 🆕 2026-05-07 Star Bump + May 2026 Resources
 
 **Version**: v4.13.6 (unchanged)
