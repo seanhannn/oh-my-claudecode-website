@@ -2,6 +2,18 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-13 Star Bump + 3 New Resources
+
+**Version**: v4.13.7 (unchanged)
+**Star count**: 33,300 → **33,600**
+
+### New Resource Labels (3 added, 122 total hidden articles)
+- `a2amcp_what_is_omc` — a2a-mcp blog beginner explainer of OMC
+- `github_florianbruniaux_ultimate_guide` — Florian Bruniaux Claude Code ultimate guide on GitHub
+- `youtube_full_beginners_2026` — FULL Claude Code Tutorial for Beginners 2026 YouTube video
+
+---
+
 ## 🆕 2026-05-11 Late: 2 More Community Resources
 
 **Version**: v4.13.7 (unchanged)
