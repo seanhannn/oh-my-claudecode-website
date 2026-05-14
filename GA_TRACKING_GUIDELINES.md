@@ -2,6 +2,16 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-14 Star Bump + Beginner Guide
+
+**Version**: v4.13.7 (unchanged)
+**Star count**: 33,600 → **33,700**
+
+### New Resource Labels (1 added, 123 total hidden articles)
+- `codewithmukesh_beginners_guide` — codewithmukesh.com Complete 2026 beginner guide to Claude Code
+
+---
+
 ## 🆕 2026-05-13 Star Bump + 3 New Resources
 
 **Version**: v4.13.7 (unchanged)
