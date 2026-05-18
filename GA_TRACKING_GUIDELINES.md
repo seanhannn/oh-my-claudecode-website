@@ -2,6 +2,15 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-18 v4.14.0 Release + Star Bump
+
+**Version bump**: v4.13.7 → **v4.14.0** (Durable Multi-Goal Workflow via `omc ultragoal` CLI, released May 15)
+**Star count**: 33,700 → **34,100**
+
+No new resource labels this round — focused on version sync.
+
+---
+
 ## 🆕 2026-05-14 Star Bump + Beginner Guide
 
 **Version**: v4.13.7 (unchanged)
