@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oh-my-claudecode — 혼자 코딩하지 마세요. 에이전트 팀과 함께 출시하세요.</title>
+    <meta name="description" content="Claude Code를 위한 멀티 에이전트 오케스트레이션 플러그인. 32명의 전문 에이전트, 4가지 실행 모드, 30-50% 토큰 절감. 한국 개발자가 만들고 35,000명 이상이 ★을 단 오픈소스.">
+    <meta name="keywords" content="oh-my-claudecode, claude code, AI 코딩, 멀티 에이전트, 오케스트레이션, 클로드 코드, 한국어, omc, autopilot, ralph, ultrawork, 한국 개발자">
+    <meta name="author" content="oh-my-claudecode contributors">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#00E5FF">
+
+    <link rel="canonical" href="https://ohmyclaudecode.com/ko/">
+    <link rel="alternate" hreflang="en" href="https://ohmyclaudecode.com/">
+    <link rel="alternate" hreflang="ko" href="https://ohmyclaudecode.com/ko/">
+    <link rel="alternate" hreflang="x-default" href="https://ohmyclaudecode.com/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Open Graph (Korean) -->
+    <meta property="og:title" content="oh-my-claudecode — 혼자 코딩하지 마세요">
+    <meta property="og:description" content="Claude Code를 32명의 전문 에이전트 팀으로. 한국 개발자가 만들고 35,000명이 ★을 단 오픈소스 플러그인.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ohmyclaudecode.com/ko/">
+    <meta property="og:site_name" content="oh-my-claudecode">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://opengraph.githubassets.com/1/Yeachan-Heo/oh-my-claudecode">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="oh-my-claudecode — 혼자 코딩하지 마세요">
+    <meta name="twitter:description" content="Claude Code를 위한 32명의 전문 에이전트 팀. 30초 설치, 한국 개발자가 만든 오픈소스.">
+    <meta name="twitter:image" content="https://opengraph.githubassets.com/1/Yeachan-Heo/oh-my-claudecode">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- JSON-LD: WebSite (ko) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "oh-my-claudecode 한국어 페이지",
+        "inLanguage": "ko-KR",
+        "url": "https://ohmyclaudecode.com/ko/",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "oh-my-claudecode",
+            "url": "https://ohmyclaudecode.com/"
+        }
+    }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY1SMZBQT0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DY1SMZBQT0', { send_page_view: true, page_path: '/ko/' });
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: { 900:'#050810', 800:'#080C18', 700:'#0B1020', 600:'#121A2E', 500:'#1A2442', 400:'#2A3555', 300:'#3F4B6B' },
+                        glow: { cyan:'#00E5FF', amber:'#FFB547', lime:'#B4FF4C', coral:'#FF6B8B', purple:'#A78BFF', pink:'#FF6FB0' }
+                    },
+                    fontFamily: {
+                        display: ['Sora', 'Pretendard Variable', 'sans-serif'],
+                        sans: ['Pretendard Variable', 'Pretendard', 'Manrope', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace']
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+        :root {
+            --ink-900:#050810; --ink-800:#080C18; --ink-700:#0B1020; --ink-600:#121A2E;
+            --border:#1E2642; --cyan:#00E5FF; --amber:#FFB547; --lime:#B4FF4C; --coral:#FF6B8B; --purple:#A78BFF;
+        }
+
+        * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Pretendard Variable', Pretendard, Manrope, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            background: #050810;
+            color: #EEF2F8;
+            overflow-x: hidden;
+            /* 한글 본문 가독성 정밀 튜닝 */
+            font-feature-settings: "ss01", "ss02";
+            letter-spacing: -0.01em;
+            word-break: keep-all;
+            line-break: strict;
+        }
+
+        /* 영문/숫자/단위는 Sora로 표시되도록 */
+        .num, .en, code, .mono { font-family: 'JetBrains Mono', monospace; letter-spacing: 0; }
+        .display { font-family: 'Sora', 'Pretendard Variable', sans-serif; letter-spacing: -0.045em; }
+
+        /* 한글 디스플레이: weight 800 + 좁은 자간 */
+        .ko-display {
+            font-family: 'Pretendard Variable', Pretendard, sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            line-height: 1.18;
+        }
+
+        /* === 그라데이션 텍스트 === */
+        .h-cyan {
+            background: linear-gradient(180deg,#FFFFFF 0%,#B8F3FF 50%,#00E5FF 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .h-amber {
+            background: linear-gradient(180deg,#FFFFFF 0%,#FFE5B0 50%,#FFB547 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .h-lime {
+            background: linear-gradient(180deg,#FFFFFF 0%,#E0FFB0 50%,#B4FF4C 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        /* === 오로라 배경 === */
+        .aurora-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+        .aurora-bg::before {
+            content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%);
+            width: 120%; height: 800px;
+            background: radial-gradient(ellipse at center, rgba(0,229,255,0.15) 0%, rgba(167,139,255,0.08) 30%, transparent 70%);
+            filter: blur(60px);
+        }
+        .aurora-bg::after {
+            content: ''; position: absolute; top: 30%; right: -10%; width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(255,181,71,0.08) 0%, transparent 70%);
+            filter: blur(80px);
+        }
+
+        /* === 그리드 패턴 === */
+        .grid-bg {
+            background-image:
+                linear-gradient(rgba(30,38,66,0.25) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30,38,66,0.25) 1px, transparent 1px);
+            background-size: 56px 56px;
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+        }
+
+        /* === 버튼 === */
+        .btn-primary {
+            background: linear-gradient(180deg,#00E5FF 0%,#00C9DF 100%);
+            color: #050810;
+            box-shadow: 0 10px 40px -8px rgba(0,229,255,0.5), inset 0 1px 0 rgba(255,255,255,0.3);
+            transition: all .25s cubic-bezier(.16,1,.3,1);
+            font-weight: 700;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 50px -6px rgba(0,229,255,0.65), inset 0 1px 0 rgba(255,255,255,0.4); }
+        .btn-secondary {
+            background: rgba(11,16,32,0.6); backdrop-filter: blur(10px);
+            border: 1px solid rgba(42,53,85,0.6); color: #EEF2F8;
+            transition: all .25s cubic-bezier(.16,1,.3,1); font-weight: 600;
+        }
+        .btn-secondary:hover { background: rgba(18,26,46,0.8); border-color: rgba(0,229,255,0.3); transform: translateY(-2px); }
+
+        /* === 카드 === */
+        .card {
+            background: linear-gradient(180deg, rgba(18,26,46,0.6), rgba(11,16,32,0.4));
+            border: 1px solid rgba(30,38,66,0.8);
+            border-radius: 16px;
+            transition: all .3s cubic-bezier(.16,1,.3,1);
+            position: relative; overflow: hidden;
+        }
+        .card:hover { border-color: rgba(0,229,255,0.35); transform: translateY(-3px); box-shadow: 0 20px 50px -10px rgba(0,0,0,0.5), 0 0 30px -10px rgba(0,229,255,0.15); }
+        .card-glow::before {
+            content:''; position:absolute; inset:0; border-radius:16px; padding:1px;
+            background: linear-gradient(135deg, rgba(0,229,255,0.3), rgba(255,181,71,0.2), transparent 70%);
+            mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            mask-composite: exclude; -webkit-mask-composite: xor; pointer-events: none;
+        }
+
+        /* === 핀 === */
+        .pill {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 8px 16px; border-radius: 100px;
+            font-size: 13px; font-weight: 500;
+            background: rgba(18,26,46,0.6);
+            border: 1px solid rgba(30,38,66,0.8);
+            backdrop-filter: blur(10px);
+        }
+        .pill-dot { width: 6px; height: 6px; border-radius: 50%; position: relative; }
+        .pill-dot.live { background: #B4FF4C; box-shadow: 0 0 0 2px rgba(180,255,76,0.2); }
+        .pill-dot.live::before {
+            content:''; position:absolute; inset:-4px; border-radius:50%;
+            background: rgba(180,255,76,0.4); animation: pulseRing 2s ease-out infinite;
+        }
+        @keyframes pulseRing { 0% { transform: scale(.8); opacity: 1; } 100% { transform: scale(2); opacity: 0; } }
+
+        /* === 터미널 === */
+        .terminal {
+            background: linear-gradient(180deg,#0B1020 0%,#080C18 100%);
+            border: 1px solid rgba(30,38,66,0.8);
+            border-radius: 14px; overflow: hidden;
+            box-shadow: 0 30px 70px -20px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05);
+        }
+        .terminal-bar {
+            display: flex; align-items: center; gap: 8px;
+            padding: 12px 16px;
+            background: rgba(11,16,32,0.8);
+            border-bottom: 1px solid rgba(30,38,66,0.8);
+        }
+        .terminal-dot { width: 12px; height: 12px; border-radius: 50%; }
+        .terminal-body {
+            padding: 22px 26px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px; line-height: 1.85;
+            min-height: 240px;
+        }
+        .cursor {
+            display: inline-block; width: 9px; height: 18px;
+            background: #00E5FF; vertical-align: text-bottom;
+            animation: blink 1s step-end infinite;
+            box-shadow: 0 0 8px rgba(0,229,255,0.6);
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* === 모드 탭 === */
+        .mode-tab {
+            cursor: pointer; padding: 14px 18px; border-radius: 12px;
+            transition: all .25s cubic-bezier(.16,1,.3,1);
+            border: 1px solid transparent; background: transparent; text-align: left; width: 100%;
+        }
+        .mode-tab:hover { background: rgba(18,26,46,0.5); }
+        .mode-tab.active {
+            background: linear-gradient(135deg, rgba(0,229,255,0.12), rgba(167,139,255,0.08));
+            border-color: rgba(0,229,255,0.3);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+        }
+        .mode-panel { display: none; animation: fadeIn .4s cubic-bezier(.16,1,.3,1); }
+        .mode-panel.active { display: block; }
+
+        /* === 에이전트 태그 === */
+        .agent-pill {
+            display: inline-flex; align-items: center;
+            padding: 5px 10px; font-size: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500; border-radius: 6px;
+            transition: all .2s ease;
+        }
+        .agent-pill:hover { transform: translateY(-1px); }
+
+        /* === 비대칭 그리드 (한국어 페이지 시그니처) === */
+        .grid-asym {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 900px) { .grid-asym { grid-template-columns: 1fr; } }
+
+        /* === 코드 블록 === */
+        .code-block {
+            background: #0B1020;
+            border: 1px solid rgba(30,38,66,0.8);
+            border-radius: 10px;
+            overflow-x: auto; position: relative;
+        }
+        .copy-btn { transition: all .2s ease; }
+        .copy-btn:hover { background: rgba(0,229,255,0.1); color: #00E5FF; }
+        .copy-btn.copied { background: rgba(180,255,76,0.15); color: #B4FF4C; }
+
+        /* === 네비 스크롤 효과 === */
+        nav.nav-scrolled {
+            background: rgba(5,8,16,0.85);
+            backdrop-filter: blur(20px);
+            border-bottom-color: rgba(30,38,66,0.8);
+        }
+
+        /* === FAQ === */
+        .faq-item {
+            transition: all .3s ease;
+            background: linear-gradient(180deg, rgba(18,26,46,0.4), rgba(11,16,32,0.3));
+            border: 1px solid rgba(30,38,66,0.6);
+            border-radius: 12px; overflow: hidden;
+        }
+        .faq-item:hover { border-color: rgba(0,229,255,0.25); }
+        .faq-item[open] {
+            background: linear-gradient(180deg, rgba(0,229,255,0.04), rgba(11,16,32,0.4));
+            border-color: rgba(0,229,255,0.3);
+        }
+        .faq-item[open] summary { color: #00E5FF; }
+        .faq-item[open] .faq-icon { transform: rotate(180deg); color: #00E5FF; }
+
+        /* === 리저브 인터섹션 === */
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* === 한국어 페이지 시그니처: 자모 디테일 === */
+        .ko-mark {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 3px 9px 3px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            background: linear-gradient(135deg, rgba(0,229,255,0.12), rgba(180,255,76,0.06));
+            border: 1px solid rgba(0,229,255,0.25);
+            color: #B8F3FF;
+        }
+        .ko-mark::before {
+            content:''; width:6px; height:6px; border-radius:50%;
+            background: #00E5FF;
+            box-shadow: 0 0 8px rgba(0,229,255,0.6);
+        }
+
+        /* === 인용 부호 (대형) === */
+        .quote-bar {
+            position: relative;
+            padding-left: 28px;
+        }
+        .quote-bar::before {
+            content:''; position:absolute; left:0; top:6px; bottom:6px;
+            width:3px; border-radius: 2px;
+            background: linear-gradient(180deg, #00E5FF 0%, rgba(0,229,255,0.1) 100%);
+        }
+
+        /* === 리소스 카드 === */
+        .res-card {
+            transition: all .3s cubic-bezier(.16,1,.3,1);
+            cursor: pointer;
+        }
+        .res-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(0,229,255,0.35);
+            box-shadow: 0 15px 40px -10px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body class="relative">
+
+<!-- =============================================================== -->
+<!-- NAVIGATION                                                       -->
+<!-- =============================================================== -->
+<nav id="mainNav" class="fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/ko/" class="flex items-center gap-2.5 font-bold" data-ga-category="navigation_click" data-ga-label="ko_nav_logo">
+            <span class="text-2xl">⚡</span>
+            <span class="text-[17px]"><span style="color:#00E5FF">oh-my-</span>claudecode</span>
+            <span class="ko-mark ml-1">KO</span>
+        </a>
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-300">
+            <a href="#why" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_nav_why">왜 필요한가</a>
+            <a href="#features" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_nav_features">기능</a>
+            <a href="#modes" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_nav_modes">실행 모드</a>
+            <a href="#agents" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_nav_agents">에이전트</a>
+            <a href="#community" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_nav_community">커뮤니티</a>
+            <a href="#faq" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_nav_faq">FAQ</a>
+        </div>
+        <div class="flex items-center gap-2">
+            <a href="/"
+               class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold text-gray-400 hover:text-white border border-ink-500/60 hover:border-glow-cyan/40 transition-all"
+               data-ga-category="language_switch" data-ga-label="ko_to_en">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                EN
+            </a>
+            <a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" rel="noopener"
+               class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-lg bg-ink-700/60 border border-ink-500/60 hover:border-glow-cyan/40 transition-all text-sm font-medium"
+               data-ga-category="cta_click" data-ga-label="ko_nav_github_stars">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.849L19.335 24 12 20.017 4.665 24 6 15.599 0 9.75l8.332-1.595z"/></svg>
+                <span style="color:#FFB547">35k</span>
+            </a>
+            <a href="#install" class="btn-primary px-5 py-2 rounded-lg text-sm" data-ga-category="cta_click" data-ga-label="ko_nav_install">설치하기</a>
+        </div>
+    </div>
+</nav>
+
+<!-- =============================================================== -->
+<!-- HERO                                                             -->
+<!-- =============================================================== -->
+<section class="relative pt-36 pb-20 px-4 overflow-hidden">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="aurora-bg"></div>
+
+    <div class="relative max-w-6xl mx-auto">
+        <!-- 버전 배지 -->
+        <div class="flex justify-center mb-8" style="animation: fadeIn .8s ease;">
+            <a href="https://github.com/Yeachan-Heo/oh-my-claudecode/releases" target="_blank" rel="noopener"
+               class="pill hover:border-glow-cyan/40 transition-all"
+               data-ga-category="resource_click" data-ga-label="ko_hero_version_badge">
+                <span class="pill-dot live"></span>
+                <span class="text-gray-300 num">v4.14.4</span>
+                <span class="text-gray-500">·</span>
+                <span class="text-white">Durable Multi-Goal Workflow</span>
+                <span style="color:#00E5FF">→</span>
+            </a>
+        </div>
+
+        <!-- 메인 헤드라인 (한글 + 영문 믹스, 정성스럽게) -->
+        <h1 class="ko-display text-center mb-7" style="font-size: clamp(2.5rem, 6.8vw, 5.4rem);">
+            <span class="block text-white">혼자 코딩하지 마세요.</span>
+            <span class="block h-cyan">에이전트 팀과 함께 출시하세요.</span>
+        </h1>
+
+        <!-- 서브타이틀 -->
+        <p class="text-center max-w-3xl mx-auto text-lg md:text-xl text-gray-400 leading-relaxed mb-3">
+            <span class="text-white font-semibold">oh-my-claudecode</span> 는 Claude Code 를
+            <span style="color:#00E5FF" class="font-semibold">32명의 전문가</span>로 이루어진
+            팀으로 바꿔주는 무설정 오케스트레이션 레이어입니다.
+        </p>
+        <p class="text-center text-gray-500 mb-10">
+            기능을 <span style="color:#FFB547" class="font-semibold">3–5배 더 빨리</span> 출시하고,
+            토큰은 <span style="color:#B4FF4C" class="font-semibold">30–50% 절감</span>합니다.
+            품질은 타협하지 않습니다.
+        </p>
+
+        <!-- 한국 개발자에게: 작은 강조 라인 -->
+        <div class="flex justify-center mb-12">
+            <div class="pill" style="background: linear-gradient(135deg, rgba(0,229,255,0.08), rgba(180,255,76,0.04)); border-color: rgba(0,229,255,0.2);">
+                <span style="color:#00E5FF">◆</span>
+                <span class="text-gray-300">한국 개발자</span>
+                <a href="https://github.com/Yeachan-Heo" target="_blank" rel="noopener" class="text-white font-semibold hover:underline" data-ga-category="cta_click" data-ga-label="ko_hero_author_link">@Yeachan-Heo</a>
+                <span class="text-gray-500">가 만들고,</span>
+                <span class="num text-white">35,000+</span>
+                <span class="text-gray-500">명이 ★ 을 단 오픈소스</span>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="flex flex-col sm:flex-row gap-3 justify-center mb-20">
+            <a href="#install" class="btn-primary px-8 py-4 rounded-xl text-base inline-flex items-center justify-center gap-2"
+               data-ga-category="cta_click" data-ga-label="ko_hero_cta_install">
+                30초 만에 설치하기
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" rel="noopener"
+               class="btn-secondary px-8 py-4 rounded-xl text-base inline-flex items-center justify-center gap-2"
+               data-ga-category="cta_click" data-ga-label="ko_hero_cta_github">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub 에 ★ 달기
+                <span class="px-2 py-0.5 rounded-md text-xs font-bold num" style="background: rgba(255,181,71,0.15); color:#FFB547;">35k ★</span>
+            </a>
+        </div>
+
+        <!-- 라이브 터미널 데모 (한국어 명령) -->
+        <div class="max-w-4xl mx-auto reveal">
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="terminal-dot" style="background:#FF5F57"></span>
+                    <span class="terminal-dot" style="background:#FEBC2E"></span>
+                    <span class="terminal-dot" style="background:#28C840"></span>
+                    <span class="mono text-xs text-gray-500 ml-3">~/my-project — claude</span>
+                    <span class="ml-auto text-[11px] text-gray-600 mono">live</span>
+                </div>
+                <div class="terminal-body">
+                    <div><span class="text-gray-600">$</span> <span id="heroType1" class="text-white"></span><span id="heroCursor1" class="cursor"></span></div>
+                    <div id="heroLine2" class="opacity-0 transition-opacity duration-500">
+                        <span style="color:#FFB547">↳ autopilot</span> <span class="text-gray-400">감지됨. 팀을 소집합니다…</span>
+                    </div>
+                    <div id="heroLine3" class="opacity-0 transition-opacity duration-500 mt-1">
+                        <span style="color:#00E5FF">✓</span> <span class="text-gray-400">architect</span> <span class="text-gray-600">설계 완료</span> <span class="text-gray-600">· 2 files</span>
+                    </div>
+                    <div id="heroLine4" class="opacity-0 transition-opacity duration-500">
+                        <span style="color:#00E5FF">✓</span> <span class="text-gray-400">executor</span> <span class="text-gray-600">구현 완료</span> <span class="text-gray-600">· 14 files, 420 lines</span>
+                    </div>
+                    <div id="heroLine5" class="opacity-0 transition-opacity duration-500">
+                        <span style="color:#00E5FF">✓</span> <span class="text-gray-400">test-engineer</span> <span class="text-gray-600">테스트 통과</span> <span class="text-gray-600">· 36 tests, 100%</span>
+                    </div>
+                    <div id="heroLine6" class="opacity-0 transition-opacity duration-500">
+                        <span style="color:#00E5FF">✓</span> <span class="text-gray-400">security-reviewer</span> <span class="text-gray-600">보안 검토 통과</span>
+                    </div>
+                    <div id="heroLine7" class="opacity-0 transition-opacity duration-500 mt-2">
+                        <span class="font-bold" style="color:#B4FF4C">4분 38초 만에 완료.</span>
+                        <span class="text-gray-500">기본 Claude Code 보다 3.2× 빠릅니다.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- TRUST BAR / STATS                                                -->
+<!-- =============================================================== -->
+<section class="py-16 px-4 border-y border-ink-500/40 bg-ink-800/40 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto">
+        <p class="text-center text-xs uppercase tracking-[0.2em] text-gray-500 mb-10 font-semibold">전 세계 35,000+ 명의 개발자가 신뢰합니다</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="display text-5xl md:text-6xl h-cyan mb-2 num">35k</div>
+                <div class="text-sm text-gray-500 uppercase tracking-wider">GitHub Stars</div>
+            </div>
+            <div class="text-center">
+                <div class="display text-5xl md:text-6xl h-amber mb-2 num">32</div>
+                <div class="text-sm text-gray-500 uppercase tracking-wider">전문 에이전트</div>
+            </div>
+            <div class="text-center">
+                <div class="display text-5xl md:text-6xl mb-2 num" style="color:#B4FF4C">40+</div>
+                <div class="text-sm text-gray-500 uppercase tracking-wider">내장 스킬</div>
+            </div>
+            <div class="text-center">
+                <div class="display text-5xl md:text-6xl mb-2 num" style="color:#A78BFF">4</div>
+                <div class="text-sm text-gray-500 uppercase tracking-wider">실행 모드</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- WHY (문제 정의)                                                   -->
+<!-- =============================================================== -->
+<section id="why" class="py-32 px-4 relative">
+    <div class="max-w-5xl mx-auto reveal">
+        <div class="text-center mb-16">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#FF6B8B">●</span>
+                <span class="text-gray-300">왜 필요한가</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-6xl mb-6">
+                Claude Code 는 강력합니다.
+                <span class="block text-gray-500">혼자서 쓰면, 거기까지입니다.</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                한 명의 에이전트가 기획·코딩·테스트·리뷰를 다 떠안으면 결과는 뻔합니다.
+                속도는 느려지고, 버그는 쌓이고, 토큰은 재작업에 낭비됩니다.
+                Claude 의 잠재력 80% 를 책상 위에 그대로 두는 셈이죠.
+            </p>
+        </div>
+
+        <!-- Before / After -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="card p-8 relative">
+                <div class="flex items-center gap-2 mb-5">
+                    <span class="px-2.5 py-1 rounded-md text-xs font-bold" style="background: rgba(255,107,139,0.15); color:#FF6B8B">BEFORE</span>
+                    <span class="text-sm text-gray-500">혼자 쓰는 Claude Code</span>
+                </div>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex items-start gap-3">
+                        <span style="color:#FF6B8B" class="mt-0.5">✕</span>
+                        <span>순차적 작업 — 생각하고, 만들고, 테스트하고, 리뷰하는 동안 그저 기다림</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span style="color:#FF6B8B" class="mt-0.5">✕</span>
+                        <span>사소한 수정에도 Opus 가 동원돼 토큰 낭비가 누적</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span style="color:#FF6B8B" class="mt-0.5">✕</span>
+                        <span>어려운 버그 앞에서 포기하거나, 같은 루프에 갇힘 — 검증 게이트 없음</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span style="color:#FF6B8B" class="mt-0.5">✕</span>
+                        <span>어떤 명령어가 어떤 에이전트와 어울리는지 외워야 함</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card card-glow p-8 relative">
+                <div class="flex items-center gap-2 mb-5">
+                    <span class="px-2.5 py-1 rounded-md text-xs font-bold" style="background: rgba(0,229,255,0.15); color:#00E5FF">WITH OMC</span>
+                    <span class="text-sm text-gray-500">오케스트레이션된 팀</span>
+                </div>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-start gap-3">
+                        <span style="color:#B4FF4C" class="mt-0.5">✓</span>
+                        <span>최대 5명이 병렬로 — architect 가 설계하는 사이 executor 가 구현</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span style="color:#B4FF4C" class="mt-0.5">✓</span>
+                        <span>스마트 모델 라우팅 — 단순 조회는 Haiku, 추론은 Opus</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span style="color:#B4FF4C" class="mt-0.5">✓</span>
+                        <span><code class="mono text-white" style="background:rgba(180,255,76,0.1); padding:1px 6px; border-radius:4px;">Ralph</code> 모드는 architect 검증 전까지 절대 멈추지 않음</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span style="color:#B4FF4C" class="mt-0.5">✓</span>
+                        <span>그냥 자연어로 말하면 OMC 가 알아서 모드를 골라줍니다</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- FEATURES (비대칭 그리드)                                          -->
+<!-- =============================================================== -->
+<section id="features" class="py-32 px-4 relative">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#00E5FF">●</span>
+                <span class="text-gray-300">해결책</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-6xl mb-5">
+                한 번 설치하면
+                <span class="h-cyan">7가지가 따라옵니다.</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Claude Code 에 처음부터 들어있어야 했던 것들. 무설정, 한 번에.
+            </p>
+        </div>
+
+        <!-- 비대칭 그리드: 큰 카드 + 작은 카드 3개 + 중간 카드 2개 -->
+        <div class="grid grid-cols-12 gap-5 reveal">
+            <!-- 큰 카드: 32 specialists -->
+            <div class="col-span-12 md:col-span-8 card card-glow p-10 relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="pill mb-6" style="width: fit-content;">
+                        <span style="color:#00E5FF">◉</span>
+                        <span class="text-xs">코어</span>
+                    </div>
+                    <h3 class="ko-display text-3xl md:text-4xl mb-4">
+                        자기 일을 아는 <span class="h-cyan">32명의 전문가.</span>
+                    </h3>
+                    <p class="text-gray-400 mb-6 max-w-xl leading-relaxed">
+                        architect 가 설계하고, executor 가 만들고, qa-tester 가 검증하고,
+                        security-reviewer 가 보안을 보고, designer 가 다듬습니다.
+                        OMC 가 알아서 적임자에게 일을 넘깁니다 — 프롬프트 꼼수는 필요 없습니다.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="agent-pill" style="background:rgba(0,229,255,0.1); color:#00E5FF">architect</span>
+                        <span class="agent-pill" style="background:rgba(255,181,71,0.1); color:#FFB547">executor</span>
+                        <span class="agent-pill" style="background:rgba(180,255,76,0.1); color:#B4FF4C">qa-tester</span>
+                        <span class="agent-pill" style="background:rgba(167,139,255,0.1); color:#A78BFF">code-reviewer</span>
+                        <span class="agent-pill" style="background:rgba(255,111,176,0.1); color:#FF6FB0">designer</span>
+                        <span class="agent-pill" style="background:rgba(110,174,255,0.1); color:#6EAEFF">explore</span>
+                        <span class="agent-pill" style="background:rgba(255,107,139,0.1); color:#FF6B8B">security-reviewer</span>
+                        <span class="agent-pill" style="background:rgba(150,150,150,0.1); color:#9CA3AF">+25명 더</span>
+                    </div>
+                </div>
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full" style="border:1px solid rgba(0,229,255,0.1); opacity:.5;"></div>
+                <div class="absolute -right-10 -bottom-10 w-60 h-60 rounded-full" style="border:1px solid rgba(0,229,255,0.15); opacity:.4;"></div>
+            </div>
+
+            <!-- 속도 -->
+            <div class="col-span-12 md:col-span-4 card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-lg mb-5 flex items-center justify-center" style="background:rgba(255,181,71,0.1)">
+                        <svg class="w-5 h-5" style="color:#FFB547" fill="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <div class="display h-amber num mb-2" style="font-size:60px; line-height:1;">3–5×</div>
+                    <h3 class="text-lg font-bold mb-2">더 빠른 출시</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">최대 5명이 병렬로 작업.<br>풀스택 기능도 수 분 안에.</p>
+                </div>
+            </div>
+
+            <!-- 비용 -->
+            <div class="col-span-6 md:col-span-4 card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-lg mb-5 flex items-center justify-center" style="background:rgba(180,255,76,0.1)">
+                        <svg class="w-5 h-5" style="color:#B4FF4C" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div class="display num mb-2" style="font-size:60px; line-height:1; color:#B4FF4C">30–50%</div>
+                    <h3 class="text-lg font-bold mb-2">토큰 절감</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">스마트 라우팅이 단순한 일은 Haiku 에게.<br>Opus 는 정말 필요할 때만.</p>
+                </div>
+            </div>
+
+            <!-- 무설정 -->
+            <div class="col-span-6 md:col-span-4 card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-lg mb-5 flex items-center justify-center" style="background:rgba(0,229,255,0.1)">
+                        <svg class="w-5 h-5" style="color:#00E5FF" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <div class="display h-cyan num mb-2" style="font-size:60px; line-height:1;">0</div>
+                    <h3 class="text-lg font-bold mb-2">설정 줄</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">설치하고, 셋업 한 번.<br>나머지는 자연어로 말하면 됩니다.</p>
+                </div>
+            </div>
+
+            <!-- 팀 -->
+            <div class="col-span-12 md:col-span-6 card p-8">
+                <div class="flex items-start justify-between mb-5">
+                    <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(167,139,255,0.1)">
+                        <svg class="w-5 h-5" style="color:#A78BFF" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <span class="text-xs text-gray-500 mono">v4 NEW</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">팀 중심 아키텍처</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    공유 태스크 리스트로 일을 받아 가고, 메시지로 핸드오프하며, 끝날 때까지 버티는 팀을 띄웁니다.
+                    순차 루프는 이제 그만.
+                </p>
+            </div>
+
+            <!-- 검증 -->
+            <div class="col-span-12 md:col-span-6 card p-8">
+                <div class="flex items-start justify-between mb-5">
+                    <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(255,111,176,0.1)">
+                        <svg class="w-5 h-5" style="color:#FF6FB0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <span class="text-xs text-gray-500 mono">Ralph 모드</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">검증되기 전까지 “완료” 라고 말하지 않습니다</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    architect 가 인증하는 검증 루프. 커밋 전 보안 리뷰가 자동 실행되고,
+                    “대충 되긴 하는데” 의 함정은 통과/실패 게이트로 차단합니다.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- MODES (탭)                                                       -->
+<!-- =============================================================== -->
+<section id="modes" class="py-32 px-4 relative bg-ink-800/30 border-y border-ink-500/30">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#FFB547">●</span>
+                <span class="text-gray-300">실행 모드</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-6xl mb-5">
+                4가지 모드,
+                <span class="h-amber">상황에 맞게.</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                직접 고르거나, 그냥 일을 설명하면 OMC 가 알아서 선택합니다.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-[320px_1fr] gap-6 reveal">
+            <!-- 탭 선택 -->
+            <div class="flex flex-row md:flex-col gap-2 overflow-x-auto md:overflow-visible">
+                <button class="mode-tab active flex-shrink-0 md:w-full" data-mode="autopilot" data-ga-category="mode_tab_click" data-ga-label="ko_mode_tab_autopilot">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(0,229,255,0.15)">
+                            <div class="w-3 h-3 rounded-sm" style="background:#00E5FF"></div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm">Autopilot</div>
+                            <div class="text-xs text-gray-500">기본 · 순차 실행</div>
+                        </div>
+                    </div>
+                </button>
+                <button class="mode-tab flex-shrink-0 md:w-full" data-mode="ultrawork" data-ga-category="mode_tab_click" data-ga-label="ko_mode_tab_ultrawork">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(167,139,255,0.15)">
+                            <div class="w-3 h-3 rounded-sm" style="background:#A78BFF"></div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm flex items-center gap-2">Ultrawork <span class="px-1.5 py-0.5 rounded text-[10px]" style="background:rgba(167,139,255,0.2); color:#A78BFF">3–5×</span></div>
+                            <div class="text-xs text-gray-500">최대 병렬 · <code class="mono">ulw</code></div>
+                        </div>
+                    </div>
+                </button>
+                <button class="mode-tab flex-shrink-0 md:w-full" data-mode="team" data-ga-category="mode_tab_click" data-ga-label="ko_mode_tab_team">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(255,181,71,0.15)">
+                            <div class="w-3 h-3 rounded-sm" style="background:#FFB547"></div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm">Team</div>
+                            <div class="text-xs text-gray-500">협업하는 팀</div>
+                        </div>
+                    </div>
+                </button>
+                <button class="mode-tab flex-shrink-0 md:w-full" data-mode="ralph" data-ga-category="mode_tab_click" data-ga-label="ko_mode_tab_ralph">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(180,255,76,0.15)">
+                            <div class="w-3 h-3 rounded-sm" style="background:#B4FF4C"></div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm">Ralph</div>
+                            <div class="text-xs text-gray-500">집요하게 · 검증까지</div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <!-- 탭 패널 -->
+            <div class="card p-8 min-h-[420px]">
+                <!-- Autopilot -->
+                <div class="mode-panel active" data-panel="autopilot">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-bold" style="background:rgba(0,229,255,0.15); color:#00E5FF">AUTOPILOT</span>
+                        <span class="text-xs text-gray-500">기본 모드</span>
+                    </div>
+                    <h3 class="ko-display text-3xl mb-3">처음부터 끝까지 자율 실행.</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        만들 기능을 말하기만 하세요. Autopilot 이 architect 와 함께 계획하고,
+                        executor 가 구현하고, qa-tester 가 검증하고, code-reviewer 가 점검합니다 — 전부 자동으로.
+                        OMC 의 대표 경험입니다.
+                    </p>
+                    <div class="code-block p-4 mb-4">
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span style="color:#FFB547">/autopilot</span> <span style="color:#B4FF4C">"로그인 기능이 있는 투두 앱 만들어줘"</span></code>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#00E5FF">순차</div>
+                            <div class="text-xs text-gray-500">스테이지 게이트</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#00E5FF">검증됨</div>
+                            <div class="text-xs text-gray-500">완료 전 자동 검증</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#00E5FF">손 떼고</div>
+                            <div class="text-xs text-gray-500">자리 비워도 OK</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ultrawork -->
+                <div class="mode-panel" data-panel="ultrawork">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-bold" style="background:rgba(167,139,255,0.15); color:#A78BFF">ULTRAWORK</span>
+                        <span class="text-xs text-gray-500">최대 병렬 · 단축어 <code class="mono" style="color:#A78BFF">ulw</code></span>
+                    </div>
+                    <h3 class="ko-display text-3xl mb-3">최대 병렬로 들이부어주세요.</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        프론트, 백엔드, DB, 테스트, 인프라 — OMC 가 파일 소유권을 분할하고 워커를 병렬로 실행합니다.
+                        프롬프트 앞에 <code class="mono" style="color:#A78BFF">ulw</code> 만 붙이거나
+                        <code class="mono" style="color:#A78BFF">/ultrawork</code> 를 호출하면 됩니다.
+                        풀스택 기능, 대규모 리팩토링에 최적.
+                    </p>
+                    <div class="code-block p-4 mb-4">
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span style="color:#A78BFF">/ultrawork</span> <span class="text-white">"Stripe 결제 + Postgres 풀스택 SaaS 만들어줘"</span></code>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#A78BFF">최대 병렬</div>
+                            <div class="text-xs text-gray-500">워커</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#A78BFF">분할</div>
+                            <div class="text-xs text-gray-500">파일 소유권</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#A78BFF">병합</div>
+                            <div class="text-xs text-gray-500">완료 시 자동</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team -->
+                <div class="mode-panel" data-panel="team">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-bold" style="background:rgba(255,181,71,0.15); color:#FFB547">TEAM</span>
+                        <span class="text-xs text-gray-500">협업하는 팀</span>
+                    </div>
+                    <h3 class="ko-display text-3xl mb-3">N명의 에이전트, 공유 태스크 리스트.</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        팀을 띄우면 공유 풀의 태스크를 원자적으로 가져가고, 메시지로 핸드오프하고,
+                        결과를 합쳐냅니다. 정통 멀티 에이전트 인터페이스.
+                    </p>
+                    <div class="code-block p-4 mb-4">
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span style="color:#FFB547">/team 3:executor</span> <span style="color:#B4FF4C">"/src 의 TypeScript 에러 전부 고쳐줘"</span></code>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#FFB547">원자적</div>
+                            <div class="text-xs text-gray-500">태스크 클레임</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#FFB547">메시징</div>
+                            <div class="text-xs text-gray-500">에이전트 간</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#FFB547">통합</div>
+                            <div class="text-xs text-gray-500">리드 주도</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ralph -->
+                <div class="mode-panel" data-panel="ralph">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-bold" style="background:rgba(180,255,76,0.15); color:#B4FF4C">RALPH</span>
+                        <span class="text-xs text-gray-500">집요한 지속</span>
+                    </div>
+                    <h3 class="ko-display text-3xl mb-3">architect 가 통과시킬 때까지 멈추지 않습니다.</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        성가신 버그, 위험도 높은 리팩토링에 최적. Ralph 는 계획·수정·검증을 반복하며 architect 의 사인까지 받습니다.
+                        최대 지속성으로 끝까지.
+                    </p>
+                    <div class="code-block p-4 mb-4">
+                        <code class="mono text-sm"><span class="text-gray-500">$</span> <span style="color:#B4FF4C">/ralph</span> <span class="text-white">"무중단으로 JWT 인증으로 마이그레이션해줘"</span></code>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#B4FF4C">루핑</div>
+                            <div class="text-xs text-gray-500">검증될 때까지</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#B4FF4C">architect 게이트</div>
+                            <div class="text-xs text-gray-500">사인 필수</div>
+                        </div>
+                        <div class="p-3 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold text-lg" style="color:#B4FF4C">고집</div>
+                            <div class="text-xs text-gray-500">설계된 집요함</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- AGENTS                                                           -->
+<!-- =============================================================== -->
+<section id="agents" class="py-32 px-4 relative">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#A78BFF">●</span>
+                <span class="text-gray-300">에이전트 생태계</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-6xl mb-5">
+                팀의 모든 역할에
+                <span class="h-cyan">전문가가 한 명씩.</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                이름이 있는 32명의 에이전트. 팀 우선 구조. 호출마다 Haiku / Sonnet / Opus 를 직접 지정 가능.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 reveal">
+            <!-- Architect -->
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(0,229,255,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#00E5FF"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">architect</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">시스템 설계, 영향도 분석, 검증 게이트</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(255,181,71,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#FFB547"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">executor</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">실제 구현 — 파일 작성과 편집</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(180,255,76,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#B4FF4C"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">qa-tester</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">단위/통합/E2E 테스트 작성·실행</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(167,139,255,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#A78BFF"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">code-reviewer</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">코드 품질, 안티패턴 점검</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(255,107,139,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#FF6B8B"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">security-reviewer</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">OWASP, 시크릿, 인증 검증</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(255,111,176,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#FF6FB0"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">designer</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">UI/UX, 인터페이스 다듬기</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(110,174,255,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#6EAEFF"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">explore</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">코드베이스 검색·심화 탐색</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(0,229,255,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#00E5FF"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">planner</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">전략적 계획, 인터뷰 워크플로우</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(180,255,76,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#B4FF4C"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">verifier</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">근거 기반 완료 검증</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(255,181,71,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#FFB547"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">tracer</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">증거 기반 인과 추적 디버깅</p>
+            </div>
+            <div class="card p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(167,139,255,0.2)">
+                        <div class="w-2 h-2 rounded-sm" style="background:#A78BFF"></div>
+                    </div>
+                    <span class="font-mono text-sm font-bold text-white">writer</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">README, API 문서, 주석</p>
+            </div>
+            <div class="card p-5" style="border-color: rgba(0,229,255,0.3); background: linear-gradient(180deg, rgba(0,229,255,0.04), rgba(11,16,32,0.4));">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-5 h-5 rounded flex items-center justify-center" style="background:rgba(0,229,255,0.2)">
+                        <span class="text-xs font-bold" style="color:#00E5FF">+</span>
+                    </div>
+                    <span class="font-mono text-sm font-bold" style="color:#00E5FF">+21명 더</span>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">tdd-guide, scientist, debugger, build-fixer …</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- INSTALL                                                          -->
+<!-- =============================================================== -->
+<section id="install" class="py-32 px-4 relative bg-ink-800/30 border-y border-ink-500/30">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14 reveal">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#B4FF4C">●</span>
+                <span class="text-gray-300">30초 설치</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-6xl mb-5">
+                3단계면 끝.
+                <span class="h-lime">정말 그게 다입니다.</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                Claude Code CLI 만 있으면 됩니다. 추가 의존성, 설정 파일, 빌드 단계 없음.
+            </p>
+        </div>
+
+        <div class="space-y-4 reveal">
+            <!-- Step 1 -->
+            <div class="card p-6 flex items-start gap-5">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold" style="background:rgba(0,229,255,0.15); color:#00E5FF">1</div>
+                <div class="flex-grow min-w-0">
+                    <h3 class="font-bold mb-2">플러그인 마켓플레이스 추가</h3>
+                    <p class="text-sm text-gray-500 mb-3">Claude Code 안에서 한 줄로 마켓플레이스를 추가합니다.</p>
+                    <div class="code-block p-3 flex items-center justify-between gap-3">
+                        <code class="mono text-sm text-gray-300 break-all">/plugin marketplace add Yeachan-Heo/oh-my-claudecode</code>
+                        <button class="copy-btn px-2 py-1 rounded text-xs text-gray-500 mono flex-shrink-0" data-copy="/plugin marketplace add Yeachan-Heo/oh-my-claudecode" data-ga-category="cta_click" data-ga-label="ko_install_step_1">복사</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="card p-6 flex items-start gap-5">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold" style="background:rgba(255,181,71,0.15); color:#FFB547">2</div>
+                <div class="flex-grow min-w-0">
+                    <h3 class="font-bold mb-2">oh-my-claudecode 설치</h3>
+                    <p class="text-sm text-gray-500 mb-3">마켓플레이스에서 플러그인 설치.</p>
+                    <div class="code-block p-3 flex items-center justify-between gap-3">
+                        <code class="mono text-sm text-gray-300">/plugin install oh-my-claudecode@oh-my-claudecode</code>
+                        <button class="copy-btn px-2 py-1 rounded text-xs text-gray-500 mono flex-shrink-0" data-copy="/plugin install oh-my-claudecode@oh-my-claudecode" data-ga-category="cta_click" data-ga-label="ko_install_step_2">복사</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="card card-glow p-6 flex items-start gap-5">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold" style="background:rgba(180,255,76,0.15); color:#B4FF4C">3</div>
+                <div class="flex-grow min-w-0">
+                    <h3 class="font-bold mb-2">초기 셋업 실행</h3>
+                    <p class="text-sm text-gray-500 mb-3">이 명령 한 번이면 모든 에이전트와 스킬이 등록됩니다.</p>
+                    <div class="code-block p-3 flex items-center justify-between gap-3">
+                        <code class="mono text-sm text-gray-300">/omc-setup</code>
+                        <button class="copy-btn px-2 py-1 rounded text-xs text-gray-500 mono flex-shrink-0" data-copy="/omc-setup" data-ga-category="cta_click" data-ga-label="ko_install_step_3">복사</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-sm text-gray-500 reveal">
+            <p>설치 끝났다면 <code class="mono text-white" style="background:rgba(0,229,255,0.1); padding:2px 8px; border-radius:4px;">/autopilot "원하는 기능 설명"</code> 한 줄로 첫 작업 가능.</p>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- KOREAN COMMUNITY (한국어 커뮤니티 — 시그니처 섹션)                  -->
+<!-- =============================================================== -->
+<section id="community" class="py-32 px-4 relative">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#00E5FF">◆</span>
+                <span class="text-gray-300">한국 개발자들에게</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-6xl mb-5">
+                한국에서 시작해
+                <span class="h-cyan">전 세계로.</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                만든 사람도, 초기 사용자 상당수도 한국 개발자입니다.
+                국내 커뮤니티에서 먼저 검증된 도구를, 한국어 리소스로 만나보세요.
+            </p>
+        </div>
+
+        <!-- 메이커 카드 -->
+        <div class="grid-asym mb-10 reveal">
+            <div class="card card-glow p-10 relative overflow-hidden">
+                <div class="quote-bar relative z-10">
+                    <div class="text-xs text-gray-500 uppercase tracking-widest mb-4 mono">메이커</div>
+                    <h3 class="ko-display text-3xl md:text-4xl mb-3">
+                        <span class="text-white">허예찬</span>
+                        <span class="text-gray-500 text-2xl en">(Yeachan-Heo)</span>
+                    </h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        OMC 의 메인테이너. 한국 개발자 커뮤니티의 피드백을 빠르게 반영하며,
+                        v4 의 “팀 우선” 아키텍처와 Ralph 모드 같은 핵심 기능을 직접 설계했습니다.
+                        오픈소스 기여, 한국어 이슈와 PR 모두 환영합니다.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://github.com/Yeachan-Heo" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold border transition-all"
+                           style="background: rgba(0,229,255,0.08); border-color: rgba(0,229,255,0.3); color:#00E5FF;"
+                           data-ga-category="cta_click" data-ga-label="ko_maker_github">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            @Yeachan-Heo
+                        </a>
+                        <a href="https://github.com/Yeachan-Heo/oh-my-claudecode/discussions" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold border border-ink-500 text-gray-300 hover:text-white hover:border-glow-cyan/40 transition-all"
+                           data-ga-category="cta_click" data-ga-label="ko_community_discussions">
+                            GitHub Discussions →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-rows-2 gap-6">
+                <div class="card p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(255,181,71,0.15)">
+                            <svg class="w-4 h-4" style="color:#FFB547" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.849L19.335 24 12 20.017 4.665 24 6 15.599 0 9.75l8.332-1.595z"/></svg>
+                        </div>
+                        <div class="display num text-3xl h-amber">35,000+</div>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">한국 개발자가 만든 오픈소스 중 가장 빠르게 ★을 모은 Claude Code 플러그인 가운데 하나.</p>
+                </div>
+                <div class="card p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(180,255,76,0.15)">
+                            <span class="text-lg">🇰🇷</span>
+                        </div>
+                        <div class="display text-2xl text-white">한국어 PR 환영</div>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">이슈, 문서, 번역, 한국어 스킬 — 어떤 기여든 좋습니다. 답변은 한국어로 받아요.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 한국어 리소스 큐레이션 -->
+        <div class="mb-6 reveal">
+            <div class="flex items-end justify-between mb-6">
+                <div>
+                    <h3 class="ko-display text-2xl md:text-3xl mb-2">한국어로 읽는 OMC</h3>
+                    <p class="text-sm text-gray-500">국내외 한국 개발자들이 정리한 깊이 있는 글들.</p>
+                </div>
+                <a href="https://ohmyclaudecode.com/#resources" class="text-xs text-gray-500 hover:text-white transition-colors hidden md:inline-block"
+                   data-ga-category="navigation_click" data-ga-label="ko_to_en_resources">영문 리소스 전체 보기 →</a>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 reveal">
+            <a href="https://ice-ice-bear.github.io/posts/2026-03-20-oh-my-claudecode/" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="ko_res_iceicebear">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(0,229,255,0.1); color:#00E5FF">블로그 · 한국어</span>
+                    <span class="text-xs text-gray-500 mono">2026.03</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">oh-my-claudecode (OMC) — 팀 우선 멀티 에이전트 오케스트레이션</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">v4 아키텍처를 처음부터 따라가는 본격적인 한국어 딥다이브.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>ice-ice-bear.github.io</span>
+                    <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+
+            <a href="https://blog.imseankim.com/claude-code-team-mode-multi-agent-orchestration-march-2026/" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="ko_res_seankim">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(255,181,71,0.1); color:#FFB547">블로그 · 한국어</span>
+                    <span class="text-xs text-gray-500 mono">2026.03</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code Team Mode 와 멀티 에이전트 오케스트레이션</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">실무자 관점에서 본 Team 모드의 활용 시나리오와 함정.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>blog.imseankim.com</span>
+                    <span style="color:#FFB547">→</span>
+                </div>
+            </a>
+
+            <a href="https://jeongil.dev/en/blog/trends/claude-code-agent-teams/" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="ko_res_jeongil">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(180,255,76,0.1); color:#B4FF4C">블로그 · 한국 개발자</span>
+                    <span class="text-xs text-gray-500 mono">2026</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code Agent Teams — 에이전트 생태계 정리</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">한국 개발자가 정리한 OMC 와 주변 에이전트 생태계 비교.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>jeongil.dev</span>
+                    <span style="color:#B4FF4C">→</span>
+                </div>
+            </a>
+
+            <a href="https://sonim1.com/en/blog/oh-my-claudecode" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="ko_res_sonim1">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(167,139,255,0.1); color:#A78BFF">에세이</span>
+                    <span class="text-xs text-gray-500 mono">2026</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Oh My ClaudeCode — Claude Code 의 합법적 도핑</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">OMC 를 도입하고 나서 워크플로우가 어떻게 바뀌었는지에 대한 솔직한 회고.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>sonim1.com</span>
+                    <span style="color:#A78BFF">→</span>
+                </div>
+            </a>
+
+            <a href="https://alexkerber.com/blog/elite-ai-coding-korea-claw-code" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="ko_res_alexkerber">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(255,107,139,0.1); color:#FF6B8B">해외 시선</span>
+                    <span class="text-xs text-gray-500 mono">2026</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Elite AI Coding from Korea — OMC 의 별이 폭증한 이유</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">해외 매체가 본 한국발 AI 코딩 도구의 흐름과 OMC 의 위치.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>alexkerber.com</span>
+                    <span style="color:#FF6B8B">→</span>
+                </div>
+            </a>
+
+            <a href="https://min.news/en/tech/855a1ab35502eaa339eaf114614efcbd.html" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="ko_res_minnews">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(0,229,255,0.1); color:#00E5FF">입문 가이드</span>
+                    <span class="text-xs text-gray-500 mono">2026</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">초보자를 위한 oh-my-claudecode 시작 가이드</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">설치부터 첫 autopilot 까지, 처음 OMC 를 만나는 개발자를 위한 안내.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>min.news</span>
+                    <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- FAQ                                                              -->
+<!-- =============================================================== -->
+<section id="faq" class="py-32 px-4 relative bg-ink-800/30 border-y border-ink-500/30">
+    <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-14 reveal">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#FFB547">●</span>
+                <span class="text-gray-300">자주 묻는 질문</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-5xl mb-5">짧은 답변, <span class="h-amber">긴 안심.</span></h2>
+        </div>
+        <div class="space-y-3 reveal">
+            <details class="faq-item">
+                <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold">
+                    <span>설치 외에 추가 설정이 정말 필요 없나요?</span>
+                    <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400 leading-relaxed">
+                    네. <code class="mono text-white" style="background:rgba(0,229,255,0.1); padding:1px 6px; border-radius:4px;">/omc-setup</code> 한 번이면 에이전트·스킬·훅이 모두 등록됩니다. 자연어로 일을 설명하면 OMC 가 적합한 모드를 골라요. <code class="mono">autopilot</code> · <code class="mono">ralph</code> 같은 키워드는 파워 유저용 단축어일 뿐, 외울 의무는 없습니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold">
+                    <span>Max / Pro 구독이 필요한가요? Anthropic API 키만 있어도 되나요?</span>
+                    <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400 leading-relaxed">
+                    Claude Code CLI 가 깔려 있다면 둘 중 하나만 있으면 됩니다. Claude Max / Pro 구독이거나 Anthropic API 키.
+                    OMC 는 그 위에 얹히는 오케스트레이션 레이어라 별도 결제 없이 그대로 동작합니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold">
+                    <span>토큰 절감은 어떤 원리로 이루어지나요?</span>
+                    <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400 leading-relaxed">
+                    스마트 모델 라우팅 덕입니다. 단순 검색·문서 작성 같은 일에는 Haiku, 복잡한 추론에는 Opus 를 자동 배정합니다.
+                    결과적으로 같은 결과를 30–50% 적은 토큰으로 — 품질을 떨어뜨리지 않으면서요.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold">
+                    <span>실무·프로덕션 코드에 써도 안전한가요?</span>
+                    <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400 leading-relaxed">
+                    네. security-reviewer 에이전트가 OWASP Top 10 · 시크릿 검사 · 안전하지 않은 패턴을 점검하고,
+                    architect 검증과 “완료 전 검증” 프로토콜이 게이트를 만듭니다.
+                    그래도 모든 자동 생성 코드는 사람의 PR 리뷰를 거치는 걸 권장합니다 — OMC 가 그걸 더 쉽게 만들어 주는 도구입니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold">
+                    <span>한국어로 프롬프트를 줘도 잘 되나요?</span>
+                    <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400 leading-relaxed">
+                    그럼요. <code class="mono text-white" style="background:rgba(0,229,255,0.1); padding:1px 6px; border-radius:4px;">/autopilot "로그인이 있는 투두 앱 만들어줘"</code> 처럼 그냥 한국어로 말해도 동일하게 동작합니다.
+                    명령어·키워드(autopilot, ralph, ulw)만 영문이고, 인자는 어떤 언어로 줘도 됩니다.
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="cursor-pointer p-5 flex items-center justify-between font-semibold">
+                    <span>Autopilot 과 Ultrawork 의 차이는?</span>
+                    <svg class="faq-icon w-5 h-5 text-gray-500 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-400 leading-relaxed">
+                    Autopilot 은 단계 게이트가 있는 순차 자율 실행입니다. Ultrawork 는 거기에 최대 병렬을 더한 것 —
+                    프롬프트 앞에 <code class="mono">ulw</code> 만 붙이면 풀스택 기능이나 대규모 리팩토링이 3–5× 빠르게 끝납니다.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- CTA                                                              -->
+<!-- =============================================================== -->
+<section class="py-32 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-50"></div>
+    <div class="aurora-bg"></div>
+    <div class="relative max-w-4xl mx-auto text-center reveal">
+        <h2 class="ko-display text-4xl md:text-6xl mb-6">
+            Claude Code 를
+            <span class="h-cyan">팀으로 바꿔봅니다.</span>
+        </h2>
+        <p class="text-lg text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+            35,000+ 명의 개발자가 이미 합류했습니다.
+            설치는 30초. 손해 볼 게 없습니다.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="#install" class="btn-primary px-8 py-4 rounded-xl text-base inline-flex items-center justify-center gap-2"
+               data-ga-category="cta_click" data-ga-label="ko_final_cta_install">
+                지금 설치하기
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" rel="noopener"
+               class="btn-secondary px-8 py-4 rounded-xl text-base inline-flex items-center justify-center gap-2"
+               data-ga-category="cta_click" data-ga-label="ko_final_cta_github">
+                GitHub 에서 보기
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
+<!-- FOOTER                                                           -->
+<!-- =============================================================== -->
+<footer class="border-t border-ink-500/40 py-12 px-4 bg-ink-900">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-10 mb-10">
+            <div class="md:col-span-2">
+                <a href="/ko/" class="flex items-center gap-2.5 font-bold mb-4">
+                    <span class="text-2xl">⚡</span>
+                    <span class="text-[17px]"><span style="color:#00E5FF">oh-my-</span>claudecode</span>
+                    <span class="ko-mark ml-1">KO</span>
+                </a>
+                <p class="text-sm text-gray-500 leading-relaxed max-w-md">
+                    Claude Code 를 위한 무설정 멀티 에이전트 오케스트레이션.
+                    32명의 전문가, 40+ 스킬. 35,000+ 명이 쓰는 MIT 라이선스 오픈소스.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider text-gray-400">제품</h4>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="#features" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_footer_features">기능</a></li>
+                    <li><a href="#modes" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_footer_modes">실행 모드</a></li>
+                    <li><a href="#agents" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_footer_agents">에이전트</a></li>
+                    <li><a href="#install" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_footer_install">설치</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider text-gray-400">리소스</h4>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" rel="noopener" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_footer_github">GitHub</a></li>
+                    <li><a href="https://github.com/Yeachan-Heo/oh-my-claudecode/releases" target="_blank" rel="noopener" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_footer_releases">릴리즈 노트</a></li>
+                    <li><a href="https://github.com/Yeachan-Heo/oh-my-claudecode/discussions" target="_blank" rel="noopener" class="hover:text-white transition-colors" data-ga-category="navigation_click" data-ga-label="ko_footer_discussions">Discussions</a></li>
+                    <li><a href="/" class="hover:text-white transition-colors" data-ga-category="language_switch" data-ga-label="ko_footer_to_en">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-ink-500/40 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-600">
+            <p>MIT License · © 2026 oh-my-claudecode contributors. Made by <a href="https://github.com/Yeachan-Heo" target="_blank" rel="noopener" class="text-gray-400 hover:text-white" data-ga-category="cta_click" data-ga-label="ko_footer_maker">@Yeachan-Heo</a> in Korea.</p>
+            <p class="flex items-center gap-2">
+                <span class="pill-dot live"></span>
+                <span>v4.14.4 · 최신 버전</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- =============================================================== -->
+<!-- SCRIPTS                                                          -->
+<!-- =============================================================== -->
+<script>
+    // 네비 스크롤 효과
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 24) nav.classList.add('nav-scrolled');
+        else nav.classList.remove('nav-scrolled');
+    });
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // 모드 탭 토글
+    document.querySelectorAll('.mode-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            const mode = tab.dataset.mode;
+            document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.mode-panel').forEach(p => p.classList.remove('active'));
+            tab.classList.add('active');
+            document.querySelector(`.mode-panel[data-panel="${mode}"]`).classList.add('active');
+        });
+    });
+
+    // 복사 버튼
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const text = btn.dataset.copy;
+            try {
+                await navigator.clipboard.writeText(text);
+                const original = btn.textContent;
+                btn.textContent = '복사됨';
+                btn.classList.add('copied');
+                setTimeout(() => { btn.textContent = original; btn.classList.remove('copied'); }, 1400);
+            } catch (e) { /* noop */ }
+        });
+    });
+
+    // 히어로 터미널 타이핑
+    (function () {
+        const cmd = '/autopilot "로그인이 있는 투두 앱 만들어줘"';
+        const target = document.getElementById('heroType1');
+        const cursor = document.getElementById('heroCursor1');
+        let i = 0;
+        function type() {
+            if (i <= cmd.length) {
+                target.textContent = cmd.slice(0, i);
+                i++;
+                setTimeout(type, 28);
+            } else {
+                cursor.style.display = 'none';
+                ['heroLine2','heroLine3','heroLine4','heroLine5','heroLine6','heroLine7'].forEach((id, idx) => {
+                    setTimeout(() => {
+                        const el = document.getElementById(id);
+                        if (el) el.style.opacity = '1';
+                    }, 380 * (idx + 1));
+                });
+            }
+        }
+        setTimeout(type, 700);
+    })();
+</script>
+
+</body>
+</html>

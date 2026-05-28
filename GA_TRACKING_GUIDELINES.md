@@ -2,6 +2,62 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-05-28 Korean Landing Page (`/ko/`) + Language Toggle
+
+**New page**: `/ko/index.html` — dedicated Korean landing page using Pretendard typography, asymmetric grid, and Korean-market copy (maker spotlight on Yeachan-Heo, curated KR resources).
+**Hreflang**: bidirectional `en` / `ko` / `x-default` `<link rel="alternate">` on both pages.
+**Main nav**: new `KO` toggle (label `en_to_ko`) sits before the GitHub star badge.
+
+### New Event Category
+- `language_switch` — fires when users switch between English and Korean pages
+
+### New Labels on Main `index.html` (1 added)
+- `en_to_ko` — main nav KO toggle (category: `language_switch`)
+
+### New Labels on `/ko/index.html` (41 added)
+All Korean page labels are prefixed with `ko_` to keep reports cleanly segmentable.
+
+**Language switch (3)**
+- `ko_to_en` — nav EN toggle
+- `ko_footer_to_en` — footer English link
+- `ko_to_en_resources` — community section link to main resources
+
+**Navigation (8)**
+- `ko_nav_logo`, `ko_nav_why`, `ko_nav_features`, `ko_nav_modes`, `ko_nav_agents`, `ko_nav_community`, `ko_nav_faq`, `ko_nav_github_stars`
+
+**Hero (5)**
+- `ko_hero_version_badge`, `ko_hero_author_link`, `ko_hero_cta_install`, `ko_hero_cta_github`, `ko_nav_install`
+
+**Mode tabs (4)**
+- `ko_mode_tab_autopilot`, `ko_mode_tab_ultrawork`, `ko_mode_tab_team`, `ko_mode_tab_ralph`
+
+**Install steps (3)**
+- `ko_install_step_1`, `ko_install_step_2`, `ko_install_step_3`
+
+**Community section (2)**
+- `ko_maker_github`, `ko_community_discussions`
+
+**Curated Korean resources (6)**
+- `ko_res_iceicebear` — ice-ice-bear.github.io OMC deep dive (KR)
+- `ko_res_seankim` — blog.imseankim.com Team Mode analysis (KR)
+- `ko_res_jeongil` — jeongil.dev agent ecosystem overview (KR developer)
+- `ko_res_sonim1` — sonim1.com "Legal Doping" essay
+- `ko_res_alexkerber` — alexkerber.com Korea-focused outside perspective
+- `ko_res_minnews` — min.news beginner guide
+
+**Final CTA (2)**
+- `ko_final_cta_install`, `ko_final_cta_github`
+
+**Footer (8)**
+- `ko_footer_features`, `ko_footer_modes`, `ko_footer_agents`, `ko_footer_install`, `ko_footer_github`, `ko_footer_releases`, `ko_footer_discussions`, `ko_footer_maker`
+
+### Why a separate page rather than client-side i18n?
+- SEO: dedicated URL with `lang="ko"`, Korean OG/Twitter meta, and `inLanguage: ko-KR` JSON-LD ranks better in Korean SERPs.
+- Performance: only one font payload per visitor — Pretendard for `/ko/`, no penalty on `/`.
+- Copy quality: lets Korean copy diverge from a literal translation (different headlines, different proof points, dedicated maker/community section).
+
+---
+
 ## 🆕 2026-05-19 Star Bump
 
 **Version**: v4.14.0 (unchanged)
