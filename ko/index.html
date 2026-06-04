@@ -347,6 +347,18 @@
             border-color: rgba(0,229,255,0.35);
             box-shadow: 0 15px 40px -10px rgba(0,0,0,0.4);
         }
+
+        /* === 후기 인용 부호 === */
+        .quote-mark {
+            font-family: 'Sora', sans-serif;
+            font-size: 80px;
+            line-height: 1;
+            color: rgba(0, 229, 255, 0.15);
+            position: absolute;
+            top: 20px;
+            left: 24px;
+            font-weight: 800;
+        }
     </style>
 </head>
 <body class="relative">
@@ -1041,6 +1053,89 @@
 </section>
 
 <!-- =============================================================== -->
+<!-- TESTIMONIALS                                                     -->
+<!-- =============================================================== -->
+<section id="testimonials" class="py-32 px-4 relative">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+            <div class="pill mb-6 mx-auto" style="width: fit-content;">
+                <span style="color:#FFB547">★</span>
+                <span class="text-gray-300">커뮤니티의 사랑</span>
+            </div>
+            <h2 class="ko-display text-4xl md:text-6xl mb-5">
+                개발자들은
+                <span class="h-amber">이렇게 말합니다.</span>
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">이미 발행된 100편 이상의 OMC 아티클에서 발췌했습니다.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 reveal">
+            <!-- Quote 1 -->
+            <a href="https://medium.com/@joe.njenga/i-tested-oh-my-claude-code-the-only-agents-swarm-orchestration-you-need-7338ad92c00f" target="_blank" rel="noopener"
+               class="res-card card p-8 relative block"
+               data-ga-category="testimonial_click" data-ga-label="testimonial_joe_njenga">
+                <div class="quote-mark">"</div>
+                <p class="relative z-10 text-gray-300 mb-6 leading-relaxed pt-4">
+                    여러분에게 필요한 유일한 에이전트 스웜 오케스트레이션입니다. Claude Code 경험이 많지 않은
+                    개발자도 멀티 에이전트 코딩을 손쉽게 시작할 수 있게 해줍니다.
+                </p>
+                <div class="flex items-center gap-3 pt-4 border-t border-ink-500/40">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-glow-cyan to-glow-purple flex items-center justify-center font-bold text-sm text-ink-900">JN</div>
+                    <div>
+                        <div class="font-bold text-sm">Joe Njenga</div>
+                        <div class="text-xs text-gray-500">Medium · 실사용 리뷰</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Quote 2 -->
+            <a href="https://addyosmani.com/blog/code-agent-orchestra/" target="_blank" rel="noopener"
+               class="res-card card p-8 relative block"
+               data-ga-category="testimonial_click" data-ga-label="testimonial_addy_osmani">
+                <div class="quote-mark">"</div>
+                <p class="relative z-10 text-gray-300 mb-6 leading-relaxed pt-4">
+                    공유 태스크 리스트와 에이전트 간 메시징으로 병렬 작업하는 전문화된 팀원들.
+                    현대 AI 코딩에 필요한 오케스트레이션 패턴입니다.
+                </p>
+                <div class="flex items-center gap-3 pt-4 border-t border-ink-500/40">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-glow-amber to-glow-coral flex items-center justify-center font-bold text-sm text-ink-900">AO</div>
+                    <div>
+                        <div class="font-bold text-sm">Addy Osmani</div>
+                        <div class="text-xs text-gray-500">Google · The Code Agent Orchestra</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Quote 3 -->
+            <a href="https://alexkerber.com/blog/elite-ai-coding-korea-claw-code" target="_blank" rel="noopener"
+               class="res-card card p-8 relative block"
+               data-ga-category="testimonial_click" data-ga-label="testimonial_alex_kerber">
+                <div class="quote-mark">"</div>
+                <p class="relative z-10 text-gray-300 mb-6 leading-relaxed pt-4">
+                    32개 전문 에이전트로 3-5배 속도 향상과 30-50% 토큰 절감을 제공하는
+                    제로 컨피그 오케스트레이션 레이어. GitHub 트렌딩 1위를 기록했습니다.
+                </p>
+                <div class="flex items-center gap-3 pt-4 border-t border-ink-500/40">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-glow-purple to-glow-pink flex items-center justify-center font-bold text-sm text-ink-900">AK</div>
+                    <div>
+                        <div class="font-bold text-sm">Alex Kerber</div>
+                        <div class="text-xs text-gray-500">100K Stars in 24 Hours 분석</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="text-center mt-10">
+            <a href="#community" class="inline-flex items-center gap-2 text-sm font-semibold text-glow-cyan hover:text-white transition-colors"
+               data-ga-category="navigation_click" data-ga-label="testimonial_see_all">
+                한국어 리소스 전체 보기
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- =============================================================== -->
 <!-- INSTALL                                                          -->
 <!-- =============================================================== -->
 <section id="install" class="py-32 px-4 relative bg-ink-800/30 border-y border-ink-500/30">
@@ -1277,6 +1372,36 @@
                 <div class="flex items-center gap-2 text-xs text-gray-500">
                     <span>min.news</span>
                     <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+
+            <a href="https://gyuha.com/post/2026/2026-03-04-oh-my-claudecode/" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="gyuha_omc_intro">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(0,229,255,0.1); color:#00E5FF">블로그 · 한국어</span>
+                    <span class="text-xs text-gray-500 mono">2026.03</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">oh-my-claudecode: Claude Code를 위한 멀티 에이전트 오케스트레이션 플러그인</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">설치부터 실행 모드, 매직 키워드까지 차근차근 정리한 한국어 소개 글.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>gyuha.com</span>
+                    <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+
+            <a href="https://hwani.net/417" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="hwani_omc_intro">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(255,181,71,0.1); color:#FFB547">블로그 · 한국어</span>
+                    <span class="text-xs text-gray-500 mono">2026</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code를 "멀티 에이전트"로 강화하는 플러그인, OMC 소개</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">OMC 의 구조와 에이전트 구성, 일상 활용 패턴을 다룬 한국어 입문 글.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>hwani.net</span>
+                    <span style="color:#FFB547">→</span>
                 </div>
             </a>
         </div>

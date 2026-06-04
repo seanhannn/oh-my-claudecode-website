@@ -37,13 +37,18 @@ All Korean page labels are prefixed with `ko_` to keep reports cleanly segmentab
 **Community section (2)**
 - `ko_maker_github`, `ko_community_discussions`
 
-**Curated Korean resources (6)**
+**Curated Korean resources (8)**
 - `ko_res_iceicebear` — ice-ice-bear.github.io OMC deep dive (KR)
 - `ko_res_seankim` — blog.imseankim.com Team Mode analysis (KR)
 - `ko_res_jeongil` — jeongil.dev agent ecosystem overview (KR developer)
 - `ko_res_sonim1` — sonim1.com "Legal Doping" essay
 - `ko_res_alexkerber` — alexkerber.com Korea-focused outside perspective
 - `ko_res_minnews` — min.news beginner guide
+- `gyuha_omc_intro` — gyuha.com OMC intro walkthrough (KR, shared label with EN page)
+- `hwani_omc_intro` — hwani.net OMC architecture intro (KR, shared label with EN page)
+
+**Testimonials (shared labels with EN page)**
+- The `/ko/` testimonials section reuses `testimonial_joe_njenga`, `testimonial_addy_osmani`, `testimonial_alex_kerber`, and `testimonial_see_all` so analytics aggregate across both languages.
 
 **Final CTA (2)**
 - `ko_final_cta_install`, `ko_final_cta_github`
