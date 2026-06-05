@@ -47,6 +47,9 @@ All Korean page labels are prefixed with `ko_` to keep reports cleanly segmentab
 - `gyuha_omc_intro` — gyuha.com OMC intro walkthrough (KR, shared label with EN page)
 - `hwani_omc_intro` — hwani.net OMC architecture intro (KR, shared label with EN page)
 
+**English archive additions (EN page only)**
+- `vibecodinghub_omc_review` — vibecodinghub.org OMC review (Jun 2026)
+
 **Testimonials (shared labels with EN page)**
 - The `/ko/` testimonials section reuses `testimonial_joe_njenga`, `testimonial_addy_osmani`, `testimonial_alex_kerber`, and `testimonial_see_all` so analytics aggregate across both languages.
 
