@@ -158,6 +158,7 @@ No new resource labels this round — focused on version sync.
 **Star count**: 30,300 → **32,400**
 
 ### New Resource Labels (5 added, 108 total hidden articles)
+- `starlog_omc_pipelines` — Starlog: orchestrating multi-agent teams with staged pipeline workflows (May 2026)
 - `andrewooo_omc_review` — andrew.ooo OMC multi-agent review (Apr 2026)
 - `codex_danielvaughan_ecosystem` — Daniel Vaughan multi-agent ecosystem (Apr 2026)
 - `mejba_top10_skills_plugins` — Engr Mejba Ahmed top 10 plugins/skills/CLIs (2026)
