@@ -106,6 +106,19 @@ No new resource labels this round — focused on version sync.
 
 ---
 
+## 🆕 2026-06-10 v4.14.6 + Orchestration Guides
+
+**Version bump**: v4.14.5 → **v4.14.6** (tmux CLI workers — claude / codex / gemini / grok)
+**Star count**: 36.1k (live-fetched via GitHub API)
+
+### New Resource Labels (2 added)
+- `alexop_deterministic_workflows` — alexop.dev deep dive on deterministic multi-agent workflow orchestration
+- `hidekazukonishi_subagents_guide` — hidekazu-konishi.com guide on Claude Code subagents & orchestration
+
+> Korean page (`ko/index.html`) mirrored the version bump only — its resource section curates Korean-language resources, so these two non-Korean guides have no matching home there. Same GA labels are reused (no `_ko` variants).
+
+---
+
 ## 🆕 2026-05-11 Late: 2 More Community Resources
 
 **Version**: v4.13.7 (unchanged)
