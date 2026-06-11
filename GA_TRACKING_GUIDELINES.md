@@ -106,6 +106,18 @@ No new resource labels this round — focused on version sync.
 
 ---
 
+## 🆕 2026-06-11: June News Roundup
+
+**Version**: v4.14.6 (unchanged)
+**Star count**: live-fetched via GitHub API (unchanged)
+
+### New Resource Labels (1 added)
+- `meanceo_claude_code_news_june2026` — Mean.ceo Claude Code News June 2026 (Startup Edition)
+
+> English-language news roundup — not mirrored into `ko/index.html` (Korean page curates Korean-language resources only).
+
+---
+
 ## 🆕 2026-06-10 v4.14.6 + Orchestration Guides
 
 **Version bump**: v4.14.5 → **v4.14.6** (tmux CLI workers — claude / codex / gemini / grok)
