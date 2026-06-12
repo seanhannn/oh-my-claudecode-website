@@ -106,6 +106,20 @@ No new resource labels this round — focused on version sync.
 
 ---
 
+## 🆕 2026-06-12: Dynamic Workflows Coverage
+
+**Version**: v4.14.6 (unchanged)
+**Star count**: live-fetched via GitHub API (unchanged)
+
+### New Resource Labels (3 added)
+- `anthropic_dynamic_workflows` — official Anthropic blog on dynamic workflows in Claude Code
+- `infoq_dynamic_workflows` — InfoQ news on dynamic workflows for parallel agent coordination
+- `zyte_agentic_setup` — Zyte engineering practitioner agentic coding setup walkthrough
+
+> All three are English-language resources — not mirrored into `ko/index.html` (Korean page curates Korean-language resources only).
+
+---
+
 ## 🆕 2026-06-11: June News Roundup
 
 **Version**: v4.14.6 (unchanged)
