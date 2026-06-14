@@ -2,6 +2,18 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-06-14 EN + KO Resource Refresh
+
+Repo already synced to v4.14.6 / 36k+ stars (star counts auto-fetch live via GitHub API, `data-gh-stars`). This pass added curated resources to both pages.
+
+### New Labels on Main `index.html` (1 added)
+- `marc0_200_agent_swarm` — marc0.dev "Claude Opus 4.8 /ultracode: I Ran a 200-Agent Swarm" (featured, visible grid)
+
+### New Labels on `/ko/index.html` (3 added)
+- `ko_res_roboco` — roboco.io "Claude Code 를 '팀'으로 쓰는 플러그인" (정도현, KR)
+- `ko_res_cmaven` — cmaven.github.io OMC multi-agent orchestration work notes (KR)
+- `ko_res_tobycodex` — codex.epril.com "oh-my-claudecode 개발 가이드" (Toby's Codex, KR)
+
 ## 🆕 2026-05-28 Korean Landing Page (`/ko/`) + Language Toggle
 
 **New page**: `/ko/index.html` — dedicated Korean landing page using Pretendard typography, asymmetric grid, and Korean-market copy (maker spotlight on Yeachan-Heo, curated KR resources).
