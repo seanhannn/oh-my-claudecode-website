@@ -2,6 +2,13 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-06-18 Chinese-language Guide
+
+Repo unchanged (v4.14.7 / 36.6k stars, live-fetched). Added one international (Chinese) community guide to the EN page only — the KO page curates Korean-audience resources and defers the full international catalog to EN, so no KO mirror for this card.
+
+### New Labels on Main `index.html` (1 added)
+- `weiruyi_omc_guide_zh` — weiruyi.github.io (Lance/RuyiWei) "oh-my-claudecode 插件指南", in-depth Chinese guide to OMC skills (Jun 2026)
+
 ## 🆕 2026-06-14 EN + KO Resource Refresh
 
 Repo already synced to v4.14.6 / 36k+ stars (star counts auto-fetch live via GitHub API, `data-gh-stars`). This pass added curated resources to both pages.
