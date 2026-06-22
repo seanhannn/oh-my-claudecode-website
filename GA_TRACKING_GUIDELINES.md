@@ -2,6 +2,13 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-06-22 Related Project: Oh My Clawd
+
+Repo unchanged (v4.14.7 / 36.7k stars, live-fetched). Added one related-project card (companion UI built on OMC) to the EN page only — language-neutral, but KO has no related-projects section and defers the full catalog to EN, so no KO mirror.
+
+### New Labels on Main `index.html` (1 added)
+- `ohmyclawd_companion_ui` — oh-my-clawd.cc, MIT-licensed companion UI built on top of oh-my-claudecode (Jun 2026)
+
 ## 🆕 2026-06-18 Chinese-language Guide
 
 Repo unchanged (v4.14.7 / 36.6k stars, live-fetched). Added one international (Chinese) community guide to the EN page only — the KO page curates Korean-audience resources and defers the full international catalog to EN, so no KO mirror for this card.
