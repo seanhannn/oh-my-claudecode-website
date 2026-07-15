@@ -75,6 +75,7 @@ All Korean page labels are prefixed with `ko_` to keep reports cleanly segmentab
 - `velog_sammy_200guide` — velog.io/@sammy0329 spec-kit vs Everything Claude Code vs OMC guide (KR, shared label with EN page, Feb 2026)
 - `gpters_omc_week_review` — gpters.org 윤누리 week-long hands-on with OMC's 4 core modes (KR, shared label with EN page, Apr 2026)
 - `soliloquiess_omc_guide` — soliloquiess.github.io 17-section OMC orchestration reference (KR, shared label with EN page, Jun 2026)
+- `ko_res_a2amcp` — a2a-mcp.org Korean OMC explainer (KO page only; EN page has the English original as `a2amcp_what_is_omc`, Apr 2026)
 
 **English archive additions (EN page only)**
 - `vibecodinghub_omc_review` — vibecodinghub.org OMC review (Jun 2026)
