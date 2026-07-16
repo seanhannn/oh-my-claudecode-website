@@ -82,6 +82,7 @@ All Korean page labels are prefixed with `ko_` to keep reports cleanly segmentab
 - `cmaven_omc_review` — cmaven.github.io "Oh My Claude (omc)" hands-on working notes (Mar 2026; KR page has its own earlier card as `ko_res_cmaven`)
 - `marktechpost_25features` — marktechpost.com "Claude Code Guide 2026: 25 Features" (Jun 2026)
 - `mollick_what_comes_next` — oneusefulthing.org Ethan Mollick "Claude Code and What Comes Next" (Jan 2026)
+- `eesel_multiagent_guide` — eesel.ai "Claude Code Multiple Agent Systems: Complete 2026 Guide" (features OMC by name, Jun 2026)
 
 **Testimonials (shared labels with EN page)**
 - The `/ko/` testimonials section reuses `testimonial_joe_njenga`, `testimonial_addy_osmani`, `testimonial_alex_kerber`, and `testimonial_see_all` so analytics aggregate across both languages.
