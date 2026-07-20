@@ -240,6 +240,30 @@ No new resource labels this round — focused on version sync.
 
 ---
 
+## 🆕 2026-07-20 Resource Refresh
+
+**Version**: v4.15.4 (unchanged — site already matched upstream CHANGELOG)
+**Hidden article count**: 126 → **136**
+
+### New Resource Labels (10 added)
+- `rywalker_omc_research` — Ry Walker analyst profile of OMC (Jun 2026)
+- `tilnote_omc_korean` — TILNOTE Korean OMC automation guide (Feb 2026) — **also used on `ko/index.html`**
+- `totalum_subagents_playbook` — Totalum subagents production playbook (Jun 2026)
+- `claudefast_teams_best_practices` — ClaudeFast agent teams best practices & troubleshooting
+- `mindstudio_workflows_vs_teams` — Dynamic Workflows vs Agent Teams vs Sub-Agents (Jun 2026)
+- `developersdigest_dynamic_workflows` — Developers Digest dynamic workflows complete guide
+- `claudeworld_what_is_workflow` — ClaudeWorld "What Is a Workflow?" explainer
+- `blakecrosley_cli_complete_guide` — Claude Code CLI complete guide (hooks, MCP, skills)
+- `ayautomate_best_plugins` — ayautomate 10 best Claude Code plugins (2026)
+- `nimbalyst_plugins_guide` — Nimbalyst Claude Code plugins 2026 guide
+
+### Bilingual note
+`tilnote_omc_korean` is the only label shared across `index.html` and `ko/index.html` in this
+batch. Per policy the Korean page reuses the **identical** label so GA4 aggregates both
+languages under one event — do not create a `_ko` variant.
+
+---
+
 ## 🆕 2026-04-21 README Alignment Update
 
 **Version bump**: v4.13.0 → **v4.13.1** (Cursor IDE Support & Bug Fixes)
