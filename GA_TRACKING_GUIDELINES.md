@@ -240,6 +240,33 @@ No new resource labels this round — focused on version sync.
 
 ---
 
+## 🆕 2026-07-21 Resource Refresh
+
+**Version**: v4.15.4 (unchanged — upstream CHANGELOG still shows v4.15.4, maintenance-only release)
+**Hidden article count**: 136 → **144**
+
+### New Resource Labels (8 added)
+- `kwag93_omc_onboarding_guide` — Korean Claude Code onboarding course, OMC chapter — **also used on `ko/index.html`**
+- `firecrawl_best_skills` — Firecrawl "Best Claude Code Skills to Try in 2026" (Jul 2026)
+- `openaitoolshub_workflow_examples` — Jim Liu, workflows across 12 repos (May 2026)
+- `atcyrus_swarm_explained` — Connor Turland, swarm/agent teams explained (Feb 2026)
+- `claudedirectory_workflow_builder` — Claude Directory workflow builder skill (Jul 2026)
+- `github_matrixy_swarm_orchestration` — MaTriXy/claude-swarm-orchestration repo
+- `gist_kieran_swarm_skill` — Kieran Klaassen swarm orchestration skill gist
+- `github_alirezarezvani_claude_skills` — alirezarezvani/claude-skills (345 skills)
+
+### Near-duplicate labels — do not confuse
+These pairs point at **different URLs** on the same domain and are intentionally separate events:
+- `firecrawl_top10_plugins` (`/blog/best-claude-code-plugins`) vs `firecrawl_best_skills` (`/blog/best-claude-code-skills`)
+- `claudedirectory_best_plugins` (`/blog/...`) vs `claudedirectory_workflow_builder` (`/skills/...`)
+- `gist_multiagent_system` (gist `d2b3556…`) vs `gist_kieran_swarm_skill` (gist `4f2aba8…`)
+
+### Bilingual note
+`kwag93_omc_onboarding_guide` is the only label shared across both pages in this batch —
+identical on `index.html` and `ko/index.html` so GA4 aggregates the two languages.
+
+---
+
 ## 🆕 2026-07-20 Resource Refresh
 
 **Version**: v4.15.4 (unchanged — site already matched upstream CHANGELOG)
