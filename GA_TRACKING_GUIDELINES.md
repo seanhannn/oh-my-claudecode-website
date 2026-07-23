@@ -2,6 +2,22 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-07-23 v4.15.7 Sync + 5 New Resources
+
+**Version bump**: v4.15.4 → **v4.15.7** (hero badge, footer, JSON-LD `softwareVersion` on EN; hero badge + footer on KO). v4.15.7 is a bug-fix release (tmux-safe session names, worktree fail-closed, jira-cli `--raw`, Windows timeout split) — no feature/agent/keyword section changes needed.
+
+### New Labels on Main `index.html` (5 added, hidden `#more-articles` grid; count 144 → 149)
+- `tembo_multiagent_guide` — tembo.io "Claude Code Multi-Agent Orchestration: 2026 Guide" (Jul 2026)
+- `meanceo_claude_code_news_july2026` — Mean.ceo Claude Code News July 2026 (Startup Edition)
+- `designrevision_code_review` — designrevision.com "Claude Code for Code Review: Best Plugins & Skills" (Jul 2026)
+- `halallens_agentic_coding` — halallens.no "Agentic Coding in 2026" complete guide (Jun 2026)
+- `gpters_agent_selection_guide` — gpters.org AI 코딩 에이전트 선택 가이드, hands-on comparison (KR, shared label with KO page)
+
+### New Labels on `/ko/index.html` (1 added)
+- `gpters_agent_selection_guide` — same card mirrored into the Korean curated list (shared label, no `_ko` variant)
+
+> The four English-language articles are EN page only — the KO page curates Korean-language resources and defers the full catalog to EN.
+
 ## 🆕 2026-06-22 Related Project: Oh My Clawd
 
 Repo unchanged (v4.14.7 / 36.7k stars, live-fetched). Added one related-project card (companion UI built on OMC) to the EN page only — language-neutral, but KO has no related-projects section and defers the full catalog to EN, so no KO mirror.
