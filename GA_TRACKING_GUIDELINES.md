@@ -2,6 +2,17 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-07-28 3 New Resources
+
+**Version check**: repo latest release is still **v4.15.7** (2026-07-23) — site already in sync, no version/stats/agents/keywords changes needed.
+
+### New Labels on Main `index.html` (3 added, hidden `#more-articles` grid; count 149 → 152)
+- `similarlabs_claude_code_guide` — similarlabs.com "How to Use Claude Code in 2026: The Ultimate Tutorial & Guide" (Mar 2026)
+- `devto_ayyazzafar_beginners_2026` — DEV.to Ayyaz Zafar "Claude Code Tutorial for Beginners 2026: From Installation to Your First Project" (Jan 2026)
+- `systemprompt_best_plugins_2026` — systemprompt.io "Best Claude Code Plugins 2026" curated guide (Mar 2026)
+
+> All three are English-language articles — EN page only, per the standing rule that the KO page curates Korean-language resources and defers the full catalog to EN.
+
 ## 🆕 2026-07-23 v4.15.7 Sync + 5 New Resources
 
 **Version bump**: v4.15.4 → **v4.15.7** (hero badge, footer, JSON-LD `softwareVersion` on EN; hero badge + footer on KO). v4.15.7 is a bug-fix release (tmux-safe session names, worktree fail-closed, jira-cli `--raw`, Windows timeout split) — no feature/agent/keyword section changes needed.
