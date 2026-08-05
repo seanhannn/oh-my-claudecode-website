@@ -2,6 +2,61 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-08-05 16 New Resources + Star Count Refresh
+
+**Version check**: repo latest release is still **v4.15.7** (2026-07-23, published before this refresh) — site hero badge, footer, and JSON-LD `softwareVersion` already in sync on both pages. No agent/skill/keyword/mode changes needed.
+
+**Star count refresh**: upstream is at **38,343** stars (was displayed as 36,000+ / 35984). Updated on both pages: `36,000+` → `38,000+`, JSON-LD `ratingCount` `35984` → `38343`, `data-count` and the `36k` stat → `38k`. These are the static fallbacks behind the `data-gh-stars` live-fetch attributes.
+
+**⚠️ Hidden article counter corrected**: the static `#more-articles-count` span had drifted out of sync with the real card count — it read `(152)` while the `#more-articles` grid actually held **163** anchors. The counter is hardcoded (`toggleArticles()` does not recompute it), so it silently drifts whenever cards are added without updating it. Set to the true post-refresh count: **175**. Re-verify with:
+> `awk 'NR>START && NR<END' index.html | grep -c '<a href='` over the `#more-articles` block.
+
+### New Labels on Main `index.html` (12 added, hidden `#more-articles` grid; count 163 → 175)
+- `skillsllm_omc_listing` — SkillsLLM directory profile for oh-my-claudecode (OMC-specific)
+- `ko_res_tobycodex` — codex.epril.com "oh-my-claudecode 개발 가이드" (KR, OMC-specific) — **shared label with KO page**
+- `developersdigest_agent_teams_playbook` — Developers Digest "Agent Teams, Subagents, and MCP: The 2026 Playbook"
+- `alexop_tasks_to_swarms` — alexop.dev "From Tasks to Swarms: Agent Teams in Claude Code"
+- `tembo_subagents_guide` — tembo.io "Claude Code Subagents: A 2026 Practical Guide"
+- `nimbalyst_subagents_guide` — nimbalyst.com "Claude Code Subagents: A Practical 2026 Guide"
+- `designrevision_skills_best_practices` — designrevision.com "Claude Code Skills Best Practices" (Jul 2026)
+- `designrevision_awesome_skills` — designrevision.com "Awesome Claude Code Skills: The Curated List" (Jul 2026)
+- `taskade_best_skills` — taskade.com "Best Claude Code Skills in 2026 (Tested + How to Build)" (Jul 2026)
+- `claudedirectory_worktrees_guide` — Claude Directory "Worktrees Guide: Parallel Agents Without Conflicts"
+- `nxcode_beginners_guide` — nxcode.io "Claude Code Tutorial 2026: Complete Beginner's Guide"
+- `claudeworld_zero_to_hero` — claude-world.com "Claude Code Complete Guide 2026: From Zero to Hero"
+
+### New Labels on `/ko/index.html` (4 added, Korean curated grid; count 19 → 23)
+- `daleseo_subagents` — daleseo.com "클로드 코드 서브 에이전트: AI에게 일을 시키는 AI"
+- `hyperithm_claude_guides` — tech.hyperithm.com "Claude Code 심화 활용법" (Hyperithm engineering blog)
+- `medium_ihwoo_skill_subagent_teams` — Medium/ihwoo "Claude Code 도입기 — Skill, SubAgent, Teams로 AI 개발 자동화하기"
+- `tilnote_subagents_guide` — tilnote.io "Claude Code 서브에이전트 완전 정리"
+
+### Bilingual note
+`ko_res_tobycodex` is the only label shared across both pages in this batch. The card already
+existed on `ko/index.html` under that label; the EN page reuses the **identical existing label**
+rather than minting `epril_omc_dev_guide_korean`, so GA4 keeps one continuous event for the URL
+and no history is orphaned. The other 11 EN additions are English-language and stay EN-only; the
+4 KO additions are Korean-language and stay KO-only — per the standing rule that the KO page
+curates Korean-language resources and defers the full catalog to EN.
+
+### Near-duplicate labels — do not confuse
+These pairs point at **different URLs** on the same domain and are intentionally separate events:
+- `tembo_multiagent_guide` (`/blog/claude-code-multi-agent-orchestration`) vs `tembo_subagents_guide` (`/blog/claude-code-subagents`)
+- `nimbalyst_plugins_guide` (`/blog/claude-code-plugins-guide/`) vs `nimbalyst_subagents_guide` (`/blog/claude-code-subagents-guide/`)
+- `designrevision_code_review` vs `designrevision_skills_best_practices` vs `designrevision_awesome_skills`
+- `claudedirectory_best_plugins` vs `claudedirectory_workflow_builder` vs `claudedirectory_worktrees_guide`
+- `claudeworld_what_is_workflow` (`/what-is-a-workflow-multi-agent-orchestration/`) vs `claudeworld_zero_to_hero` (`/claude-code-complete-guide-2026/`)
+- `developersdigest_dynamic_workflows` vs `developersdigest_agent_teams_playbook`
+- `alexop_deterministic_workflows` (`/claude-code-workflows-deterministic-orchestration/`) vs `alexop_tasks_to_swarms` (`/from-tasks-to-swarms-agent-teams-in-claude-code/`)
+- `tilnote_omc_korean` (page `6983c9b4…`) vs `tilnote_subagents_guide` (page `695a1c6d…`)
+
+### Rejected as duplicates during this pass
+- yukifuruta.hashnode.dev swarm-orchestration post — cross-post of the already-tracked `devto_yukifuruta_gamechanger`
+- Existing KR coverage re-surfaced by search and skipped: soliloquiess, kwag93, gpters, roboco, hwani, gyuha
+- Existing EN coverage re-surfaced and skipped: totalum, firecrawl (both), florianbruniaux, shipyard, halallens, addyosmani, byteiota, seankim, medevel, cmaven, a2a-mcp, openclawapi, vibetip
+
+---
+
 ## 🆕 2026-07-28 3 New Resources
 
 **Version check**: repo latest release is still **v4.15.7** (2026-07-23) — site already in sync, no version/stats/agents/keywords changes needed.
