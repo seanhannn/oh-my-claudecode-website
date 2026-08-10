@@ -349,6 +349,41 @@ identical on `index.html` and `ko/index.html` so GA4 aggregates the two language
 
 ---
 
+## 🆕 2026-08-10 Resource Refresh
+
+**Version**: v4.15.7 → **v4.15.10** (hero badge + KO footer badge)
+**Hidden article count**: 175 → **188**
+**Star fallback**: `data-count` 38343 → 38460 (live GitHub API still overrides via `data-gh-stars`)
+
+### New Resource Labels (13 added — all mirrored on `ko/index.html`)
+- `medium_chimin_tmux_worktrees` — Agent Teams via tmux + worktrees (May 2026)
+- `promptshelf_orchestration_patterns` — The Prompt Shelf, 6 orchestration patterns (Jun 2026)
+- `developersdigest_worktrees_playbook` — Git Worktrees + Claude Code 2026 playbook (Jun 2026)
+- `digitalapplied_orchestration_patterns` — Digital Applied, 5 patterns that work (May 2026)
+- `claudecodeguides_swarm_coordination` — Claude Code Guides, swarm coordination (Apr 2026)
+- `aakashx_parallel_agents` — Parallel agents without breaking your repo (May 2026)
+- `devto_javatarz_multiagent_workflows` — DEV, multi-agent development workflows (May 2026)
+- `medium_hightower_teams_worktrees` — Towards AI, agent teams and worktrees (May 2026)
+- `codewithmukesh_worktrees` — Git worktrees parallel sessions setup guide (2026)
+- `developersdigest_july_agent_controls` — Codex & Claude Code July 2026 agent controls
+- `alirezarezvani_best_plugins` — Best Claude Code plugins & skills companion guide (2026)
+- `meanceo_news_august_2026` — Claude Code News August 2026 (Startup Edition)
+- `yowuwiki_omc_tips_ko` — YOWU DEV WIKI Korean OMC field-tips roundup
+
+### Bilingual note
+Unlike previous batches, **every** label in this refresh appears on both `index.html` and
+`ko/index.html` with the identical value, so GA4 aggregates EN + KO traffic under one event
+per resource. No `_ko` variants were created.
+
+### Counter bug fix (affects `show_more_articles` label copy only)
+`toggleArticles()` previously hard-coded `(103)` in the collapse branch, so the button label
+silently reverted to a stale count after a user expanded and re-collapsed. The count is now
+derived at runtime from `container.querySelectorAll('a.resource-card').length`, and an
+on-load `syncArticleCount()` IIFE keeps the initial static label honest. The
+`show_more_articles` event itself (category `engagement`, label `expand`) is unchanged.
+
+---
+
 ## 🆕 2026-07-20 Resource Refresh
 
 **Version**: v4.15.4 (unchanged — site already matched upstream CHANGELOG)
@@ -671,6 +706,19 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `addyosmani_code_orchestra` - Addy Osmani: The Code Agent Orchestra multi-agent coding patterns (Mar 2026)
 - `anthropic_managed_agents` - Anthropic Engineering: Scaling Managed Agents architecture deep-dive (2026)
 - `alexkerber_korea_stars` - Alex Kerber: What +100K Stars in 24 Hours tells about AI Coding and OMC (Apr 2026)
+- `medium_chimin_tmux_worktrees` - Chimin: Agent Teams — running Claude in parallel with tmux + worktrees (May 2026) — **also on `ko/index.html`**
+- `promptshelf_orchestration_patterns` - The Prompt Shelf: Claude Code multi-agent orchestration, 6 patterns (Jun 2026) — **also on `ko/index.html`**
+- `developersdigest_worktrees_playbook` - Developers Digest: Git Worktrees + Claude Code 2026 parallel agents playbook (Jun 2026) — **also on `ko/index.html`**
+- `digitalapplied_orchestration_patterns` - Digital Applied: Multi-Agent Orchestration, 5 patterns that work in 2026 (May 2026) — **also on `ko/index.html`**
+- `claudecodeguides_swarm_coordination` - Claude Code Guides: agent swarm coordination strategies (Apr 2026) — **also on `ko/index.html`**
+- `aakashx_parallel_agents` - Aakash Ahuja: parallel Claude Code agents without breaking your repo (May 2026) — **also on `ko/index.html`**
+- `devto_javatarz_multiagent_workflows` - Karun Japhet (DEV): multi-agent development workflows with Claude Code (May 2026) — **also on `ko/index.html`**
+- `medium_hightower_teams_worktrees` - Rick Hightower (Towards AI): agent teams and worktrees, one Claude is not enough (May 2026) — **also on `ko/index.html`**
+- `codewithmukesh_worktrees` - Mukesh Murugan: Git worktrees in Claude Code for parallel sessions (2026) — **also on `ko/index.html`**
+- `developersdigest_july_agent_controls` - Developers Digest: Codex and Claude Code in July 2026, agent controls are the feature — **also on `ko/index.html`**
+- `alirezarezvani_best_plugins` - Alireza Rezvani: Best Claude Code plugins & skills companion guide (2026) — **also on `ko/index.html`**
+- `meanceo_news_august_2026` - Violetta Bonenkamp: Claude Code News August 2026 (Startup Edition) — **also on `ko/index.html`**
+- `yowuwiki_omc_tips_ko` - YOWU DEV WIKI: Oh My ClaudeCode field-tips roundup, Korean (2026) — **also on `ko/index.html`**
 
 ---
 

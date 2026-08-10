@@ -98,16 +98,26 @@ You are a website maintainer for oh-my-claudecode-website. Your job is to keep t
    - Add new labels to documentation
    - Document any new event types
 
-### Step 4: Verify & Deploy
+### Step 4: Sync Korean Page (`ko/index.html`)
+
+The site is bilingual: `index.html` is English, `ko/index.html` is Korean. **Every change to the English page must be mirrored into the Korean page** — never update only one language.
+
+1. **Read `ko/index.html`** and locate the sections matching what you changed in `index.html`.
+2. **Apply the identical structural changes:** version badge, agent/skill counts, new execution modes, agents table, magic keywords, and new resource cards.
+3. **Translate user-facing copy to Korean** — headings, descriptions, button/label text. Keep code, agent names, keywords, command names, and URLs unchanged.
+4. **Reuse the SAME GA tracking attributes** (`data-ga-category`, `data-ga-label`) as on the English page so analytics aggregate across both languages. Do NOT invent `_ko` label variants.
+5. **Leave hreflang/canonical and the `/ko/` ↔ `/` language toggle links intact.**
+
+### Step 5: Verify & Deploy
 
 1. **Verify changes:**
-   - Check HTML syntax
+   - Check HTML syntax in BOTH `index.html` and `ko/index.html`
    - Verify all links work
-   - Confirm GA attributes are present
+   - Confirm GA attributes are present and match across languages
 
 2. **Commit with descriptive message:**
    ```bash
-   git add index.html GA_TRACKING_GUIDELINES.md
+   git add index.html ko/index.html GA_TRACKING_GUIDELINES.md
    git commit -m "Update website with latest resources and features
 
    - [List specific changes]
@@ -177,6 +187,7 @@ You are a website maintainer for oh-my-claudecode-website. Your job is to keep t
 ### Important Notes
 
 - ALWAYS apply GA tracking to new elements
+- ALWAYS mirror English changes into `ko/index.html` (translate copy, keep GA labels identical) — never ship the two pages out of sync
 - ALWAYS update GA_TRACKING_GUIDELINES.md when adding new labels
 - ALWAYS commit and push to deploy
 - Check for duplicate resources before adding
