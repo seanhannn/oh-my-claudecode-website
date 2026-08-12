@@ -349,6 +349,41 @@ identical on `index.html` and `ko/index.html` so GA4 aggregates the two language
 
 ---
 
+## 🆕 2026-08-12 Resource Refresh
+
+**Version**: v4.15.10 (unchanged — no upstream release since the last refresh)
+**Hidden article count**: 188 → **201**
+**Star fallback**: `data-count` 38460 → 38512 (live GitHub API still overrides via `data-gh-stars`)
+
+Theme of this batch: **skill authoring and hooks** — the extensibility layer OMC's 40+ built-in
+skills are written against, plus context-engineering changes that landed with Claude 5.
+
+### New Resource Labels (13 added — all mirrored on `ko/index.html`)
+- `anthropic_agent_skills_docs` — Agent Skills, official Claude Platform documentation
+- `hidekazu_skills_guide` — Hidekazu Konishi: skills complete guide, create/test/distribute (Jun 2026)
+- `hidekazu_hooks_guide` — Hidekazu Konishi: hooks complete guide, all 30 lifecycle events (Jun 2026)
+- `developersdigest_context_engineering` — New rules of context engineering for Claude 5 models (Jul 2026)
+- `kimi_agent_teams_guide` — Kimi: Claude Code agent teams comprehensive guide (Jul 2026)
+- `kdnuggets_skills_building` — KDnuggets / Shittu Olumide: Anthropic's complete skills-building guide (Jun 2026)
+- `medium_tort_mario_skills` — Tort Mario: skills guide from an Anthropic engineer (Apr 2026)
+- `gist_skill_authoring_guide` — lipex360x gist: skill authoring best practices
+- `aifordevelopers_skills_guide` — AI For Developers: complete guide to creating and using skills (Apr 2026)
+- `developersdigest_best_skills_2026` — Developers Digest: curated skills directory (Jun 2026)
+- `claudedirectory_hooks_guide` — Claude Directory: hooks automation guide (Mar 2026)
+- `techsy_hooks_guide` — TECHSY: hooks examples & setup, 7 production configs (Apr 2026)
+- `github_hermes_agency_orchestrator` — Sakshxm1/hermes-agency-orchestrator, agent workflows + cost analysis (157★)
+
+### Bilingual note
+As in the 2026-08-10 batch, **every** label appears on both `index.html` and `ko/index.html`
+with the identical value. No `_ko` variants.
+
+### Counter note
+The `(201)` static label is now self-correcting — `syncArticleCount()` overwrites it on load
+from the live card count, and `toggleArticles()` recomputes on collapse (fixed 2026-08-10).
+Update the static value anyway so the pre-JS render is accurate.
+
+---
+
 ## 🆕 2026-08-10 Resource Refresh
 
 **Version**: v4.15.7 → **v4.15.10** (hero badge + KO footer badge)
@@ -719,6 +754,19 @@ Add `data-ga-category` and `data-ga-label` attributes to any clickable resource:
 - `alirezarezvani_best_plugins` - Alireza Rezvani: Best Claude Code plugins & skills companion guide (2026) — **also on `ko/index.html`**
 - `meanceo_news_august_2026` - Violetta Bonenkamp: Claude Code News August 2026 (Startup Edition) — **also on `ko/index.html`**
 - `yowuwiki_omc_tips_ko` - YOWU DEV WIKI: Oh My ClaudeCode field-tips roundup, Korean (2026) — **also on `ko/index.html`**
+- `anthropic_agent_skills_docs` - Anthropic: Agent Skills official platform documentation — **also on `ko/index.html`**
+- `hidekazu_skills_guide` - Hidekazu Konishi: Claude Code skills complete guide, create/test/distribute (Jun 2026) — **also on `ko/index.html`**
+- `hidekazu_hooks_guide` - Hidekazu Konishi: Claude Code hooks complete guide, all 30 lifecycle events (Jun 2026) — **also on `ko/index.html`**
+- `developersdigest_context_engineering` - Developers Digest: new rules of context engineering for Claude 5 models (Jul 2026) — **also on `ko/index.html`**
+- `kimi_agent_teams_guide` - Kimi: Claude Code agent teams comprehensive guide (Jul 2026) — **also on `ko/index.html`**
+- `kdnuggets_skills_building` - KDnuggets / Shittu Olumide: Anthropic's complete guide to Claude skills building (Jun 2026) — **also on `ko/index.html`**
+- `medium_tort_mario_skills` - Tort Mario: skills for Claude Code, guide from an Anthropic engineer (Apr 2026) — **also on `ko/index.html`**
+- `gist_skill_authoring_guide` - lipex360x gist: skill authoring guide, best practices for high-quality skills — **also on `ko/index.html`**
+- `aifordevelopers_skills_guide` - AI For Developers: complete guide to creating and using Claude skills (Apr 2026) — **also on `ko/index.html`**
+- `developersdigest_best_skills_2026` - Developers Digest: best Claude Code skills curated directory (Jun 2026) — **also on `ko/index.html`**
+- `claudedirectory_hooks_guide` - Claude Directory: Claude Code hooks workflow automation guide (Mar 2026) — **also on `ko/index.html`**
+- `techsy_hooks_guide` - TECHSY: Claude Code hooks guide with 7 production-ready configs (Apr 2026) — **also on `ko/index.html`**
+- `github_hermes_agency_orchestrator` - Sakshxm1/hermes-agency-orchestrator: agent workflows guide + orchestration framework (157★) — **also on `ko/index.html`**
 
 ---
 
