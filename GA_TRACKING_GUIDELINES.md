@@ -2,6 +2,44 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-08 v5.3.0 Sync + 8 New Resources
+
+**Version**: v4.15.10 → **v5.3.0** (hero badge on both pages, KO footer badge)
+**Hidden article count**: 201 → **208** (`show_more_articles_button` static label updated; `syncArticleCount()` still self-corrects)
+**Star fallback**: `data-count` 38512 → 39049; static copy 38k/38,000+/36k → 39k/39,000+ (live GitHub API still overrides via `data-gh-stars`)
+**Agent/skill counts**: 32 → **19** specialists, 40+ → **35+** skills, on both pages (hero, stats, features, agents grid, FAQ, JSON-LD, meta/og/twitter, footer).
+Upstream README has said "19 specialized agents (with tier variants)" since v4.x and `agents/` holds 19 files; `skills/` holds 37 after the v5.0.0 retirement of 14 skills. The EN agents grid now lists the real 19 (dropped stale names such as ux-researcher, api-reviewer, product-manager, dependency-expert).
+
+### Mode Tab Label Change (⚠️ breaks historical data — second time, see 2026-04 note below)
+- `mode_tab_ultrawork` → **`mode_tab_execute`** (EN) and `ko_mode_tab_ultrawork` → **`ko_mode_tab_execute`** (KO)
+  - Reason: v5.0.0 removed `ultrawork`/`ultrapilot`/`swarm`/`pipeline` outright (no aliases). `/execute` is the documented replacement; `/team` covers coordinated parallel workers.
+  - `data-mode`/`data-panel` values also changed from `ultrawork` to `execute`; the tab-switching JS is generic and needed no change.
+  - Related copy updated: FAQ ("Autopilot vs Execute vs Team vs Ralph"), JSON-LD FAQPage entry, meta keywords, hero terminal typewriter phrase (`ulw …` → `/execute "…"`), KO FAQ keyword list (`ulw` → `/execute`).
+
+### New Official Docs Bar Label (EN docs bar + KO curated grid, same label)
+- `official_migration_guide` — docs/MIGRATION.md, v4 → v5 workflow retirement replacement table
+
+### New Resource Labels (7 added — all mirrored on `ko/index.html`)
+- `github_oh_my_codex` — Yeachan-Heo/oh-my-codex (OMX), same orchestration for OpenAI Codex CLI (33k★)
+- `github_gajae_code` — Yeachan-Heo/gajae-code, lighter SDK-based sibling project (2.7k★, beta)
+- `qiita_ymorimatsu_omc` — Qiita / Yuki Morimatsu (JP): deep-interview → ralplan → autopilot MVP build (Apr 2026)
+- `qiita_backendnotes_omc_vs_omx` — Qiita / backend-notes (JP): why OMC and OMX diverged in design (Apr 2026)
+- `chenguangliang_orchestration_plugins_compared` — Gerald Chen: Ruflo / Maestro / Claude Octopus / Codex Peer Review compared (May 2026)
+- `saascity_skills_plugins_guide` — SaaSCity / ghosty: skills vs plugins, safe installs, authoring (Jun 2026)
+- `origami_claude_code_august2026` — Origami: What's New in Claude Code, August 2026 (`/design`, Concise style, auto-mode permissions)
+
+### Bilingual note
+Every label above appears on both `index.html` and `ko/index.html` with the identical value. No `_ko` variants.
+(`ko_mode_tab_*` remain the one pre-existing KO-prefixed family; they were already split before this pass.)
+
+### Rejected during this pass
+- CSDN / Zhihu / Bilibili OMC write-ups — blocked automated fetch (HTTP 403/412/521), so title/author/date could not be verified.
+- dev.to "best way to do agentic development in 2026" — covers oh-my-**opencode**, not OMC.
+- claudeskills.info OMC listing — directory page pinned to stale v4.15.4 metadata.
+- skillsllm.com compare page, SourceForge mirror — low-signal directory pages.
+
+---
+
 ## 🆕 2026-08-05 16 New Resources + Star Count Refresh
 
 **Version check**: repo latest release is still **v4.15.7** (2026-07-23, published before this refresh) — site hero badge, footer, and JSON-LD `softwareVersion` already in sync on both pages. No agent/skill/keyword/mode changes needed.
@@ -137,7 +175,7 @@ All Korean page labels are prefixed with `ko_` to keep reports cleanly segmentab
 - `ko_hero_version_badge`, `ko_hero_author_link`, `ko_hero_cta_install`, `ko_hero_cta_github`, `ko_nav_install`
 
 **Mode tabs (4)**
-- `ko_mode_tab_autopilot`, `ko_mode_tab_ultrawork`, `ko_mode_tab_team`, `ko_mode_tab_ralph`
+- `ko_mode_tab_autopilot`, `ko_mode_tab_execute` (was `ko_mode_tab_ultrawork` until 2026-09-08), `ko_mode_tab_team`, `ko_mode_tab_ralph`
 
 **Install steps (3)**
 - `ko_install_step_1`, `ko_install_step_2`, `ko_install_step_3`
@@ -474,7 +512,7 @@ The v2 site introduces rich engagement tracking across all sections. **143 GA da
 |----------|----------|---------|
 | `cta_click` | Hero/Final/Nav CTAs | Conversion funnel |
 | `testimonial_click` | Community quote cards | Social proof impact |
-| `mode_tab_click` | Autopilot/Ultrapilot/Team/Ralph tabs | Feature interest |
+| `mode_tab_click` | Autopilot/Execute/Team/Ralph tabs | Feature interest |
 | `copy_code` | Install step copy buttons | Install intent |
 | `section_view` | Section visibility (once/session) | Content engagement |
 | `scroll_depth` | 25/50/75/100% milestones | Page depth |
@@ -492,7 +530,7 @@ The v2 site introduces rich engagement tracking across all sections. **143 GA da
 - `final_cta_install` — Bottom of page install CTA
 - `final_cta_github` — Bottom of page GitHub CTA
 - `install_step_1` / `install_step_2` / `install_step_3` — Copy buttons per step
-- `mode_tab_autopilot` / `mode_tab_ultrapilot` / `mode_tab_team` / `mode_tab_ralph` — Which mode users explore
+- `mode_tab_autopilot` / `mode_tab_execute` / `mode_tab_team` / `mode_tab_ralph` — Which mode users explore (`mode_tab_ultrapilot` → `mode_tab_ultrawork` in 2026-04, → `mode_tab_execute` in 2026-09)
 - `testimonial_joe_njenga` / `testimonial_addy_osmani` / `testimonial_alex_kerber` — Testimonial drives
 - `show_more_articles_button` — Resources deep dive
 
