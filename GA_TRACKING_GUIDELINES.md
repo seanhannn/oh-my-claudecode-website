@@ -2,6 +2,34 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-14 v5.4.0 Sync + 8 New Resources
+
+**Version**: v5.3.0 → **v5.4.0** (EN hero badge, KO hero + footer badge). Tagline now "Shipyard harbor intake gate · agent-doc-discipline · pre-flight danger scan".
+**Hidden article count**: 208 → **216**
+**Star fallback**: `data-count` 39049 → 39138 (static 39k / 39,000+ copy unchanged; live GitHub API still overrides via `data-gh-stars`)
+**Agent/skill counts**: unchanged — 19 agents; `skills/` grew 37 → 39 (`harbor`, `agent-doc-discipline`), still within "35+".
+
+### New Resource Labels (8 added — all mirrored on `ko/index.html`)
+- `zenn_yamitake_omc` — Zenn / JJ yamitake (JP): OMC turns Claude Code into a multi-agent dev environment (Apr 2026)
+- `youtube_kist_omc_talk_ko` — YouTube / KIST channel (KO): "Claude Code Plugin : Oh My Claude Code / 260611", 2h22m recorded live session (Jun 2026)
+- `youtube_devskingdom_omc_visualize` — YouTube / DevsKingdom: visualize multi-agent orchestration with one prompt, 11 min (Apr 2026)
+- `hidekazu_plugins_guide` — Hidekazu Konishi: plugins complete guide, bundling skills/hooks/agents/MCP (Jun 2026). Sibling of `hidekazu_skills_guide` / `hidekazu_hooks_guide` / `hidekazukonishi_subagents_guide` — different URLs.
+- `totalum_skills_guide` — Totalum / Francesc: skills vs hooks vs subagents vs MCP (Aug 2026). Sibling of `totalum_subagents_playbook` — different URL.
+- `claudelessons_skills_plugins` — Claude Lessons: skills and plugins explained (Jul 2026)
+- `serenitiesai_agent_teams_setup` — Serenities AI / Nishant Lamichhane: agent teams complete setup guide (Feb 2026)
+- `meanceo_claude_code_news_september2026` — Mean CEO: Claude Code News September 2026, Startup Edition (published 2026-09-06). Follows the `meanceo_claude_code_news_{month}2026` pattern (note the August one is `meanceo_news_august_2026`).
+
+### Bilingual note
+Every label above appears on both `index.html` and `ko/index.html` with the identical value. No `_ko` variants; the `_ko` suffix on `youtube_kist_omc_talk_ko` denotes content language, as with `roboco_korean` / `iceicebear_omc_deepdive_korean`.
+
+### Rejected during this pass
+- midego1/claude-orchestrate — 8★, too early to feature.
+- beginnersinai.org hooks & plugins guide — no author, generic.
+- wikidocs.net Claude Code 완벽 가이드 (KO) — does not mention OMC; generic Claude Code intro.
+- gradually.ai / newreleases.io / releasebot changelog mirrors — directory pages.
+
+---
+
 ## 🆕 2026-09-08 v5.3.0 Sync + 8 New Resources
 
 **Version**: v4.15.10 → **v5.3.0** (hero badge on both pages, KO footer badge)
