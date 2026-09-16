@@ -2,6 +2,34 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-16 Resource Refresh
+
+**Version**: v5.4.0 (unchanged — no upstream release since 2026-09-11)
+**Hidden article count**: 216 → **222**
+**Star fallback**: `data-count` 39138 → 39188 (static 39k / 39,000+ copy unchanged; live GitHub API still overrides via `data-gh-stars`)
+**Agent/skill counts**: unchanged (19 agents, 39 skills → "35+")
+
+Theme of this batch: **international OMC coverage** (1 KO + 3 JP OMC-specific pieces) plus two extensibility guides.
+
+### New Resource Labels (6 added — all mirrored on `ko/index.html`)
+- `gpters_omc_setup_team_mode_ko` — GPTers / 지피터스 강지인 (KO): OMC install + Team mode, install-failure fixes, CLI vs slash commands (Aug 2026). Sibling of the two existing `gpters.org/dev/post/...` cards — different URL.
+- `qiita_backendnotes_omc_intro` — Qiita / backend-notes (JP): oh-my-claudecode入門, agent lanes + model routing (Apr 2026). Sibling of `qiita_backendnotes_omc_vs_omx` — different URL.
+- `zenn_dk_superpowers_vs_omc` — Zenn / dk_ (JP): superpowers vs oh-my-claudecode, choosing by philosophy (Mar 2026)
+- `note_masao_omc_guide` — note.com / まさお (JP): OMC how-to and explainer (Mar 2026)
+- `vmobify_uiux_plugins_skills` — Vmobify / Amol Pomane: 18 UI/UX plugins & skills evaluated (Sep 2026)
+- `ofox_hooks_subagents_skills_guide` — Ofox: hooks, subagents & skills complete guide (Apr 2026, updated Jun 2026)
+
+### Bilingual note
+Every label above appears on both `index.html` and `ko/index.html` with the identical value. The `_ko` suffix on `gpters_omc_setup_team_mode_ko` denotes content language (as with `youtube_kist_omc_talk_ko`), not a KO-page variant.
+
+### Rejected during this pass
+- amux.io "Best Multi-Agent Coding Orchestrators 2026" — undated vendor comparison that ranks its own product; no OMC mention.
+- claudefa.st "6 Frameworks vs ClaudeFast Code Kit" — undated, unattributed vendor pitch; no OMC mention.
+- Medium / Claudio Novaglio agent-teams piece — already on site as `novaglio_agent_teams`.
+- bswen oh-my-pi vs Claude Code — about a different tool (oh-my-pi).
+
+---
+
 ## 🆕 2026-09-14 v5.4.0 Sync + 8 New Resources
 
 **Version**: v5.3.0 → **v5.4.0** (EN hero badge, KO hero + footer badge). Tagline now "Shipyard harbor intake gate · agent-doc-discipline · pre-flight danger scan".
