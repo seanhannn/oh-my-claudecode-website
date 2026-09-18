@@ -696,7 +696,7 @@
         <p class="text-center text-xs uppercase tracking-[0.2em] text-gray-500 mb-10 font-semibold">Trusted by <span data-gh-stars="plus">39,000+</span> developers worldwide</p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="text-center">
-                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="39188" data-gh-stars="k">39k</div>
+                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="39234" data-gh-stars="k">39k</div>
                 <div class="text-sm text-gray-500 uppercase tracking-wider">GitHub Stars</div>
             </div>
             <div class="text-center">
@@ -1398,9 +1398,25 @@
             <p class="text-lg text-gray-400 max-w-2xl mx-auto">Curated hands-on reviews, deep dives, and tutorials from the OMC community.</p>
         </div>
 
-        <!-- Featured Articles (9 visible) -->
+        <!-- Featured Articles (10 visible) -->
         <div class="mb-10 reveal">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Related Project: Agentty (AI Native terminal) -->
+                <a href="https://www.agentty.run/" target="_blank"
+                   class="resource-card feature-card card p-6 group"
+                   data-ga-category="resource_click" data-ga-label="agentty_ai_native_terminal">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="px-2 py-1 text-xs bg-glow-purple/10 text-glow-purple rounded font-medium">Related Project</span>
+                        <span class="text-xs text-gray-500">🖥️ AI Native terminal · macOS</span>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2 group-hover:text-glow-cyan transition-colors">Agentty — The real terminal for the AI Native era</h4>
+                    <p class="text-gray-500 text-sm mb-4">A 17MB Rust-native terminal built for running agents. Claude Code, Codex, Gemini CLI, and more side by side in unlimited split panes; live status shows which agent needs you; sessions are searchable and share context. A tmux alternative that fits OMC's team workflows.</p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500">
+                        <span>agentty.run · free · v0.1.8</span>
+                        <span class="text-glow-cyan group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </a>
+
                 <!-- Article: marc0 200-agent swarm -->
                 <a href="https://www.marc0.dev/en/blog/ai-agents/claude-opus-4-8-dynamic-workflows-ultracode-200-agent-swarm" target="_blank"
                    class="resource-card feature-card card p-6 group"
@@ -1545,26 +1561,12 @@
                     </div>
                 </a>
 
-                <!-- Article 9 -->
-                <a href="https://zenvanriel.nl/ai-engineer-blog/claude-code-swarms-multi-agent-orchestration/" target="_blank"
-                   class="resource-card feature-card card p-6 group"
-                   data-ga-category="resource_click" data-ga-label="zenvanriel_swarms">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="px-2 py-1 text-xs bg-[#6EAEFF]/10 text-[#6EAEFF] rounded font-medium">AI Engineer Blog</span>
-                        <span class="text-xs text-gray-500">Feb 2026</span>
-                    </div>
-                    <h4 class="font-bold text-lg mb-2 group-hover:text-glow-cyan transition-colors">Claude Code Swarms: Multi-Agent AI Coding Is Here</h4>
-                    <p class="text-gray-500 text-sm mb-4">Comprehensive breakdown of the multi-agent paradigm shift in AI-assisted development.</p>
-                    <div class="flex items-center gap-2 text-sm text-gray-500">
-                        <span>By Zen van Riel</span>
-                        <span class="text-glow-cyan group-hover:translate-x-1 transition-transform">→</span>
-                    </div>
-                </a>
             </div>
         </div>
 
         <!-- Hidden articles container (all remaining articles 10-107 + tutorials + community + related projects) -->
                 <div id="more-articles" class="hidden mt-6">
+                    <!-- Article: Zen van Riel swarms (moved from featured 2026-09-18) --><a href="https://zenvanriel.nl/ai-engineer-blog/claude-code-swarms-multi-agent-orchestration/" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="zenvanriel_swarms"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-blue/10 text-accent-blue rounded">AI Engineer Blog</span><span class="text-xs text-gray-500">Feb 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Swarms: Multi-Agent AI Coding Is Here</h4><p class="text-gray-400 text-sm mb-4">Comprehensive breakdown of the multi-agent paradigm shift in AI-assisted development.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Zen van Riel</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Article: Tembo --><a href="https://www.tembo.io/blog/claude-code-multi-agent-orchestration" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="tembo_multiagent_guide"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-blue/10 text-accent-blue rounded">Tembo</span><span class="text-xs text-gray-500">Jul 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Multi-Agent Orchestration: 2026 Guide</h4><p class="text-gray-400 text-sm mb-4">From subagents to Agent Teams to external orchestrators — how to orchestrate Claude Code agents across repos and an entire team.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>Tembo</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                     <!-- Article: Mean.ceo July --><a href="https://blog.mean.ceo/claude-code-news-july-2026/" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="meanceo_claude_code_news_july2026"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">Mean.ceo</span><span class="text-xs text-gray-500">Jul 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code News: July 2026 (Startup Edition)</h4><p class="text-gray-400 text-sm mb-4">July 2026 roundup — Claude Code as a terminal-based work layer for teams: bugs, files, commands, and git inside the dev flow.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Mean.ceo</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
@@ -1791,6 +1793,7 @@
                     <!-- Article: note.com Masao OMC guide --><a href="https://note.com/masa_wunder/n/nf45f89e18cc0" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="note_masao_omc_guide"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">note</span><span class="text-xs text-gray-500">🇯🇵 Mar 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">【神Claude Codeプラグイン】oh-my-claudecodeの使い方＆解説</h4><p class="text-gray-400 text-sm mb-4">Japanese how-to covering installation, the operating modes, magic keywords, and the model routing that cuts costs 30-50% — aimed at readers going from beginner to pro.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By まさお</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                     <!-- Article: Vmobify UI/UX plugins & skills --><a href="https://vmobify.com/blog/claude-code-ui-ux-plugins-skills" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="vmobify_uiux_plugins_skills"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">Vmobify</span><span class="text-xs text-gray-500">Sep 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code UI/UX Plugins &amp; Skills (2026)</h4><p class="text-gray-400 text-sm mb-4">Eighteen design plugins and skills evaluated across five mechanism types — tokens, aesthetic anchors, review gates — plus a copy-paste skill file to start with.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Amol Pomane</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                     <!-- Article: Ofox hooks, subagents & skills --><a href="https://ofox.ai/blog/claude-code-hooks-subagents-skills-complete-guide-2026/" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="ofox_hooks_subagents_skills_guide"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">Ofox</span><span class="text-xs text-gray-500">Jun 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code: Hooks, Subagents &amp; Skills Complete Guide</h4><p class="text-gray-400 text-sm mb-4">The three extensibility layers side by side — hooks for lifecycle automation, subagents for parallel delegation, skills for reusable expertise — and when to reach for each.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Ofox</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <!-- Article: QJC agent terminal apps compared (KO) --><a href="https://qjc.app/en/blog/agent-terminal-apps" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="qjc_agent_terminal_apps_ko"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">Quantum Jump Club</span><span class="text-xs text-gray-500">🇰🇷 Jul 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">에이전트 터미널 앱 비교 2026: iTerm2·Ghostty·cmux·orca 뭐가 다를까</h4><p class="text-gray-400 text-sm mb-4">Korean comparison of terminals for running several coding agents at once — Ghostty as the rendering engine, cmux and orca as management layers on top, iTerm2 as the mature general-purpose option. Useful context for why an agent-native terminal is now its own category.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By 정상록</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                 </div>
                 </div>
 
@@ -1800,7 +1803,7 @@
                     class="inline-flex items-center gap-2 px-6 py-3 bg-ink-700/60 border border-ink-500/60 rounded-xl font-semibold hover:border-glow-cyan/40 hover:bg-ink-600/60 transition-all text-sm text-gray-300 hover:text-white"
                     data-ga-category="engagement" data-ga-label="show_more_articles_button">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                Show more articles <span id="more-articles-count" class="text-glow-cyan">(222)</span>
+                Show more articles <span id="more-articles-count" class="text-glow-cyan">(224)</span>
             </button>
         </div>
 

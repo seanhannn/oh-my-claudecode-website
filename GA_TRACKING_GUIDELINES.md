@@ -2,6 +2,32 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-18 Agentty Featured + Terminal Context
+
+**Version**: v5.4.0 (unchanged — no upstream release since 2026-09-11)
+**Visible featured cards**: 10 (unchanged) — Agentty added at position 1, Zen van Riel moved to the hidden grid
+**Hidden article count**: 222 → **224** (+1 moved from featured, +1 new)
+**Star fallback**: `data-count` 39188 → 39234 (live GitHub API still overrides via `data-gh-stars`)
+
+### New Labels (2 added — both mirrored on `ko/index.html`)
+- `agentty_ai_native_terminal` — **Related Project, requested by the site owner.** https://www.agentty.run/ — "The real terminal for the AI Native era": 17MB Rust-native macOS terminal for running Claude Code, Codex, Gemini CLI etc. side by side, live agent status, session search, context sharing. By Yong Lee (GitHub `empty-user77`, releases repo public since 2026-09-16, v0.1.8 on 2026-09-18). Free; source "to be open-sourced". **First visible card** in the EN featured grid and **first card** in the KO curated grid.
+  - ⚠️ Not to be confused with agentty.org / `1ay1/agentty` (a C++ coding agent) or `coder/agent-tty` (a PTY driver). Only agentty.run is linked.
+- `qjc_agent_terminal_apps_ko` — Quantum Jump Club / 정상록 (KO): 에이전트 터미널 앱 비교 2026 (iTerm2·Ghostty·cmux·orca), Jul 2026. Context piece for the "agent-native terminal" category. Hidden grid (EN) / curated grid (KO).
+
+### Moved label (no rename)
+- `zenvanriel_swarms` — moved from the visible featured grid (position 10) to the top of `#more-articles` so the visible count stays at 10. Label value unchanged; GA history continues. Markup converted to the single-line hidden-card format.
+
+### Bilingual note
+Both labels appear on `index.html` and `ko/index.html` with the identical value. `_ko` on `qjc_agent_terminal_apps_ko` denotes content language.
+
+### Rejected during this pass
+- agentsroom.dev "Best terminal for agentic coding 2026" — undated author, ranks its own product.
+- claudcod.com agent-teams guide (Mar 2026) — generic; the site already carries ~15 agent-teams guides.
+- aicodingdaily substack (Jan 2026) — no OMC mention, newsletter roundup.
+- claudepluginhub.com — directory listing of a fork.
+
+---
+
 ## 🆕 2026-09-16 Resource Refresh
 
 **Version**: v5.4.0 (unchanged — no upstream release since 2026-09-11)
