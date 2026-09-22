@@ -2,6 +2,38 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-22 v5.5.0 Sync + Agentty Body Section + KO Event Tracking
+
+**Version**: v5.4.0 → **v5.5.0** (EN hero badge, KO hero + footer). Tagline: "jev judgment points · architecture-survey, diagram & intent skills · sharper deep-interview".
+**Skill count**: `skills/` 39 → 43 (architecture-survey, diagram, intent, minimal-prose-discipline) → site copy 35+ → **40+** (EN: JSON-LD ×2, FAQ ×2, stats, install demo; KO: stats, footer).
+**Star fallback**: `data-count` 39234 → 39295 (live GitHub API still overrides).
+**Hidden article count**: 224 → **225**. Visible featured cards: 10 → **9** (Agentty card removed — moved into the body).
+
+### 🆕 New event: `agentty_click` (site-owner request — dedicated section, dedicated event)
+Agentty (https://www.agentty.run/) now has its own body section (`<section id="agentty">`) between **Install** and **Resources** (EN) / **Install** and **Korean Community** (KO), with the official logo (`/assets/agentty-logo.png`, 192px PNG downsized from agentty.run/logo.png). The resource card added on 2026-09-18 (`resource_click` / `agentty_ai_native_terminal`) was **removed from both pages** — that label is retired after 4 days of data.
+
+| Clickable | `data-ga-category` (= GA4 event name) | `data-ga-label` | Target |
+|-----------|---------------------------------------|-----------------|--------|
+| Logo image | `agentty_click` | `agentty_logo` | https://www.agentty.run/ |
+| Primary button "Download Agentty" / "Agentty 다운로드" | `agentty_click` | `agentty_cta_download` | https://www.agentty.run/ |
+| Secondary button "Releases on GitHub" / "GitHub 릴리스" | `agentty_click` | `agentty_github_releases` | https://github.com/empty-user77/agentty-releases |
+
+- Impressions: `section_view` with `event_label = "agentty"` (registered in `sectionNames` as "Agentty Companion Terminal" on both pages) → CTR = `agentty_click` ÷ `section_view[agentty]`.
+- **Where to look in GA4**: Reports → Engagement → Events → `agentty_click`; add secondary dimension `event_label` to split logo / download / releases. `page_location` splits EN vs KO (identical labels on both pages by design).
+- Same labels on both pages; no `_ko` variants.
+
+### ⚠️ KO page: event tracking was missing until now
+`ko/index.html` had the gtag config tag but **no** `[data-ga-category]` click handler and **no** `section_view` observer — every `data-ga-*` attribute on the Korean page (nav, CTAs, mode tabs, 70+ resource cards) was inert. This pass adds both (namespaced `omcTrack` / `omcSectionNames` / `omcSectionObserver` inside the main `<script>`), with the same event/param shape as EN (`event_category`, `event_label`, `link_url`, `link_text`). **Expect KO event volume to appear from 2026-09-22 onward; earlier KO clicks were never recorded.** KO `section_view` ids: why, features, modes, agents, testimonials, install, agentty, community, faq.
+
+### New Resource Label (1 added — mirrored on `ko/index.html`)
+- `jadecon_omc_harness_review_ko` — jadecon (Substack, KO): "어떻게 클로드코드를 써야 똑똑할까? — OMC Harness Review (autopilot & team)", Apr 2026.
+
+### Rejected during this pass
+- Threads post by @bellman.pub (the OMC author) — social post, not an article.
+- releasebot / claudskills changelog mirrors — directory pages.
+
+---
+
 ## 🆕 2026-09-18 Agentty Featured + Terminal Context
 
 **Version**: v5.4.0 (unchanged — no upstream release since 2026-09-11)
@@ -595,6 +627,7 @@ The v2 site introduces rich engagement tracking across all sections. **143 GA da
 | `cta_click` | Hero/Final/Nav CTAs | Conversion funnel |
 | `testimonial_click` | Community quote cards | Social proof impact |
 | `mode_tab_click` | Autopilot/Execute/Team/Ralph tabs | Feature interest |
+| `agentty_click` | Agentty companion section (logo / download / releases) | Partner referral clicks (added 2026-09-22) |
 | `copy_code` | Install step copy buttons | Install intent |
 | `section_view` | Section visibility (once/session) | Content engagement |
 | `scroll_depth` | 25/50/75/100% milestones | Page depth |
