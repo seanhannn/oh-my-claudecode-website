@@ -2,6 +2,34 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-28 Agentty Open-Source Refresh + 6 New Resources
+
+**Version**: v5.5.0 (unchanged — no upstream release since 2026-09-22; 19 agents / 43 skills unchanged)
+**Hidden article count**: 225 → **231**
+**Star fallback**: `data-count` 39295 → 39378 (live GitHub API still overrides)
+
+### Agentty section (no label changes)
+- Version badge v0.1.14 → **v0.2.4**; platform line now "… free · open source (Apache-2.0)"; description notes per-terminal in-app browsers (v0.2); footnote carries the Homebrew cask.
+- Agentty went open source on 2026-09-25 (v0.2.0) at https://github.com/empty-user77/Agentty. The secondary button (`agentty_click` / `agentty_github_releases`) now points to that source repo (its Releases tab hosts v0.2.x) instead of the old `agentty-releases` mirror; button text "Source & releases on GitHub" / "GitHub 소스 & 릴리스". **Label kept** so the GitHub-button click series stays continuous — note the target change when reading data before/after 2026-09-28.
+
+### New Resource Labels (6 added — all mirrored on `ko/index.html`)
+- `anthropic_build_plugins_portal` — Anthropic (official): Build plugins for Claude, directory submission portal (2026-09-25). Distinct from `anthropic_plugins_blog` (claude.com/blog/claude-code-plugins).
+- `note_aitaro_omc_32_team` — note.com / AIタロウ (JP): summoning a 32-agent team into Claude Code (Apr 2026). Distinct from `note_masao_omc_guide`.
+- `lowcode_subagents_guide` — LOW/CODE / Jesus Vargas: subagents orchestration guide (updated 2026-09-24)
+- `cloudzero_agents_cost` — CloudZero / Lyne Carolyne: what parallel sessions actually cost (May 2026)
+- `medium_shashank_skills_subagents_hooks_plugins` — Shashank Mishra: skills, subagents, hooks, plugins practical overview (Apr 2026)
+- `smartscope_advanced_best_practices` — SmartScope: 11 advanced techniques for hooks/subagents/context (Jul 2026)
+
+### Bilingual note
+Every label above appears on both `index.html` and `ko/index.html` with the identical value. No `_ko` variants.
+
+### Rejected during this pass
+- arXiv papers (TheBotCompany, ClawArena-Team) — academic, not Claude Code plugin content.
+- lowcode.agency "What is Claude Code", sidbharath complete guide, claudecodehq blog index — generic intros / index pages.
+- Threads post by the OMC author — social post.
+
+---
+
 ## 🆕 2026-09-22 v5.5.0 Sync + Agentty Body Section + KO Event Tracking
 
 **Version**: v5.4.0 → **v5.5.0** (EN hero badge, KO hero + footer). Tagline: "jev judgment points · architecture-survey, diagram & intent skills · sharper deep-interview".
