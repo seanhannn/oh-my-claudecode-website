@@ -2,6 +2,31 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-29 Agentty Section Rebuilt from the Open-Source Repo
+
+**Version**: v5.5.0 (unchanged; 19 agents / 43 skills). **Star fallback**: 39378 → 39396. No resource changes (hidden count stays 231).
+
+The Agentty section (`#agentty`, EN + KO) was rewritten from https://github.com/empty-user77/Agentty (Apache-2.0, Rust/GPUI, v0.2.7 on 2026-09-28): six feature tiles (every agent one window · know who needs you · Session Flow · parallel worktrees + AgentGit · in-app browser/databases/Docker · plugins & session sync), the list of 18 detected CLI agents, a Homebrew install block, and the README's privacy note. KO copy follows the official README.ko wording.
+
+### Labels — `agentty_click` (existing event)
+| Label | Element | Change |
+|-------|---------|--------|
+| `agentty_logo` | logo → agentty.run | unchanged |
+| `agentty_cta_download` | primary button → agentty.run | unchanged |
+| `agentty_github_releases` | secondary button → github.com/empty-user77/Agentty | text now "Star on GitHub" / "GitHub 에 ★ 달기"; label kept |
+| `agentty_docs` | **new** tertiary link → agentty.run/docs | added 2026-09-29 |
+
+### New label — `copy_code` event
+- `agentty_copy_brew` — the Copy button on the Homebrew block. EN: fired once by `copyToClipboard()` (the button deliberately has **no** `data-ga-category`, so the global click handler does not double-fire the way the install-step buttons do). KO: fired once by the global `[data-ga-category="copy_code"]` handler (the KO `.copy-btn` handler itself does not track). Same label, one event per click on both pages.
+
+### Bilingual note
+All five labels identical on both pages. `section_view` for `agentty` unchanged.
+
+### Rejected during this pass
+- GitHubDaily/Chimin Medium "This Terminal Built for Claude Code Is Now Open Source" — it is about cmux, not Agentty.
+
+---
+
 ## 🆕 2026-09-28 Agentty Open-Source Refresh + 6 New Resources
 
 **Version**: v5.5.0 (unchanged — no upstream release since 2026-09-22; 19 agents / 43 skills unchanged)

@@ -1208,13 +1208,13 @@
         <div class="text-center mb-12 reveal">
             <div class="pill mb-6 mx-auto" style="width: fit-content;">
                 <span style="color:#FFB547">●</span>
-                <span class="text-gray-300">추천 · 함께 쓰는 터미널</span>
+                <span class="text-gray-300">추천 · 함께 쓰는 터미널 · 오픈소스</span>
             </div>
             <h2 class="ko-display text-4xl md:text-6xl mb-5">
                 이제 에이전트에게
                 <span class="h-amber">전용 터미널을 주세요.</span>
             </h2>
-            <p class="text-lg text-gray-400 max-w-2xl mx-auto">OMC 가 팀을 굴린다면, Agentty 는 그 팀이 일하는 모습을 지켜보는 곳입니다. 모든 에이전트를 한 창에, 지금 누가 내 확인을 기다리는지 한눈에.</p>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">OMC 가 팀을 굴린다면, Agentty 는 그 팀이 일하는 모습을 지켜보는 곳입니다. Claude Code, Codex 및 여러 에이전트를 나란히 실행하며, 누가 작업 중인지, 끝났는지, 응답을 기다리는지 한눈에 파악합니다.</p>
         </div>
         <div class="card card-glow p-8 md:p-10 reveal">
             <div class="grid md:grid-cols-[auto_1fr] gap-8 items-start">
@@ -1222,28 +1222,69 @@
                    data-ga-category="agentty_click" data-ga-label="agentty_logo">
                     <img src="/assets/agentty-logo.png" alt="Agentty 로고" width="96" height="96" class="w-24 h-24 rounded-2xl" loading="lazy">
                 </a>
-                <div>
+                <div class="min-w-0">
                     <div class="flex flex-wrap items-center gap-3 mb-2">
                         <h3 class="text-2xl font-bold text-white en">Agentty</h3>
-                        <span class="px-2 py-0.5 rounded-md text-xs font-bold mono" style="background:rgba(255,181,71,0.15); color:#FFB547">v0.2.4</span>
-                        <span class="text-xs text-gray-500">macOS · Windows · Linux · 무료 · 오픈소스 (Apache-2.0)</span>
+                        <span class="px-2 py-0.5 rounded-md text-xs font-bold mono" style="background:rgba(255,181,71,0.15); color:#FFB547">v0.2.7</span>
+                        <span class="text-xs text-gray-500">Apache-2.0 · Rust · macOS · Windows · Linux · 무료</span>
                     </div>
                     <p class="text-xl text-white font-semibold mb-2">AI Native 시대를 위한 진짜 터미널.</p>
-                    <p class="text-gray-400 mb-6 leading-relaxed">모든 AI 에이전트를 한 창에서 실행하고, 각각이 무엇을 하는지 보고, 서로 컨텍스트를 공유합니다. Claude Code · Codex · Gemini CLI 를 위해 만든 가벼운 Rust 네이티브 터미널(약 20MB) — OMC 팀 워크플로우에 맞는 tmux 대안입니다. v0.2 부터는 터미널마다 전용 인앱 브라우저가 생겨, 에이전트들이 서로 방해 없이 각자 페이지를 테스트합니다.</p>
-                    <div class="grid sm:grid-cols-3 gap-3 mb-8">
+                    <p class="text-gray-400 mb-6 leading-relaxed">Rust 로 만든 네이티브 GPU 렌더링 터미널 — Electron 없음 — 으로, 모든 에이전트에게 작업에 필요한 것(프로젝트 파일, Git 이력, 컨테이너, 데이터베이스)을 함께 제공합니다. v0.2 부터 Apache-2.0 오픈소스. 플러그인이 환경마다 맞는 에이전트를 만들고, Agentty 는 그 모두를 실행합니다 — OMC 팀 워크플로우에 맞는 tmux 대안.</p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
                         <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
-                            <div class="font-bold mb-1" style="color:#FFB547">무제한 분할 창</div>
-                            <div class="text-xs text-gray-500">Claude Code, Codex, Gemini CLI 를 원하는 만큼 나란히.</div>
+                            <div class="font-bold mb-1" style="color:#FFB547">모든 에이전트를 한 창에서</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">워크스페이스, 탭, 분할창으로 터미널, Claude Code, Codex 및 다른 CLI 에이전트를 관리하며 재시작 후에도 모두 복원됩니다.</div>
                         </div>
                         <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
-                            <div class="font-bold mb-1" style="color:#FFB547">에이전트 상태를 압니다</div>
-                            <div class="text-xs text-gray-500">작업 중 · 완료 · 내 확인 대기 — 한눈에 보입니다.</div>
+                            <div class="font-bold mb-1" style="color:#FFB547">나를 기다리는 에이전트를 한눈에</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">각 페인이 에이전트가 작업 중인지, 완료했는지, 응답을 기다리는지 표시합니다. 데스크톱, 메뉴 막대는 물론 Slack, Discord, Telegram 으로도 알림.</div>
                         </div>
                         <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
-                            <div class="font-bold mb-1" style="color:#FFB547">컨텍스트 공유</div>
-                            <div class="text-xs text-gray-500">세션을 검색하고 에이전트 간에 컨텍스트를 넘깁니다.</div>
+                            <div class="font-bold mb-1" style="color:#FFB547">세션 연결</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">한 에이전트에서 다른 에이전트로 선을 이어 컨텍스트를 넘기고, 양방향으로 동기화하거나, Claude Code 와 Codex 사이에서 대화를 이동합니다.</div>
+                        </div>
+                        <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold mb-1" style="color:#FFB547">병렬 워크트리 + AgentGit</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">두 번째 에이전트는 새 브랜치의 별도 git 워크트리에서 시작합니다. diff 검토, 커밋, fetch, push, merge 를 에이전트가 도는 창을 벗어나지 않고 처리.</div>
+                        </div>
+                        <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold mb-1" style="color:#FFB547">인앱 브라우저, 데이터베이스 &amp; Docker</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">개발 서버를 터미널 옆에 열고 에이전트가 페이지를 직접 조작합니다. 조회는 읽기 전용 트랜잭션, 쓰기는 정확한 SQL 을 보여 주는 승인 창을 거쳐야만 실행.</div>
+                        </div>
+                        <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
+                            <div class="font-bold mb-1" style="color:#FFB547">플러그인 &amp; 세션 동기화</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">Marketplace 의 플러그인이 패널과 자동화 워크스페이스를 더합니다. v0.2.7 부터 세션과 설정이 개인 git 저장소를 통해 컴퓨터 사이를 따라다닙니다.</div>
                         </div>
                     </div>
+                    <div class="mb-6">
+                        <div class="text-xs uppercase tracking-wider text-gray-500 mb-2">자동으로 찾아 실행하는 에이전트</div>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Claude Code</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Codex</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Gemini CLI</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Antigravity CLI</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Amp</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Copilot CLI</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Cursor CLI</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">OpenCode</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Qwen Code</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Factory Droid</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Goose</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Crush</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Aider</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Kimi CLI</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Kiro CLI</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Cline CLI</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Grok Build</span>
+                            <span class="agent-pill" style="background:rgba(255,255,255,0.05); color:#D1D5DB">Ollama</span>
+                            <span class="agent-pill" style="background:rgba(255,181,71,0.1); color:#FFB547">+ 모든 CLI 에이전트</span>
+                        </div>
+                    </div>
+                    <div class="code-block p-3 flex items-center justify-between gap-3 mb-3">
+                        <code class="mono text-sm text-gray-300 break-all"><span class="text-gray-500">$</span> <span style="color:#FFB547">brew install --cask</span> <span style="color:#B4FF4C">empty-user77/agentty/agentty</span></code>
+                        <button class="copy-btn px-2 py-1 rounded text-xs text-gray-500 mono flex-shrink-0" data-copy="brew install --cask empty-user77/agentty/agentty" data-ga-category="copy_code" data-ga-label="agentty_copy_brew">복사</button>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6">다운로드가 편하면 최신 릴리스에서 <span class="text-gray-300">.dmg</span>(Apple silicon, macOS 13+), Windows 설치 파일(10+, x64), <span class="text-gray-300">.deb / .rpm</span> 패키지를 받으세요. Agentty 는 에이전트를 실행할 뿐 번들하지 않으니, 쓰는 CLI 를 설치해 두면 알아서 찾습니다.</p>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a href="https://www.agentty.run/" target="_blank" rel="noopener"
                            class="btn-primary px-6 py-3 rounded-xl font-bold text-sm inline-flex items-center justify-center gap-2"
@@ -1255,10 +1296,16 @@
                            class="btn-secondary px-6 py-3 rounded-xl font-semibold text-sm inline-flex items-center justify-center gap-2"
                            data-ga-category="agentty_click" data-ga-label="agentty_github_releases">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            GitHub 소스 &amp; 릴리스
+                            GitHub 에 ★ 달기
+                        </a>
+                        <a href="https://www.agentty.run/docs" target="_blank" rel="noopener"
+                           class="px-6 py-3 rounded-xl font-semibold text-sm inline-flex items-center justify-center gap-2 text-gray-300 hover:text-white border transition-all"
+                           style="border-color: rgba(30,38,66,0.6)"
+                           data-ga-category="agentty_click" data-ga-label="agentty_docs">
+                            문서
                         </a>
                     </div>
-                    <p class="text-xs text-gray-600 mt-4">Yong Lee (empty-user77) 의 독립 오픈소스 프로젝트, Apache-2.0. Homebrew: <code class="mono text-gray-500">brew install --cask empty-user77/agentty/agentty</code></p>
+                    <p class="text-xs text-gray-600 mt-4">LEE YONGBEOM (empty-user77) 의 Apache-2.0 오픈소스. 에이전트 대화 기록은 로컬에서만 읽고 전송하지 않으며, 익명 사용 통계는 설정 또는 <code class="mono">DO_NOT_TRACK=1</code> 로 끌 수 있습니다.</p>
                 </div>
             </div>
         </div>

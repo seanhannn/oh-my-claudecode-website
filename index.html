@@ -696,7 +696,7 @@
         <p class="text-center text-xs uppercase tracking-[0.2em] text-gray-500 mb-10 font-semibold">Trusted by <span data-gh-stars="plus">39,000+</span> developers worldwide</p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="text-center">
-                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="39378" data-gh-stars="k">39k</div>
+                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="39396" data-gh-stars="k">39k</div>
                 <div class="text-sm text-gray-500 uppercase tracking-wider">GitHub Stars</div>
             </div>
             <div class="text-center">
@@ -1389,13 +1389,13 @@
         <div class="text-center mb-12 reveal">
             <div class="pill mb-6 mx-auto" style="width: fit-content;">
                 <span class="text-glow-amber">●</span>
-                <span class="text-gray-300">Recommended · Companion terminal</span>
+                <span class="text-gray-300">Recommended · Companion terminal · Open source</span>
             </div>
             <h2 class="h-display text-4xl md:text-6xl mb-5">
                 Now give your agents
                 <span class="h-amber">a terminal of their own.</span>
             </h2>
-            <p class="text-lg text-gray-400 max-w-2xl mx-auto">OMC runs the team. Agentty is where you watch it work — every agent in one window, and you always know which one needs you.</p>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto">OMC runs the team. Agentty is where you watch it work — Claude Code, Codex and a dozen other agents side by side, and you see at a glance who is working, who is done and who needs you.</p>
         </div>
         <div class="card card-glow p-8 md:p-10 reveal">
             <div class="grid md:grid-cols-[auto_1fr] gap-8 items-start">
@@ -1403,28 +1403,79 @@
                    data-ga-category="agentty_click" data-ga-label="agentty_logo">
                     <img src="/assets/agentty-logo.png" alt="Agentty logo" width="96" height="96" class="w-24 h-24 rounded-2xl" loading="lazy">
                 </a>
-                <div>
+                <div class="min-w-0">
                     <div class="flex flex-wrap items-center gap-3 mb-2">
                         <h3 class="text-2xl font-bold text-white">Agentty</h3>
-                        <span class="px-2 py-0.5 rounded-md text-xs font-bold bg-glow-amber/15 text-glow-amber mono">v0.2.4</span>
-                        <span class="text-xs text-gray-500">macOS · Windows · Linux · free · open source (Apache-2.0)</span>
+                        <span class="px-2 py-0.5 rounded-md text-xs font-bold bg-glow-amber/15 text-glow-amber mono">v0.2.7</span>
+                        <span class="text-xs text-gray-500">Apache-2.0 · Rust · macOS · Windows · Linux · free</span>
                     </div>
                     <p class="text-xl text-white font-semibold mb-2">The real terminal for the AI Native era.</p>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Run every AI agent in one window, see what each is doing, and share context between them. A lightweight Rust-native terminal (~20MB) built for Claude Code, Codex, Gemini CLI and more — the tmux alternative that fits OMC's team workflows. Since v0.2 every terminal also gets its own in-app browser, so agents can test their pages without stepping on each other.</p>
-                    <div class="grid sm:grid-cols-3 gap-3 mb-8">
+                    <p class="text-gray-400 mb-6 leading-relaxed">A native, GPU-rendered terminal written in Rust — no Electron — that gives every agent what the work needs: the project's files, its Git history, its containers and its databases. Open source under Apache-2.0 since v0.2. Plugins fit an agent to each environment; Agentty runs them all — the tmux alternative that fits OMC's team workflows.</p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
                         <div class="p-4 rounded-lg bg-ink-700/50 border border-ink-500/40">
-                            <div class="text-glow-amber font-bold mb-1">Unlimited split panes</div>
-                            <div class="text-xs text-gray-500">Claude Code, Codex, Gemini CLI side by side — as many as you want.</div>
+                            <div class="text-glow-amber font-bold mb-1">Every agent, one window</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">Workspaces, tabs and split panes for your terminals, Claude Code, Codex and any other CLI agent — all restored after a restart.</div>
                         </div>
                         <div class="p-4 rounded-lg bg-ink-700/50 border border-ink-500/40">
-                            <div class="text-glow-amber font-bold mb-1">Knows what agents are doing</div>
-                            <div class="text-xs text-gray-500">Working, done, or waiting on you — visible at a glance.</div>
+                            <div class="text-glow-amber font-bold mb-1">Know who needs you</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">Each pane shows whether its agent is working, finished or waiting for you. Notifications on the desktop, in the menu bar, or in Slack, Discord and Telegram.</div>
                         </div>
                         <div class="p-4 rounded-lg bg-ink-700/50 border border-ink-500/40">
-                            <div class="text-glow-amber font-bold mb-1">Shared context</div>
-                            <div class="text-xs text-gray-500">Search sessions and hand context between agents.</div>
+                            <div class="text-glow-amber font-bold mb-1">Session Flow</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">Drag a line from one agent to another to hand over the context, keep it live both ways, or move a conversation from Claude Code to Codex and back.</div>
+                        </div>
+                        <div class="p-4 rounded-lg bg-ink-700/50 border border-ink-500/40">
+                            <div class="text-glow-amber font-bold mb-1">Parallel worktrees + AgentGit</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">A second agent starts in its own git worktree on a new branch. Review diffs, commit, fetch, push and merge without leaving the window your agents run in.</div>
+                        </div>
+                        <div class="p-4 rounded-lg bg-ink-700/50 border border-ink-500/40">
+                            <div class="text-glow-amber font-bold mb-1">In-app browser, databases &amp; Docker</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">Dev servers open beside your terminals and an agent can drive the page. Agents read databases in a read-only transaction; every write waits for your approval.</div>
+                        </div>
+                        <div class="p-4 rounded-lg bg-ink-700/50 border border-ink-500/40">
+                            <div class="text-glow-amber font-bold mb-1">Plugins &amp; session sync</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">Plugins add panels and automation workspaces from the Marketplace. Since v0.2.7, sessions and settings follow you between computers through a private git repo.</div>
                         </div>
                     </div>
+                    <div class="mb-6">
+                        <div class="text-xs uppercase tracking-wider text-gray-500 mb-2">Detects and launches</div>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="agent-pill bg-white/5 text-gray-300">Claude Code</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Codex</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Gemini CLI</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Antigravity CLI</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Amp</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Copilot CLI</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Cursor CLI</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">OpenCode</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Qwen Code</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Factory Droid</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Goose</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Crush</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Aider</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Kimi CLI</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Kiro CLI</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Cline CLI</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Grok Build</span>
+                            <span class="agent-pill bg-white/5 text-gray-300">Ollama</span>
+                            <span class="agent-pill bg-glow-amber/10 text-glow-amber">+ any CLI agent</span>
+                        </div>
+                    </div>
+                    <div class="code-block mb-6">
+                        <div class="flex items-center justify-between px-4 py-2.5 border-b border-ink-500/40 bg-ink-700/50">
+                            <span class="mono text-xs text-gray-500">macOS · Homebrew</span>
+                            <button onclick="copyToClipboard(this, 'brew install --cask empty-user77/agentty/agentty')"
+                                    class="copy-btn flex items-center gap-1.5 px-3 py-1 text-xs rounded-md text-gray-400"
+                                    data-ga-label="agentty_copy_brew">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <pre class="mono text-sm"><code><span class="text-gray-500">$</span> <span class="text-glow-amber">brew install --cask</span> <span class="text-[#B4FF4C]">empty-user77/agentty/agentty</span></code></pre>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mb-6">Prefer a download? The <span class="text-gray-300">.dmg</span> (Apple silicon, macOS 13+), Windows installer (10+, x64) and <span class="text-gray-300">.deb / .rpm</span> packages are on the latest release. Agentty runs your agents; install the CLIs you use and it finds them.</p>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a href="https://www.agentty.run/" target="_blank" rel="noopener"
                            class="btn-primary px-6 py-3 rounded-xl font-bold text-sm inline-flex items-center justify-center gap-2"
@@ -1436,10 +1487,15 @@
                            class="btn-secondary px-6 py-3 rounded-xl font-semibold text-sm inline-flex items-center justify-center gap-2"
                            data-ga-category="agentty_click" data-ga-label="agentty_github_releases">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            Source &amp; releases on GitHub
+                            Star on GitHub
+                        </a>
+                        <a href="https://www.agentty.run/docs" target="_blank" rel="noopener"
+                           class="px-6 py-3 rounded-xl font-semibold text-sm inline-flex items-center justify-center gap-2 text-gray-300 hover:text-white border border-ink-500/60 hover:border-glow-amber/40 transition-all"
+                           data-ga-category="agentty_click" data-ga-label="agentty_docs">
+                            Docs
                         </a>
                     </div>
-                    <p class="text-xs text-gray-600 mt-4">An independent open-source project by Yong Lee (empty-user77), Apache-2.0. Homebrew: <code class="mono text-gray-500">brew install --cask empty-user77/agentty/agentty</code></p>
+                    <p class="text-xs text-gray-600 mt-4">Open source under Apache-2.0 by LEE YONGBEOM (empty-user77). Agent transcripts are read locally and never uploaded; anonymous usage stats can be switched off in Settings or with <code class="mono">DO_NOT_TRACK=1</code>.</p>
                 </div>
             </div>
         </div>
