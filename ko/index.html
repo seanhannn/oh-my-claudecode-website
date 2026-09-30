@@ -1225,7 +1225,7 @@
                 <div class="min-w-0">
                     <div class="flex flex-wrap items-center gap-3 mb-2">
                         <h3 class="text-2xl font-bold text-white en">Agentty</h3>
-                        <span class="px-2 py-0.5 rounded-md text-xs font-bold mono" style="background:rgba(255,181,71,0.15); color:#FFB547">v0.2.7</span>
+                        <span class="px-2 py-0.5 rounded-md text-xs font-bold mono" style="background:rgba(255,181,71,0.15); color:#FFB547">v0.2.8</span>
                         <span class="text-xs text-gray-500">Apache-2.0 · Rust · macOS · Windows · Linux · 무료</span>
                     </div>
                     <p class="text-xl text-white font-semibold mb-2">AI Native 시대를 위한 진짜 터미널.</p>
@@ -1245,7 +1245,7 @@
                         </div>
                         <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
                             <div class="font-bold mb-1" style="color:#FFB547">병렬 워크트리 + AgentGit</div>
-                            <div class="text-xs text-gray-500 leading-relaxed">두 번째 에이전트는 새 브랜치의 별도 git 워크트리에서 시작합니다. diff 검토, 커밋, fetch, push, merge 를 에이전트가 도는 창을 벗어나지 않고 처리.</div>
+                            <div class="text-xs text-gray-500 leading-relaxed">두 번째 에이전트는 새 브랜치의 별도 git 워크트리에서 시작합니다. diff 검토, 커밋, fetch, push, merge 를 에이전트가 도는 창을 벗어나지 않고 처리. v0.2.8 은 파일 패널에 모든 워크트리를 보여 주고 머지 충돌을 AI 로 해결합니다.</div>
                         </div>
                         <div class="p-4 rounded-lg" style="background:rgba(11,16,32,0.5); border:1px solid rgba(30,38,66,0.4)">
                             <div class="font-bold mb-1" style="color:#FFB547">인앱 브라우저, 데이터베이스 &amp; Docker</div>
@@ -1398,6 +1398,36 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-4 reveal">
+            <a href="https://github.com/jongfeel/BookReview/issues/1841" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="github_jongfeel_bookreview_omc_chapter_ko">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(255,77,77,0.1); color:#FF4D4D">도서 · 길벗</span>
+                    <span class="text-xs text-gray-500 mono">2026.09</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">『클로드 코드 제대로 시작하기』 4장 — 오 마이 클로드 코드(OMC): 멀티 에이전트 오케스트레이션</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">OMC 가 한국어 Claude Code 책의 한 장(chapter)으로 실렸습니다 (주홍철 · 황진성, 길벗, 2026.08). 독자가 공개한 4장 노트 — OMC 가 무엇을 위임하고, 모델 티어를 어떻게 고르며, 어떤 작업은 굳이 맡기지 않는 게 나은지.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>jongfeel (BookReview)</span>
+                    <span style="color:#FF4D4D">→</span>
+                </div>
+            </a>
+
+            <a href="https://ideas.paasup.io/omc/" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="paasup_omc_single_to_team_ko">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(255,181,71,0.1); color:#FFB547">블로그 · 한국어</span>
+                    <span class="text-xs text-gray-500 mono">2026.05</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Oh-My-ClaudeCode: 단일 AI에서 AI 팀으로</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">어시스턴트 하나에서 오케스트레이션된 팀으로 넘어가는 이야기 — 지속되는 상태, 도메인 전문가 에이전트, 작업 난이도에 따른 자동 모델 선택.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>PAASUP</span>
+                    <span style="color:#FFB547">→</span>
+                </div>
+            </a>
+
             <a href="https://a2a-mcp.org/blog/what-is-oh-my-claude-code-ko" target="_blank" rel="noopener"
                class="res-card card p-6 block"
                data-ga-category="resource_click" data-ga-label="ko_res_a2amcp">
@@ -2565,6 +2595,81 @@
                 <div class="flex items-center gap-2 text-xs text-gray-500">
                     <span>SmartScope</span>
                     <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+
+            <a href="https://fast.io/resources/claude-code-multi-agent-orchestration/" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="fastio_multi_agent_workflows">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(0,229,255,0.1); color:#00E5FF">아티클</span>
+                    <span class="text-xs text-gray-500 mono">2026.09</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code 에서 멀티 에이전트 워크플로우 오케스트레이션하기</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">서브에이전트, 에이전트 팀, 병렬 워크트리를 함께 써서 에이전트끼리 파일을 밟지 않게 하는 법 — 풀스택 리팩토링으로 시연.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>Derek Labian</span>
+                    <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+
+            <a href="https://hidekazu-konishi.com/entry/claude_code_features_settings_reference_2026.html" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="hidekazu_features_settings_reference">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(0,229,255,0.1); color:#00E5FF">레퍼런스</span>
+                    <span class="text-xs text-gray-500 mono">2026.05</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code 기능 &amp; 설정 레퍼런스 2026</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">내장 도구, 설정, 훅, 슬래시 커맨드, MCP 까지 사용자에게 보이는 모든 기능을 한 페이지 표로 정리한 조회용 레퍼런스.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>Hidekazu Konishi</span>
+                    <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+
+            <a href="https://genaiunplugged.substack.com/p/claude-code-skills-commands-hooks-agents" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="genaiunplugged_skills_hooks_agents">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(180,255,76,0.1); color:#B4FF4C">Substack</span>
+                    <span class="text-xs text-gray-500 mono">2026.03</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code 스킬 vs 훅 vs 에이전트 vs CLAUDE.md</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">네 가지 확장 레이어를 언제 쓸지 정하는 판단 기준 — CLAUDE.md 는 짧게, 스킬 설명은 구체적으로, 양보 못 하는 규칙은 훅으로.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>Dheeraj Sharma</span>
+                    <span style="color:#B4FF4C">→</span>
+                </div>
+            </a>
+
+            <a href="https://alexop.dev/posts/understanding-claude-code-full-stack/" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="alexop_claude_code_explained">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(0,229,255,0.1); color:#00E5FF">아티클</span>
+                    <span class="text-xs text-gray-500 mono">2025.11</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code 해부 (2026): MCP · 스킬 · 서브에이전트 · 훅 · 플러그인</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">다섯 가지 구성 요소가 어떻게 범용 에이전트 프레임워크로 쌓이는지 — OMC 의 에이전트와 스킬이 올라타는 바로 그 멘탈 모델.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>Alexander Opalic</span>
+                    <span style="color:#00E5FF">→</span>
+                </div>
+            </a>
+
+            <a href="https://qiita.com/Koukyosyumei/items/9ff3ddef9c11a44bcb30" target="_blank" rel="noopener"
+               class="res-card card p-6 block"
+               data-ga-category="resource_click" data-ga-label="qiita_koukyosyumei_programmable_orchestration">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 text-xs font-bold rounded" style="background:rgba(167,139,255,0.1); color:#A78BFF">Qiita · 日本語</span>
+                    <span class="text-xs text-gray-500 mono">2026.07</span>
+                </div>
+                <h4 class="font-bold mb-2 text-white">Claude Code・Codex 멀티 에이전트 구성을 코드로 정의하는 기술</h4>
+                <p class="text-sm text-gray-500 mb-3 leading-relaxed">h5i-orchestra 로 Claude Code 와 Codex 의 멀티 에이전트 워크플로우를 평범한 Python 코드로 정의 — 병렬 실행, 리뷰, 테스트, 산출물 선택까지 코드로.</p>
+                <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>Hideaki Takahashi</span>
+                    <span style="color:#A78BFF">→</span>
                 </div>
             </a>
         </div>

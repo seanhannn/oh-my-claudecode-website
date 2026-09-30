@@ -2,6 +2,32 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-09-30 Resource Refresh + Agentty v0.2.8
+
+**Version**: v5.5.0 (unchanged; 19 agents / 43 skills). **Star fallback**: 39396 → 39439.
+**Hidden article count**: 231 → **238**. KO curated grid 79 → 86 cards.
+**Agentty section**: badge v0.2.7 → v0.2.8; worktree tile notes the Files-panel worktree list and "Resolve with AI" (no label changes).
+
+### New Resource Labels (7 added — all mirrored on `ko/index.html`)
+- `github_jongfeel_bookreview_omc_chapter_ko` — reader notes for **Chapter 4 "오 마이 클로드 코드(OMC)"** of the Korean book 『클로드 코드 제대로 시작하기』 (주홍철 · 황진성, 길벗, 2026-08-05). Links the public notes issue, not the store page. **First card** in the KO grid.
+- `paasup_omc_single_to_team_ko` — PAASUP IDEAS (KO): Oh-My-ClaudeCode, 단일 AI에서 AI 팀으로 (May 2026). Second card in the KO grid.
+- `fastio_multi_agent_workflows` — Fast.io / Derek Labian: orchestrating multi-agent workflows (subagents, teams, worktrees), Sep 2026
+- `hidekazu_features_settings_reference` — Hidekazu Konishi: features & settings reference 2026 (May 2026). Fourth Hidekazu label; different URL from skills/hooks/subagents/plugins guides.
+- `genaiunplugged_skills_hooks_agents` — GenAI Unplugged / Dheeraj Sharma: skills vs hooks vs agents vs CLAUDE.md (Mar 2026)
+- `alexop_claude_code_explained` — alexop.dev / Alexander Opalic: Claude Code explained, MCP/skills/subagents/hooks/plugins (Nov 2025). Third alexop label.
+- `qiita_koukyosyumei_programmable_orchestration` — Qiita / Hideaki Takahashi (JP): programmable orchestration with h5i-orchestra (Jul 2026)
+
+### Bilingual note
+Every label above appears on both pages with the identical value. `_ko` suffixes denote content language.
+
+### Rejected during this pass
+- hinakira.com — aggregator copy of the Zenn yamitake article already on site.
+- infohiroki.com multi-agent journey (JP, Feb 2026) — unbylined, predates agent teams.
+- eesel.ai complete guide — already on site (`eesel_multiagent_guide`).
+- code.claude.com "What's new", releasebot — changelog/index pages.
+
+---
+
 ## 🆕 2026-09-29 Agentty Section Rebuilt from the Open-Source Repo
 
 **Version**: v5.5.0 (unchanged; 19 agents / 43 skills). **Star fallback**: 39378 → 39396. No resource changes (hidden count stays 231).
