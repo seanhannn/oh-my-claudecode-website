@@ -48,7 +48,7 @@
         "name": "oh-my-claudecode",
         "alternateName": "OMC",
         "url": "https://ohmyclaudecode.com/",
-        "description": "Zero-config multi-agent orchestration for Claude Code. 19 specialized agents. 40+ skills. Ship 3-5x faster.",
+        "description": "Zero-config multi-agent orchestration for Claude Code. 19 specialized agents. 45+ skills. Ship 3-5x faster.",
         "potentialAction": {
             "@type": "SearchAction",
             "target": "https://github.com/Yeachan-Heo/oh-my-claudecode/search?q={search_term_string}",
@@ -69,7 +69,7 @@
         "url": "https://ohmyclaudecode.com/",
         "downloadUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode",
         "softwareVersion": "4.15.7",
-        "description": "Teams-first multi-agent orchestration plugin for Claude Code with 19 specialized agents and 40+ skills.",
+        "description": "Teams-first multi-agent orchestration plugin for Claude Code with 19 specialized agents and 45+ skills.",
         "license": "https://opensource.org/licenses/MIT",
         "offers": {
             "@type": "Offer",
@@ -96,7 +96,7 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            {"@type":"Question","name":"What is oh-my-claudecode?","acceptedAnswer":{"@type":"Answer","text":"oh-my-claudecode (OMC) is a teams-first multi-agent orchestration layer for Claude Code. It provides 19 specialized agents, 40+ skills, and intelligent workflows that automatically parallelize tasks, optimize token usage, and persist until completion."}},
+            {"@type":"Question","name":"What is oh-my-claudecode?","acceptedAnswer":{"@type":"Answer","text":"oh-my-claudecode (OMC) is a teams-first multi-agent orchestration layer for Claude Code. It provides 19 specialized agents, 45+ skills, and intelligent workflows that automatically parallelize tasks, optimize token usage, and persist until completion."}},
             {"@type":"Question","name":"Do I need to learn special commands?","acceptedAnswer":{"@type":"Answer","text":"No. OMC has zero learning curve. Just describe what you want in natural language. Magic keywords like autopilot and ralph are optional shortcuts for power users."}},
             {"@type":"Question","name":"What are the requirements?","acceptedAnswer":{"@type":"Answer","text":"You need Claude Code CLI installed, plus either a Claude Max/Pro subscription or an Anthropic API key. That's it."}},
             {"@type":"Question","name":"How does token optimization work?","acceptedAnswer":{"@type":"Answer","text":"OMC uses smart model routing - simple tasks go to Haiku, complex reasoning goes to Opus. This automatic routing saves 30-50% on tokens while maintaining quality."}},
@@ -611,9 +611,9 @@
                class="pill hover:border-glow-cyan/40 transition-all"
                data-ga-category="resource_click" data-ga-label="hero_version_badge">
                 <span class="pill-dot live"></span>
-                <span class="text-gray-300">v5.5.0</span>
+                <span class="text-gray-300">v5.6.0</span>
                 <span class="text-gray-500">·</span>
-                <span class="text-white">jev judgment points · architecture-survey, diagram &amp; intent skills · sharper deep-interview</span>
+                <span class="text-white">omc ralph verify &amp; afk · software factory closed loop · token budget guard</span>
                 <span class="text-glow-cyan">→</span>
             </a>
         </div>
@@ -696,7 +696,7 @@
         <p class="text-center text-xs uppercase tracking-[0.2em] text-gray-500 mb-10 font-semibold">Trusted by <span data-gh-stars="plus">39,000+</span> developers worldwide</p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div class="text-center">
-                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="39439" data-gh-stars="k">39k</div>
+                <div class="stat-number text-5xl md:text-6xl h-cyan mb-2" data-count="39496" data-gh-stars="k">39k</div>
                 <div class="text-sm text-gray-500 uppercase tracking-wider">GitHub Stars</div>
             </div>
             <div class="text-center">
@@ -704,7 +704,7 @@
                 <div class="text-sm text-gray-500 uppercase tracking-wider">Specialist Agents</div>
             </div>
             <div class="text-center">
-                <div class="stat-number text-5xl md:text-6xl mb-2" style="color: #B4FF4C;">40+</div>
+                <div class="stat-number text-5xl md:text-6xl mb-2" style="color: #B4FF4C;">45+</div>
                 <div class="text-sm text-gray-500 uppercase tracking-wider">Built-in Skills</div>
             </div>
             <div class="text-center">
@@ -1342,7 +1342,7 @@
                         <div class="p-4">
                             <pre class="mono text-sm"><code><span class="text-gray-500">$</span> <span class="text-glow-cyan">/omc-setup</span>
 <span class="text-[#B4FF4C]">✓</span> <span class="text-gray-400">32 agents registered</span>
-<span class="text-[#B4FF4C]">✓</span> <span class="text-gray-400">40+ skills loaded</span>
+<span class="text-[#B4FF4C]">✓</span> <span class="text-gray-400">45+ skills loaded</span>
 <span class="text-[#B4FF4C]">✓</span> <span class="text-gray-400">Configuration complete.</span></code></pre>
                         </div>
                     </div>
@@ -1406,7 +1406,7 @@
                 <div class="min-w-0">
                     <div class="flex flex-wrap items-center gap-3 mb-2">
                         <h3 class="text-2xl font-bold text-white">Agentty</h3>
-                        <span class="px-2 py-0.5 rounded-md text-xs font-bold bg-glow-amber/15 text-glow-amber mono">v0.2.8</span>
+                        <span class="px-2 py-0.5 rounded-md text-xs font-bold bg-glow-amber/15 text-glow-amber mono">v0.2.10</span>
                         <span class="text-xs text-gray-500">Apache-2.0 · Rust · macOS · Windows · Linux · free</span>
                     </div>
                     <p class="text-xl text-white font-semibold mb-2">The real terminal for the AI Native era.</p>
@@ -1913,6 +1913,9 @@
                     <!-- Article: GenAI Unplugged skills vs hooks vs agents --><a href="https://genaiunplugged.substack.com/p/claude-code-skills-commands-hooks-agents" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="genaiunplugged_skills_hooks_agents"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">Substack</span><span class="text-xs text-gray-500">Mar 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Skills vs Hooks vs Agents vs CLAUDE.md</h4><p class="text-gray-400 text-sm mb-4">A decision framework for the four extension layers, with the practical rules: keep CLAUDE.md short, make skill descriptions specific, put non-negotiables in hooks.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Dheeraj Sharma</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                     <!-- Article: alexop Claude Code explained --><a href="https://alexop.dev/posts/understanding-claude-code-full-stack/" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="alexop_claude_code_explained"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">alexop.dev</span><span class="text-xs text-gray-500">Nov 2025</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Explained (2026): MCP, Skills, Subagents, Hooks &amp; Plugins</h4><p class="text-gray-400 text-sm mb-4">How the five building blocks stack into a general-purpose agent framework — the mental model OMC's agents and skills are layered on top of.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Alexander Opalic</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                     <!-- Article: Qiita programmable orchestration --><a href="https://qiita.com/Koukyosyumei/items/9ff3ddef9c11a44bcb30" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="qiita_koukyosyumei_programmable_orchestration"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">Qiita</span><span class="text-xs text-gray-500">🇯🇵 Jul 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code・Codexのマルチエージェント構成をコードで定義する技術</h4><p class="text-gray-400 text-sm mb-4">Defining multi-agent workflows for Claude Code and Codex as plain Python with h5i-orchestra — parallel runs, review, tests and artifact selection as code.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Hideaki Takahashi</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <!-- Article: velog jade_95 OMX & OMC summary (KO) --><a href="https://velog.io/@jade_95/OMX%EC%99%80-OMC-%EC%9A%94%EC%95%BD-%EC%A0%95%EB%A6%AC" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="velog_jade95_omx_omc_summary_ko"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-green/10 text-accent-green rounded">velog</span><span class="text-xs text-gray-500">🇰🇷 Jun 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">OMX와 OMC 요약 정리</h4><p class="text-gray-400 text-sm mb-4">Korean side-by-side of the two sibling layers: OMX as the workflow layer for Codex CLI, OMC as the Claude Code plugin — both turning code generation into clarify, plan, implement, validate.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By jade_95</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <!-- Article: Duet skills complete guide --><a href="https://duet.so/guides/claude-code-skills-complete-guide" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="duet_skills_complete_guide"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded">Duet</span><span class="text-xs text-gray-500">May 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Skills: The Complete Guide (2026)</h4><p class="text-gray-400 text-sm mb-4">Skills as model-invoked instructions: the SKILL.md format, team-wide rollout, and when a skill beats an MCP server or a subagent for procedural knowledge.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Duet Team</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
+                    <!-- Article: StationX September 2026 updates --><a href="https://app.stationx.net/articles/claude-code-september-2026" target="_blank" class="resource-card feature-card bg-dark-card border border-dark-border rounded-xl p-6 group" data-ga-category="resource_click" data-ga-label="stationx_claude_code_september2026"><div class="flex items-center gap-2 mb-3"><span class="px-2 py-1 text-xs bg-accent-purple/10 text-accent-purple rounded">StationX</span><span class="text-xs text-gray-500">Sep 2026</span></div><h4 class="font-bold text-lg mb-2 group-hover:text-accent-red transition-colors">Claude Code Updates: September 2026</h4><p class="text-gray-400 text-sm mb-4">Cross-session messaging between independent sessions, idle notifications, no more time limit on background commands, and prompt-cache diagnostics for tracking cache misses.</p><div class="flex items-center gap-2 text-sm text-gray-500"><span>By Nathan House</span><span class="text-accent-red group-hover:translate-x-1 transition-transform">&rarr;</span></div></a>
                 </div>
                 </div>
 
@@ -1922,7 +1925,7 @@
                     class="inline-flex items-center gap-2 px-6 py-3 bg-ink-700/60 border border-ink-500/60 rounded-xl font-semibold hover:border-glow-cyan/40 hover:bg-ink-600/60 transition-all text-sm text-gray-300 hover:text-white"
                     data-ga-category="engagement" data-ga-label="show_more_articles_button">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                Show more articles <span id="more-articles-count" class="text-glow-cyan">(238)</span>
+                Show more articles <span id="more-articles-count" class="text-glow-cyan">(241)</span>
             </button>
         </div>
 
@@ -1993,7 +1996,7 @@
                     <svg class="faq-icon w-5 h-5 transition-transform text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </summary>
                 <div class="px-6 pb-6 text-gray-400 leading-relaxed">
-                    oh-my-claudecode (OMC) is a teams-first multi-agent orchestration layer for Claude Code. It provides 19 specialized agents, 40+ skills, and intelligent workflows that automatically parallelize tasks, optimize token usage, and persist until completion.
+                    oh-my-claudecode (OMC) is a teams-first multi-agent orchestration layer for Claude Code. It provides 19 specialized agents, 45+ skills, and intelligent workflows that automatically parallelize tasks, optimize token usage, and persist until completion.
                 </div>
             </details>
 

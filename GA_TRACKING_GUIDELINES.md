@@ -2,6 +2,30 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-10-01 v5.6.0 Sync + 3 New Resources
+
+**Version**: v5.5.0 → **v5.6.0** (EN hero badge, KO hero + footer). Tagline: "omc ralph verify & afk · software factory closed loop · token budget guard".
+**Skill count**: `skills/` 43 → 47 (`map`, `refit`, `pr`, `tdd`) → site copy 40+ → **45+** (EN: JSON-LD ×2, FAQ ×2, stats, install demo; KO: stats, footer). Agents unchanged at 19.
+**Star fallback**: `data-count` 39439 → 39496. **Hidden article count**: 238 → **241**. KO grid 86 → 89.
+**Agentty section**: badge v0.2.8 → v0.2.10 (no label changes).
+
+### New Resource Labels (3 added — all mirrored on `ko/index.html`)
+- `velog_jade95_omx_omc_summary_ko` — velog / jade_95 (KO): OMX와 OMC 요약 정리 (Jun 2026). Third card in the KO grid.
+- `duet_skills_complete_guide` — Duet Team: Claude Code Skills complete guide (updated May 2026)
+- `stationx_claude_code_september2026` — StationX / Nathan House: Claude Code Updates, September 2026 (2026-09-11)
+
+### Bilingual note
+Every label above appears on both pages with the identical value.
+
+### Rejected during this pass
+- lilys.ai video-summary note — derivative of the Boaz YouTube video already on site (`watch?v=gCwsX8UwiwI`).
+- addyosmani.com/blog/claude-code-agent-teams, byteiota — already on site.
+- morphllm.com skills-vs-MCP guide — HTTP 429, could not verify.
+- am-will/swarms (233★) — no license, last push Apr 2026.
+- arXiv SwarmBench and outage news — off-topic for the resources grid.
+
+---
+
 ## 🆕 2026-09-30 Resource Refresh + Agentty v0.2.8
 
 **Version**: v5.5.0 (unchanged; 19 agents / 43 skills). **Star fallback**: 39396 → 39439.
