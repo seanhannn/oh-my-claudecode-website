@@ -2,6 +2,15 @@
 
 This document outlines the Google Analytics implementation for the oh-my-claudecode website.
 
+## 🆕 2026-11-03 Sync to v5.7.30
+
+Copy-only sync, no new GA labels.
+
+- Version badge v5.6.0 -> v5.7.30 (EN hero, KO hero + footer). The tagline now reads quality gates (v5.7.22), HUD effort level (v5.7.0), and mission board across sessions (v5.7.20).
+- Star fallback 39,496 -> 40,531 (39k/39,000+ -> 40k/40,000+). The live GitHub API still overrides it.
+- EN install demo: "32 agents registered" -> "19 agents registered". Upstream has 19 agents and 48 skills, so the site copy stays at 45+.
+- No resources were added. Candidates were rejected: horadecodar.com.br (PT, still describes retired `ulw`), ohmyharness.com (directory listing), vibecodinghub.org/tools (near-duplicate of the existing review).
+
 ## 🆕 2026-10-01 v5.6.0 Sync + 3 New Resources
 
 **Version**: v5.5.0 → **v5.6.0** (EN hero badge, KO hero + footer). Tagline: "omc ralph verify & afk · software factory closed loop · token budget guard".
